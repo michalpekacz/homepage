@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michał Pękacz - Nauka CSS</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="nauka-html.html">Nauka HTML</a>
+        <a href="nauka-css.html">Nauka CSS</a>
+        <a href="nauka-js.html">Nauka JavaScript</a>
+      </nav>
+    </header>
+    <main>
+      <header id="top">
+        <h1 class="h1-header">Nauka CSS</h1>
+      </header>
+
+      <section>
+        <h2 class="h2-header">Co to jest CSS</h2>
+        <p>
+          CSS=Cascading Style Sheets (kaskadowe arkusze stylów)<br />
+          CSS odpowiada za prezentację/nadawanie wyglądu na ekranach, ale także
+          wydrukach, czytnikach ekranowych itp. Składnia CSS to reguły
+          (selektor,właściwość,wartość).
+        </p>
+      </section>
+
+      <section>
+        <h2 class="h2-header">Nadawanie stylów - podstawy</h2>
+        <article>
+          <h3 class="h3-header">Stylowanie po nagłowkach</h3>
+          <p>
+            Na początek wpiszmy znacznik style w sekcji head (w sekcji body
+            widzimy treść, w sekcji head umieszczamy to co wpływa na wygląd,
+            działanie strony).<br />
+            <img src="css-001.JPG" alt="znacznik style" />
+          </p>
+          <p>
+            W związku z tym, że ostylowanych elementów może pojawić się więcej
+            najlepiej style wrzucić do oddzielnego pliku. Będzie to zewnętrzny
+            arkusz stylów.<br />
+            <img src="css-002.JPG" alt="podpięcie CSS" />
+          </p>
+        </article>
+        <article>
+          <h3 class="h3-header">Atrybut "style"</h3>
+          <p>
+            Style mozna również dołączyć za pomocą atrybutu style, który
+            przypinamy do danego znacznika, nazywa się to stylem inline
+            (liniowym). Style CSS wpisujemy wewnątrz atrybutu. Możemy wpisać
+            więcej niż jedną własność, np
+            <img src="css-003.JPG" alt="atrybus style" />
+            Korzystając z tego atrybutu może nam się pojawić bałagan w kodzie,
+            zanim zobaczymy treść lista atrybutów może osiągnąc 20 i więcej
+            pozycji.
+          </p>
+        </article>
+        <article>
+          <h3 class="h3-header">Selektory .class oraz #id</h3>
+          <p>
+            Powyższe sposoby nie sprawdzą się, gdy chcemy np tylko części z
+            tagów nadać osobny styl. Z pomocą przychodzi nam atrybut class
+            (stylowanie za pomocą selektora klasy). Dzięki niemu możemy
+            pogrupować elementy na klasy. Przypinając atrybut class do znacznika
+            nadajemy mu nazwę (nazwa klasy kebab-case), a następnie w arkuszu
+            stylów zamiast znacznika wpisujemy
+            <b>.nazwa-klasy</b> - kropka przed nazwą to selektor klasy.
+          </p>
+          <p>
+            Innym sposobem jest stylowanie za pomocą id. Tak samo jak w
+            poprzednim przykładzie, do znacznika dodajemy id o określonej
+            nazwie, a w arkuszu CSS zamiast znacznika wpisujemy
+            <b>#nazwa-id</b> - # to selektor id.
+          </p>
+          <p>
+            Selektory można łączyć, np chcąc wyróznić linki znajdujące się tylo
+            w nawigacji (bardziej ogólnie elmenty znajdujące się w elementach)
+            należy w arkuszu stylów wpisać<br />
+            <img src="css-004.JPG" alt="łączenie selektorów" /><br />
+            W tym przypadku jeden element nie musi byc bezpośrednio nad innym,
+            taki sam efekt otrzymalibyśmy zamiast nav wpisując header, wtedy
+            ostylowalibyśmy wszystkie linki znajdujące się w sekcji header.
+          </p>
+          <p>
+            !important - nadpisuje wszystkie rzeczy, które mogą być zdefiniowane
+            dla elementów. Jeśli zdefiniujemy kolor wszystkich linków dopisując
+            !important, zmieni się kolor linków także w elemencie nav,
+            nadpisując wczesniej zdefiniowany kolor:<br />
+            <img src="css-005.JPG" alt="selektor !important" /><br />
+            Jeśli nie musimy, nie należy go stosować.
+          </p>
+        </article>
+      </section>
+      <section>
+        <h2 class="h2-header">Specyficzność w CSS</h2>
+        <p>
+          Kiedy pewien element jest ostylowany na kilka sposobów, obowiązuje
+          hierarchia sposobu, w jaki ostylowaliśmy dany element:<br />
+          <b>!important > style="" > #name > .name > element</b><br />
+          Np wracając do przykładu z linkami w nawigacji, możemy podejrzeć w
+          devtoolsach która zasada obowiązuje, a która nie(jest ona
+          przekreslona).<br />
+          <img src="css-006.JPG" alt="specyficzność - devtools" /><br />
+        </p>
+        <p>
+          Jeśli specyficzność jest równa, pierwszeństwo ma selektor "bliżej"
+          elementu. Tak samo, jeśli wpiszemy dwa style w jeden selektor wygrywa
+          ta własność, która jest niżej. Dobrą praktyką jest dodawać klasy do
+          wszystkich elementów i unikanie zagnieżdżań (nie pisać stylów np
+          header nav a), lepiej dodać klasę do elementu który nas interesuje (np
+          klasa header-link do linków w nav) i stylować po tych klasach.
+        </p>
+        <p>
+          Nazewnictwo klas:<br />
+          -używamy pojedyńczych słów z j. angielskiego<br />
+          -nazywamy rzeczy zgodnie z ich funkcją na stronie<br />
+          -nazwa z małej litery<br />
+          -nie zaczynamy od cyfr<br />
+          -jeśli nazwa ma więcej niż 2 słowa, używamy kebab-case<br />
+          -staramy się, żeby element miał jedną klasę (nie zwiększamy
+          specyficzności bez potrzeby)<br />
+        </p>
+      </section>
+    </main>
+    <footer>
+      Strona domowa Michała Pękacza, wszystkie treści są efektem tworzenia
+      szkolenia WTF: Co ten frontend. <a href="#top">Wróć na górę strony</a>
+    </footer>
+  </body>
+</html>

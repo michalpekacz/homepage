@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michał Pękacz - strona domowa</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="nauka-html.html">Nauka HTML</a>
+        <a href="nauka-css.html">Nauka CSS</a>
+        <a href="nauka-js.html">Nauka JavaScript</a>
+      </nav>
+    </header>
+    <main>
+      <header id="top">
+        <h1 class="h1-header">Nauka JavaScript</h1>
+      </header>
+
+      <section>
+        <h2 class="h2-header">Co to jest JavaScript</h2>
+        <p>
+          JavaScript w wersji ECMAScript 2015+ (ES6+). ECMAScript jest to
+          ustandaryzowany przez organizację ECMA skryptowy język programowania.
+          Elementy składowe JavaScript: wartości, operacje porównywania,
+          literały, zmienne, obiekty, funkcje. Pliki zawierające kod SavaScript
+          mają rozszerzenie .js mają też swój znacznik - "script". Kod JS
+          uruchamia się raz - po załadowaniu strony, może działać później, jeśli
+          ma odpowiednie instrukcje.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="h2-header">Elementy JavaScript</h2>
+        <article>
+          <h3 class="h3-header">Wartości</h3>
+          <p>
+            Wartości są dla JavaScript tym, czym liczby dla matematyki.
+            Wartością może być liczba, może być też napis.
+          </p>
+          <h3 class="h3-header">Zmienne</h3>
+          <p>
+            Zmienna w JS jest pewnym rodzajem połączenia, między nazwą której
+            chcemy użyć a wartością. Coś jak podstawianie pod zmienne w
+            matematyce (np x=3).
+          </p>
+        </article>
+      </section>
+      <section>
+        <h2 class="h2-header">Lekcja 1 - dodajemy skrypt na stronie</h2>
+        <article>
+          <h3 class="h3-header">Sposoby dodawania skryptu</h3>
+          <p>
+            Znacznik script dodajemy na samym dole, przed zamknięciem znacznika
+            body. W znaczniku wpisujemy funkcję alert<br />
+            <img src="js-001.JPG" alt="alert function" /><br />. Funkcje składają się z
+            nazwy funkcji, nawiasów otwartych i parametrów. Znacznik "script"
+            zadziała, ale podobnie jak z CSS, lepiej umieścić kod w oddzielnym
+            pliku, a w znaczniku "script" podpinamy plik z kodem JS za pomocą
+            atrybutu "src":<br />
+            <img src="js-002.JPG" alt="script tag" /><br />
+            Za pomocą znacznika script możemy dołączyć skrypt albo bezpośrednio
+            wpisując kod do środka, albo za pomocą dołączonego pliku. Średniki
+            na końcu lini nie są konieczne, warto je jednak stosować.
+          </p>
+        </article>
+        <article>
+          <h3 class="h3-header">console.log i zmienne.</h3>
+          <p>
+            Polecenie "console.log" - funkcja, która pozwala na wyświetlenie
+            tekstu lub wartości. <img src="js-003.JPG" alt="console.log function" /> nie
+            wyświetle żadnego komunikatu bezpośrednio na stronie, żeby zobaczyć
+            jego działanie odpalamy devtoolsy i wchodzimy do zakładki "console".
+            Pojawił się tam napis, który umieściliśmy w skrypcie. Tekt, który
+            chcemy wyswietlić musimy opakować w apostrofy ''. Ważna jest
+            kolejność zapisu w pliku z kodem JS.
+          </p>
+          <p>
+            Zmienne. Stworzyłem powiązanie między name a wartością 'Michał' oraz
+            między age a wartością 32. Używamy angielskich nazw zmiennych, przy
+            nazwach używamy camelCase. <br />
+            <img src="js-004.JPG" alt="zmienne 01" /><br />
+            funkcja console.log powinna wypisać wartości które powiązaliśmy z
+            nazwami name i age.<br />
+            <img src="js-005.JPG" alt="zmienne 02" /><br />
+            Efekt możemy zobaczyć w konsoli w devtoolsach:<br />
+            <img src="js-006.JPG" alt="zmienne 03" /><br />
+          </p>
+          <p>
+            Możemy opakować nasze zmienne w tekst, używając literału. Używamy
+            ``(backtick) a zmienne opakowujemy w ${}.<br />
+            <img src="js-007.JPG" alt="literał" /><br />
+            Efekt zobaczymy w konsoli. Jesli zmienimy imię na inne, to wartość
+            firstName zostanie podmieniona. Tak samo bedzie dla wartości age.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      Strona domowa Michała Pękacza, wszystkie treści są efektem tworzenia
+      szkolenia WTF: Co ten frontend. <a href="#top">Wróć na górę strony</a>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

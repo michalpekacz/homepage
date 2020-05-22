@@ -1,17 +1,41 @@
 body{
-    background: #fefefe;
+    background: rgb(226, 226, 226);
 }
 
 section{
-    background: white;
+    background: rgb(226, 226, 226);
+}
+.header{
+    background:rgb(88, 88, 88);
+}
+.h1-header{
+    color: rgb(18, 151, 192);
 }
 
-h1{
-    color:rgb(255, 251, 0);
+.h2-header{
+    color: rgb(252, 0, 0);
 }
-p{
-    color: #24e20b;
+.h3-header{
+    color: #dd4b26;
 }
-h2{
-    color: #1460aa;
+.h4-header{
+    color: rgb(245, 40, 211); 
+}
+.weekly-notes-header{
+    color:rgb(56, 151, 112);
+}
+.daily-notes-header{
+    color:goldenrod;
+}
+a{
+    color:rgb(16, 2, 218); 
+}
+nav a{
+    color:rgb(235, 250, 26);
+}
+footer a{
+    color: rgb(235, 250, 26);
+}
+footer{
+    color:rgb(255, 255, 255); background: rgb(88, 88, 88);
 }

@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michał Pękacz - Nauka HTML</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <header>
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Nauka HTML</a>
-        </nav>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="nauka-html.html">Nauka HTML</a>
+        <a href="nauka-css.html">Nauka CSS</a>
+        <a href="nauka-js.html">Nauka JavaScript</a>
+      </nav>
     </header>
     <main>
+      <header id="top">
+        <h1 class="h1-header">Nauka HTML</h1>
+      </header>
 
-        <header id="top">
-            <h1>Nauka HTML-a</h1>
-        </header>
+      <section>
+        <h2 class="h2-header">Co to jest HTML</h2>
+        <p>
+          HTML=HyperText Markup Language<br />
+          HTML odpowiada za treść (teksty, linki, obrazki...), a właściwie za
+          jej opakowanie. Składa się ze znaczników/tagów/elementów.<br />
+          HTML mówi przeglądarce o strukturze dokumentu (i o tym, co ma
+          wczytać). Posiada zdefiniowaną składnie. Nie jest językiem
+          programowania, jest językiem znaczników (markup language).<br />
+          Semantyczny=mający znaczenie.
+        </p>
+      </section>
+      <section>
+        <h2 class="h2-header">Podstawy</h2>
+        <p>
+          Po utworzeniu szkieletu strony (!+tab) należy ustawić język. Ma to
+          znaczenie pod kątem dostępności (czytnik głosowy). Wszystko co
+          wrzucamy w body widzimy na stronie. Atrybuty są "niewidzialne" -
+          chowamy je w znaczniku. Nadają elementom dodatkowe właściwości (href,
+          src), pozwalają na grupowanie (class) oraz identyfikowanie (id)
+          elementów, można je miksować.
+        </p>
+      </section>
 
-        <section>
-            <h2>Kim jestem?</h2>
-            <p>Hej! Na co dzień uczę się tajnej sztuki frontendu. Z wykształcenia jestem inżynierem budownictwa, jednak
-                okazało się praca ta jest zdecydowanie zbyt wymagająca w stosunku do tego jak ją sobie wyobrażałem przed
-                studiami i że pracując w zawodzie brak mi czasu na własne projekty, pomysły i hobby. <br> Uczęszczam na
-                szkolenie <a href="https://cotenfrontend.pl">WTF</a><br>
-                W wolnych chwilach
-                lubię jeździć na rowerze na dłuższe wycieczki(bikepacking), gotować i czytać, głównie fantasy jak i s-f.
-                <a href="#notatki">Do notatek</a></p>
-        </section>
+      <section>
+        <h2 class="h2-header">Znaczniki</h2>
+        <p>
+          main - główna częśc dokumentu <br />
+          section - wyodrębniamy sekcje dzieląc dokument na części<br />
+          article - ma sens osobno, ale może być jednym z kilku artykułów
+          zawierających się w sekcji, ma sens bedąc samodzielną treścią<br />
+          header - nagłówek dokumentu/sekcji/artykułu<br />
+          footer - stopka dokumentu/sekcji<br />
+          h1 do h6 - nagłówki tytułowe - dokumentu/sekcji<br />
+          p - paragraf/akapit<br />
+          br lub br/ - nowa linia, znacznik pojedyńczy, lub samozamykający
+          się<br />
+          Elementy do wyróżnienia tekstu:<br />
+          b - pogrubia (bold), nie ma znaczenia semantycznego, służy do
+          wyróżnienia wizualnego fragmentu tekstu z tekstu otaczającego<br />
+          strong -pogrubia, podkreśla istotność frazy w nim zawartej, jest to
+          znacznik semantyczny<br />
+          i - kursywa(italic), nie ma znaczenia semantycznego, służy do
+          wyróżnienia wizualnego fragmentu tekstu z tekstu otaczającego<br />
+          em - kursywa, podkresla, że tekst może mieć inne znaczenie (ironia),
+          jest to znacznik semantyczny<br />
+          a - linki i łącza wewnątrz dokumentu<br />
+          nav - tworzenie nawigacji<br />
+          img - wstawianie obrazka, znacznik samozamykający się<br />
+        </p>
+      </section>
 
-        <section id="notatki">
-            <h2>Notatki z WTF: Co ten frontend</h2>
-            <article>
-                <h3>Jak stworzyć prawidłowego HTML-a?</h3>
-                <p>Tworzenie zgodnego ze standardami HTML-a to sztuka, którą do perfekcji opanowało niewielu. Jesli
-                    chcesz
-                    stać się częścią tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego czasu.
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            </article>
-            <article>
-                <h3>Czy nagrywanie szkolenia to prosta sprawa?</h3>
-                <p>Na początku myślałem, że całe szkolenie nagram w2 tygodnie. Samo planowanie rzeczy zajęło dużo
-                    więcej.
-                    Na szczęście dzieki wsparciu bliskich i sporej motywacji udało się wytworzyć schemat nagrywania,
-                    który
-                    każdego dnia przybliża mnie do skończenia pracy.
-                    dfsfdsfdsfdsdsdsdsdsdsdsdsdsdsdsdssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-                    ssssssssdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            </article>
-        </section>
+      <section>
+        <h2 class="h2-header">Atrybuty</h2>
+        <p>
+          id - identyfikuje element, przydatny podczas nawigacji wewnątrz
+          dokumentu, należy unikać używania jednego id do wielu elementów<br />
+          alt - tekst alternatywny dla obrazka
+        </p>
+      </section>
     </main>
     <footer>
-        Strona domowa Michała Pękacza, wszystkie treści są efektem tworzenia szkolenia WTF: Co ten frontend. <a
-            href="#top">Wróć na górę strony</a>
+      Strona domowa Michała Pękacza, wszystkie treści są efektem tworzenia
+      szkolenia WTF: Co ten frontend. <a href="#top">Wróć na górę strony</a>
     </footer>
-</body>
-
+  </body>
 </html>

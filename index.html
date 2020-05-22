@@ -1,63 +1,311 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michał Pękacz - strona domowa</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <header>
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">Nauka HTML</a>
-        </nav>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="nauka-html.html">Nauka HTML</a>
+        <a href="nauka-css.html">Nauka CSS</a>
+        <a href="nauka-js.html">Nauka JavaScript</a>
+      </nav>
     </header>
     <main>
+      <header id="top">
+        <h1 class="h1-header">Michał Pękacz - strona domowa</h1>
+      </header>
 
-        <header id="top">
-            <h1>Michał Pękacz - Strona domowa</h1>
-        </header>
+      <section>
+        <h2 class="h2-header">Kim jestem?</h2>
+        <img src="IMG_20200428_160746.jpg" alt="Michał selfie" />
+        <p>
+          Hej! Na imię mam Michał. Z wykształcenia jestem inżynierem
+          budownictwa, jednak okazało się że pracując na budowie po 10, 12 a
+          czasem i więcej godzin dziennie brak mi czasu na własne projekty,
+          pomysły i rozwijanie zainteresowań. Kilku znajomych ze studiów pracuje
+          obecnie w IT, a kurs
+          <a href="https://cotenfrontend.pl">WTF</a> traktuję jako pierwszy krok
+          ku zmianie pracy 😀 Pamiętam że w liceum na informatyce stworzyłem
+          prostą stronkę, pisałem ją jeszcze wtedy ręcznie w notatniku, coś na
+          wzór takiej mało rozbudowanej Gildii RPG z CD Action (znajdowało się
+          to na płycie z dodatkami i też było napisane w HTML-u) i może dlatego
+          wybrałem frontend :). W wolnych chwilach lubię jeździć na rowerze na
+          dłuższe wycieczki(bikepacking), gotować i czytać, głównie fantasy.
+        </p>
+      </section>
 
-        <section>
-            <h2>Kim jestem?</h2>
-            <img src="Koterski.JPG" alt="Uwaga rowerzysta"/>
-            <p>Hej! Na co dzień uczę się tajnej sztuki frontendu. Z wykształcenia jestem inżynierem budownictwa, jednak
-                okazało się praca ta jest zdecydowanie zbyt wymagająca w stosunku do tego jak ją sobie wyobrażałem przed
-                studiami i że pracując w zawodzie brak mi czasu na własne projekty, pomysły i hobby. <br> Uczęszczam na
-                szkolenie <a href="https://cotenfrontend.pl">WTF</a><br>
-                W wolnych chwilach
-                lubię jeździć na rowerze na dłuższe wycieczki(bikepacking), gotować i czytać, głównie fantasy jak i s-f.
-                <a href="#notatki">Do notatek</a></p>
-        </section>
+      <section id="notatki">
+        <h2 class="h2-header">Notatki z WTF: Co ten frontend</h2>
+        <p>
+          Tutaj znajdują się notatki ze szkolenia WTF:Co ten frontend. Bedą one
+          systematycznie uzupełniane o nowe lekcje, narzędzia i przydatne linki.
+        </p>
+        <article>
+          <h3 class="weekly-notes-header">Tydzień 1</h3>
+          <p>
+            Nie wiedziałem nawet że szkolenie wystartowało, jakimś cudem
+            przegapiłem newsletter 😜
+          </p>
+        </article>
+        <article>
+          <h3 class="weekly-notes-header">Tydzień 2</h3>
+          <p>
+            -zainstalowałem <a href="VSC">Visual Studio Code</a>, Google Chrome
+            oraz Slack<br />
+            -skonfigurowałem katalogi i zaczynamy zabawę!<br />
+            -warstwy strony internetowej:<br />
+            Warstwa 0 - treść<br />
+            Warstwa 1 - Semantyka: HTML<br />
+            Warstwa 2 - Prezentacja: CSS<br />
+            Warstwa 3 - Interakcja: JavaScript<br />
+            -HTML - poznałem podstawowe znaczniki, staram się zrozumieć jak w
+            poprawny sposób zagnieżdżać tagi <br />
+            -CSS - podstawy CSS, stworzenie pliku z zewnętrznym arkuszem
+            stylów<br />
+            -korzystamy z DevTools -sprawdzanie kodu za pomocą validatora HTML
+          </p>
+        </article>
+        <article>
+          <h3 class="weekly-notes-header">Tydzień 3</h3>
+          <p>
+            -metodologia Kanban, zawsze wiedziałem że ten cały multitasking jest
+            przereklamowany.<br />
+            -nowe znaczniki HTML, a tam między innymi tworzenie linków i łączy
+            wewnętrznych, wstawianie obrazków, tworzenie nawigacji<br />
+            -reguły nazywania rzeczy:<br />
+            -nazwy bez polskich znaków;<br />
+            -nie używamy spacji;<br />
+            -najlepiej używać angielskich słów;<br />
+            -trzymamy się konsekwentnie jednego schematu<br />
+            Konwencje nazewnictwa:<br />
+            -camelCase np <b>mySuperBoldHeader</b> używamy do: zmiennych w JS<br />
+            -kebab-case np <b>my-super-bold-header</b> używamy do: nazywanie
+            plików w katalogach, można do atrybutu id oraz class <br />
+            -snake_case np <b>my_super_bold_header</b> używamy do: <br />
+            -PascalCase np <b>MySuperBoldHeader</b> używamy do: <br />
+          </p>
+        </article>
+        <article>
+          <h3 class="weekly-notes-header">Tydzień 6</h3>
+          <p>
+            Rozpoczął się tydzień szósty, w tym tygodniu mam wiele do
+            nadrobienia, chciałbym powtórzyć tydzień 3 i nadrobić przynajmniej 4
+            i 5, zobaczymy jak to pójdzie. Od teraz będę się starał wrzucać
+            codzienne aktualizacje do mojej strony.
+          </p>
+          <article>
+            <h4 class="daily-notes-header">18.05.2020</h4>
 
-        <section id="notatki">
-            <h2>Notatki z WTF: Co ten frontend</h2>
-            <article>
-                <h3>Jak stworzyć prawidłowego HTML-a?</h3>
-                <p>Tworzenie zgodnego ze standardami HTML-a to sztuka, którą do perfekcji opanowało niewielu. Jesli
-                    chcesz
-                    stać się częścią tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego czasu.
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            </article>
-            <article>
-                <h3>Czy nagrywanie szkolenia to prosta sprawa?</h3>
-                <p>Na początku myślałem, że całe szkolenie nagram w2 tygodnie. Samo planowanie rzeczy zajęło dużo
-                    więcej.
-                    Na szczęście dzieki wsparciu bliskich i sporej motywacji udało się wytworzyć schemat nagrywania,
-                    który
-                    każdego dnia przybliża mnie do skończenia pracy.
-                    dfsfdsfdsfdsdsdsdsdsdsdsdsdsdsdsdssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-                    ssssssssdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            </article>
-        </section>
+            <p>
+              Jeszcze raz oglądam tydzień 3. Uzupełniam notatki z lekcji o
+              HTML-u i robię przemeblowanie w całym dokumencie, bo zagnieżdżanie
+              nie jest takie proste, jak mi się wydawało 😅
+            </p>
+          </article>
+          <article>
+            <h4 class="daily-notes-header">19.05.2020</h4>
+            <p>
+              Praktycznie brak czasu, obejrzałem lekcję o konwencjach
+              nazewnictwa i trochę CSS, uzupełniłem notatki.
+            </p>
+          </article>
+          <article>
+            <h4 class="daily-notes-header">20.05.2020</h4>
+            <p>
+              Dzisiaj męczę CSS-a, uzupełniając podstronę o nim dotarłem do
+              nagłówka h4, a po ogarnięciu specyficzności uznałem, że warto
+              trochę to wszystko przeorganizować, czyli znowu semantyka, przy
+              okazji pozbyłem się nagłówków h4 (kill me now pls).<br />
+              <img src="mozg-na-scianie.gif" alt="brain-crash-gif" />
+            </p>
+          </article>
+          <article>
+            <h4 class="daily-notes-header">21.05.2020</h4>
+            <p>
+              Działanie przeglądarki - przeglądarka korzysta z protokołu HTTP
+              lub HTTPS (Hypertext Transfer Protocol (secure-szyfrowany) -
+              protokół do transportowania HTMLa), żeby pobrać i wyświetlić
+              wszystkie pliki znajdujące się na stronach internetowych. <br />
+              URL - Uniform Resource Locator )adres, który wpisujemy, składa się
+              z protokołu, hosta, portu, roota, ścieżki dostępu do zasobu i
+              parametrów. <br />
+              Wpisujemy adres -> przeglądara szuka serwera, odpowiada za to DNS
+              - konwertuje adres np cotenfrontend.pl na adresy IP -> po
+              znalezieniu serwera odpytue o index -> pobieranie zawartości HTMLa
+              do przeglądarki i szukanie dodatkowych zasobów (obrazki, skrypty,
+              style), dla każdego z zasobów wykonuje oddzielne zapytanie. ->
+              Przeglądarka parsuje (sprawdza składnie) i renderuje stronę,
+              aplikując style i łąduje zasoby. <br />
+              Komunikacja przeglądarki z serwerem następuje w modelu request -
+              response.<br />
+              Devtools - zakładka network. Pierwsza rzecz - czysty HTML bez
+              żadnych stylów. Następnie wczytał się plik CSS, poniżej widać inne
+              rzeczy.
+            </p>
+            <p>
+              Kody odpowiedzi HTTP:<br />
+              -200 - ok<br />
+              -30x - przekierowywanie na inną stronę <br />
+              -404 - Sorry <br />
+              -50x - błędy serwera (wewnętrzne, internal server error) <br />
+            </p>
+            <p>
+              Root (/) - pokazuje, w którym miejscu przeglądarka powinna szukać
+              zasobu. Ścieżki bezwzględne ( / z przodu) i względne ( bez / z
+              przodu). Na stronie odpalanej z dysku wpisywanie / przy zasobach
+              nie jest wymagane.
+            </p>
+            <p>
+              <a href="nauka-js.html">JavaScript</a> epizod pierwszy: Mroczne
+              Widmo
+            </p>
+            <p>Podstawowe komendy w <a href="#terminal">terminalu.</a>.</p>
+            <p>
+              Poznaję system kontroli wersji <a href="#GIT-GitHub">GIT.</a> i
+              tworzę pierwsze repozytorium, czyli zaczynamy tydzień czwarty!
+            </p>
+          </article>
+        </article>
+        <article id="VSC">
+          <h3 class="h3-header">Visual Studio Code</h3>
+          <p>
+            Ściągamy wersję stabilną, zaznaczamy wszystkie checkboxy. Na
+            systemie Windows tworzymy katalog roboczy na dysku C. Długa ścieżka
+            do katalogu może powodować problemy.
+          </p>
+          <p>
+            Kombinacje klawiszy:<br />
+            ! + Tab Szkielet strony<br />
+            ctrl + s zapisanie pliku<br />
+            ctrl + shift + p <br />
+            shift + alt + f formatowanie dokumentu<br />
+          </p>
+        </article>
+
+        <article id="terminal">
+          <h3 class="h3-header">Terminal</h3>
+          <section>
+            <h4 class="h4-header">Polecenia w systemie Linux</h4>
+            <p>
+              - ls - wypisanie zawartości katalogu<br />
+              - cd~- przejście do katalogu domowego<br />
+              - cd nazwa-katalogu/ - wchodzimy do katalogu (używając tabulatora
+              możemy szybko dopełniać nazwę)<br />
+              - cd .. - przejdź katalog wyżej<br />
+              - mkdir nazwa-katalogu - tworzymy katalog o danej nazwie<br />
+              - pwd - pełna ścieżka, wktórej się znajdujemy<br />
+              - code . - pozwoli na uruchomienie VSC z linii poleceń w katalogu
+              bierzącym<br />
+            </p>
+          </section>
+          <section>
+            <h4 class="h4-header">Polecenia w systemie Windows</h4>
+            <p>
+              W systemie Windows można zainstalować "Linux subsystem for
+              Windows", wtedy korzystamy z poleceń Linuxowych<br />
+              - dir - wypisanie zawartości katalogu<br />
+              - cd katalog - wchodzimy do katalogu (używając tabulatora możemy
+              szybko dopełniać nazwę)<br />
+              - cd.. - przejdź katalog wyżej<br />
+              - cd - wyświetlenie aktualnej ścieżki<br />
+              - cd C:\ - przejście do katalogu głównego<br />
+              - mkdir nazwaKatalogu - tworzymy katalog o danej nazwie<br />
+              - code . - pozwoli na uruchomienie VSC z linii poleceń w katalogu
+              bierzącym (jeśli nie zaznaczono dodatkowych opcji przy instalacji
+              VSC ten sposób może nie działać)<br />
+            </p>
+          </section>
+        </article>
+        <article id="GIT-GitHub">
+          <h3 class="h3-header">Git & GitHub</h3>
+          <section>
+            <h4 class="h4-header">System kontroli wersji GIT</h4>
+            <p>
+              Komendy w terminalu:<br>
+              git --version - jeśli GIT jest zainstalowany poda nam wersję<br>
+              git config --global user.name "Imię Nazwisko" - konfiguracja użytkownika<br>
+              git config --global user.email jannowak@example.com - podajemy maila, na którego założymy konto w GitHubie<br>
+              git config --get user.name <br>
+              git config --get user.email<br>
+              
+
+            </p>
+          </section>
+          <section>
+            <h4 class="h4-header">GitHub</h4>
+            <p>
+              fh
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <h2 class="h2-header">Przydatne linki</h2>
+          <p>
+            <a href="https://www.google.com/intl/pl/chrome/"
+              >https://www.google.com/intl/pl/chrome/</a
+            ><br />
+            <a href="https://code.visualstudio.com/"
+              >https://code.visualstudio.com/</a
+            ><br />
+            <a href="https://slack.com/intl/en-pl/downloads/windows"
+              >https://slack.com/intl/en-pl/downloads/windows</a
+            ><br />
+            <a href="https://validator.w3.org/nu/#textarea"
+              >https://validator.w3.org/nu/#textarea</a
+            ><br />
+            <a href="https://www.w3.org/TR/html52/"
+              >https://www.w3.org/TR/html52/</a
+            ><br />
+            <a href="https://www.w3.org/TR/CSS/">https://www.w3.org/TR/CSS/</a
+            ><br />
+            <a href="https://codepen.io/">https://codepen.io/</a><br />
+            <a href="https://trello.com">https://trello.com</a><br />
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+              >Spis atrybutów globalnych HTML</a
+            ><br />
+            <a href="https://git-scm.com/">https://git-scm.com/</a><br />
+            <a href="https://coolors.co/">https://coolors.co/</a><br />
+            <a href="https://github.com/">https://github.com/</a><br />
+            <a href="https://htmlpreview.github.io/"
+              >https://htmlpreview.github.io/</a
+            ><br />
+            <a href="https://git-scm.com/">git-scm.com</a><br>
+          </p>
+        </article>
+      </section>
+
+      <section id="prace-domowe">
+        <h2 class="h2-header">Prace domowe</h2>
+
+        <p>
+          Mnie śmieszy :)<br />
+          <img src="Koterski.JPG" alt="koterski" />
+        </p>
+
+        <p>
+          Schemat regulowania przerzutki<br />
+          <img src="homework-week-2.jpg" alt="schemat" />
+        </p>
+
+        <p>
+          Po przejściu labiryntu<br />
+          <img src="trolling.jpg" alt="trolling" />
+        </p>
+      </section>
     </main>
     <footer>
-        Strona domowa Michała Pękacza, wszystkie treści są efektem tworzenia szkolenia WTF: Co ten frontend. <a
-            href="#top">Wróć na górę strony</a>
+      Strona domowa Michała Pękacza, wszystkie treści są efektem tworzenia
+      szkolenia WTF: Co ten frontend. <a href="#top">Wróć na górę strony</a>
     </footer>
-</body>
-
+  </body>
 </html>
