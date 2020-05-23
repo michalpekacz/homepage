@@ -34,9 +34,10 @@
           ku zmianie pracy 😀 Pamiętam że w liceum na informatyce stworzyłem
           prostą stronkę, pisałem ją jeszcze wtedy ręcznie w notatniku, coś na
           wzór takiej mało rozbudowanej Gildii RPG z CD Action (znajdowało się
-          to na płycie z dodatkami i też było napisane w HTML-u) i może dlatego
-          wybrałem frontend :). W wolnych chwilach lubię jeździć na rowerze na
-          dłuższe wycieczki(bikepacking), gotować i czytać, głównie fantasy.
+          to na płycie z dodatkami i też było napisane w formie HTML-a) i może
+          dlatego wybrałem frontend :). W wolnych chwilach lubię jeździć na
+          rowerze na dłuższe wycieczki(bikepacking), gotować i czytać, głównie
+          fantasy.
         </p>
       </section>
 
@@ -65,17 +66,18 @@
             Warstwa 2 - Prezentacja: CSS<br />
             Warstwa 3 - Interakcja: JavaScript<br />
             -HTML - poznałem podstawowe znaczniki, staram się zrozumieć jak w
-            poprawny sposób zagnieżdżać tagi <br />
+            poprawny sposób zagnieżdżać tagi (semantyka) <br />
             -CSS - podstawy CSS, stworzenie pliku z zewnętrznym arkuszem
             stylów<br />
-            -korzystamy z DevTools -sprawdzanie kodu za pomocą validatora HTML
+            -korzystamy z DevTools<br />
+            -sprawdzanie kodu za pomocą validatora HTML
           </p>
         </article>
         <article>
           <h3 class="weekly-notes-header">Tydzień 3</h3>
           <p>
             -metodologia Kanban, zawsze wiedziałem że ten cały multitasking jest
-            przereklamowany.<br />
+            przereklamowany<br />
             -nowe znaczniki HTML, a tam między innymi tworzenie linków i łączy
             wewnętrznych, wstawianie obrazków, tworzenie nawigacji<br />
             -reguły nazywania rzeczy:<br />
@@ -95,8 +97,8 @@
           <h3 class="weekly-notes-header">Tydzień 6</h3>
           <p>
             Rozpoczął się tydzień szósty, w tym tygodniu mam wiele do
-            nadrobienia, chciałbym powtórzyć tydzień 3 i nadrobić przynajmniej 4
-            i 5, zobaczymy jak to pójdzie. Od teraz będę się starał wrzucać
+            nadrobienia, chciałbym powtórzyć tydzień 3 i nadrobić przynajmniej
+            4, zobaczymy jak to pójdzie. Od teraz będę się starał wrzucać
             codzienne aktualizacje do mojej strony.
           </p>
           <article>
@@ -135,23 +137,23 @@
               URL - Uniform Resource Locator )adres, który wpisujemy, składa się
               z protokołu, hosta, portu, roota, ścieżki dostępu do zasobu i
               parametrów. <br />
-              Wpisujemy adres -> przeglądara szuka serwera, odpowiada za to DNS
+              Wpisujemy adres -> przeglądarka szuka serwera, odpowiada za to DNS
               - konwertuje adres np cotenfrontend.pl na adresy IP -> po
-              znalezieniu serwera odpytue o index -> pobieranie zawartości HTMLa
-              do przeglądarki i szukanie dodatkowych zasobów (obrazki, skrypty,
-              style), dla każdego z zasobów wykonuje oddzielne zapytanie. ->
-              Przeglądarka parsuje (sprawdza składnie) i renderuje stronę,
-              aplikując style i łąduje zasoby. <br />
+              znalezieniu serwera odpytuje o plik index -> pobieranie zawartości
+              HTMLa do przeglądarki i szukanie dodatkowych zasobów (obrazki,
+              skrypty, style), dla każdego z zasobów wykonuje oddzielne
+              zapytanie -> Przeglądarka parsuje (sprawdza składnie) i renderuje
+              stronę, aplikując style i ładuje zasoby. <br />
               Komunikacja przeglądarki z serwerem następuje w modelu request -
               response.<br />
               Devtools - zakładka network. Pierwsza rzecz - czysty HTML bez
               żadnych stylów. Następnie wczytał się plik CSS, poniżej widać inne
-              rzeczy.
+              rzeczy (zasoby).
             </p>
             <p>
               Kody odpowiedzi HTTP:<br />
               -200 - ok<br />
-              -30x - przekierowywanie na inną stronę <br />
+              -30x - przekierowanie na inną stronę <br />
               -404 - Sorry <br />
               -50x - błędy serwera (wewnętrzne, internal server error) <br />
             </p>
@@ -166,9 +168,20 @@
               Widmo
             </p>
             <p>Podstawowe komendy w <a href="#terminal">terminalu.</a>.</p>
+          </article>
+          <article>
+            <h4 class="daily-notes-header">22.05.2020</h4>
             <p>
               Poznaję system kontroli wersji <a href="#GIT-GitHub">GIT.</a> i
-              tworzę pierwsze repozytorium, czyli zaczynamy tydzień czwarty!
+              tworzę pierwsze repozytorium, czyli
+              <b>zaczynamy tydzień czwarty!</b>
+            </p>
+          </article>
+          <article>
+            <h4 class="daily-notes-header">23.05.2020</h4>
+            <p>
+              -Zakładam konto na <a href="#GitHub">GitHub</a> i tworze tam
+              repozytorium.
             </p>
           </article>
         </article>
@@ -222,7 +235,7 @@
               - cd C:\ - przejście do katalogu głównego<br />
               - mkdir nazwaKatalogu - tworzymy katalog o danej nazwie<br />
               - code . - pozwoli na uruchomienie VSC z linii poleceń w katalogu
-              bierzącym (jeśli nie zaznaczono dodatkowych opcji przy instalacji
+              bieżącym (jeśli nie zaznaczono dodatkowych opcji przy instalacji
               VSC ten sposób może nie działać)<br />
             </p>
           </section>
@@ -246,6 +259,7 @@
               git add . - dodaje pliki <br />
               git commit -m "nazwa" - dodaje commit o danej nazwie<br />
               gitk - pokazuje nam całą historię<br />
+              git push - pushuje commit na serwer zewnętrzny np na GitHuba<br />
             </p>
             <p>
               Repozytorium tworzymy za pomocą polecenia git init. Polecenie to
@@ -254,59 +268,76 @@
               informacje o tym, co się zmieniło od ostatniego zapisu). Po
               stworzeniu commita widzimy jego hash(identyfikator). Git przyjmuje
               każdy rodzaj plików, zmiany śledzi w plikach tekstowych, inne
-              pliki (np orazki) podmieni.
+              pliki (np obrazki) podmieni.
             </p>
             <p>
-              Edytor VSC posiada wbudowane narzędzie do commitowania. Oproćż
+              Edytor VSC posiada wbudowane narzędzie do commitowania. Oprócz
               tego mozemy zainstalować rozszerzenie GitLens. Mamy tam wszystkie
               commity, każdą zmianę którą zrobiliśmy w plikach w edytorze.
             </p>
           </section>
-          <section>
+          <section id="GitHub">
             <h4 class="h4-header">GitHub</h4>
             <p>
-              fh
+              GitHub to internetowe repozytorium, które mozna połączyć z GITem.
+              Przy rejestracji należy podac tego samego maila, który podaliśmy
+              przy konfiguracji GITa.
+            </p>
+            <p>
+              Tworząc repozytorium najlepiej podać nazwę taką samą, jak
+              zatytuowany jest projekt(jego folder). Po utworzeniu repozytorium
+              dostaniemy dwie komendy, które najlepiej skopiować do terminala.
+              Po zalogowaniu się na konto GitHub przez terminal commit zostanie
+              wysłany na GitHuba.
+            </p>
+            <p>
+              Po wprowadzeniu zmian w projekcie i wykonaniu nowego commita po
+              wpisaniu polecenia "git status" dostaniemy informację, że nasz
+              branch master jest jeden commit do przodu przed branchem
+              "origin/master" (na GitHub). Po wpisaniu komendy "git push"
+              wrzucamy commit do GitHuba, a po ponownym sprawdzeniu statusu
+              orzymamy informację, że nasz branch jest aktualny w stosunku do
+              origin/master.
             </p>
           </section>
         </article>
       </section>
 
       <section>
-        <article>
-          <h2 class="h2-header">Przydatne linki</h2>
-          <p>
-            <a href="https://www.google.com/intl/pl/chrome/"
-              >https://www.google.com/intl/pl/chrome/</a
-            ><br />
-            <a href="https://code.visualstudio.com/"
-              >https://code.visualstudio.com/</a
-            ><br />
-            <a href="https://slack.com/intl/en-pl/downloads/windows"
-              >https://slack.com/intl/en-pl/downloads/windows</a
-            ><br />
-            <a href="https://validator.w3.org/nu/#textarea"
-              >https://validator.w3.org/nu/#textarea</a
-            ><br />
-            <a href="https://www.w3.org/TR/html52/"
-              >https://www.w3.org/TR/html52/</a
-            ><br />
-            <a href="https://www.w3.org/TR/CSS/">https://www.w3.org/TR/CSS/</a
-            ><br />
-            <a href="https://codepen.io/">https://codepen.io/</a><br />
-            <a href="https://trello.com">https://trello.com</a><br />
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
-              >Spis atrybutów globalnych HTML</a
-            ><br />
-            <a href="https://git-scm.com/">https://git-scm.com/</a><br />
-            <a href="https://coolors.co/">https://coolors.co/</a><br />
-            <a href="https://github.com/">https://github.com/</a><br />
-            <a href="https://htmlpreview.github.io/"
-              >https://htmlpreview.github.io/</a
-            ><br />
-            <a href="https://git-scm.com/">git-scm.com</a><br />
-          </p>
-        </article>
+        <h2 class="h2-header">Przydatne linki</h2>
+        <p>
+          <a href="https://www.google.com/intl/pl/chrome/"
+            >https://www.google.com/intl/pl/chrome/</a
+          ><br />
+          <a href="https://code.visualstudio.com/"
+            >https://code.visualstudio.com/</a
+          ><br />
+          <a href="https://slack.com/intl/en-pl/downloads/windows"
+            >https://slack.com/intl/en-pl/downloads/windows</a
+          ><br />
+          <a href="https://validator.w3.org/nu/#textarea"
+            >https://validator.w3.org/nu/#textarea</a
+          ><br />
+          <a href="https://www.w3.org/TR/html52/"
+            >https://www.w3.org/TR/html52/</a
+          ><br />
+          <a href="https://www.w3.org/TR/CSS/">https://www.w3.org/TR/CSS/</a
+          ><br />
+          <a href="https://codepen.io/">https://codepen.io/</a><br />
+          <a href="https://trello.com">https://trello.com</a><br />
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+            >Spis atrybutów globalnych HTML</a
+          ><br />
+          <a href="https://git-scm.com/">https://git-scm.com/</a><br />
+          <a href="https://coolors.co/">https://coolors.co/</a><br />
+          <a href="https://github.com/">https://github.com/</a><br />
+          <a href="https://htmlpreview.github.io/"
+            >https://htmlpreview.github.io/</a
+          ><br />
+          <a href="https://git-scm.com/">GIT</a><br />
+          <a href="https://github.com/">GitHub</a><br />
+        </p>
       </section>
 
       <section id="prace-domowe">
