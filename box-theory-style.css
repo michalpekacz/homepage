@@ -1,0 +1,284 @@
+body {
+  background: #5599c7;
+}
+.box-example1 {
+  background: rgba(255, 255, 255, 0.3);
+}
+.box-example2 {
+  background: rgba(255, 255, 255, 0.3);
+  display: inline;
+}
+.box-example3 {
+  background: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+.box-example4 {
+  background: rgba(255, 255, 255, 0.3);
+  max-width: 600px;
+}
+.box-example5 {
+  background: rgba(255, 255, 255, 0.3);
+  max-height: 100px;
+}
+.box-example6 {
+  background: rgba(255, 255, 255, 0.3);
+  min-width: 600px;
+  min-height: 150px;
+}
+.box-example7 {
+  background: rgba(255, 255, 255, 0.3);
+  min-width: 600px;
+  max-height: 100px;
+  overflow: auto;
+}
+.box-example8 {
+  background: rgba(255, 255, 255, 0.3);
+  width: 50%;
+  height: 100px;
+  overflow: auto;
+}
+.box-example9 {
+  background: rgba(255, 255, 255, 0.3);
+  width: 80%;
+  height: 100px;
+  overflow: auto;
+}
+.box-example10 {
+  background: rgba(255, 255, 255, 0.3);
+  width: 80%;
+  overflow: auto;
+}
+.box-example11 {
+  background: rgba(255, 255, 255, 0.3);
+  width: 100px;
+  height: 100px;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+.box-example12 {
+  background: rgba(255, 255, 255, 0.3);
+  width: 100px;
+  height: 100px;
+  padding: 20px 15px 10px 5px;
+}
+.box-example13 {
+  background: rgba(255, 255, 255, 0.3);
+  width: 100px;
+  height: 100px;
+  padding: 20px 5px;
+}
+.box-example14 {
+  background: rgba(255, 255, 255, 0.3);
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border-width: 10px 20px;
+  border-style: solid;
+  border-color: #fff;
+}
+.box-example15 {
+  background: rgba(255, 255, 255, 0.3);
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border: 10px solid #fff;
+}
+.box-example16 {
+  background: rgba(255, 255, 255, 0.3);
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border-top: 40px solid rgb(0, 60, 255);
+  border-right: 15px dashed rgb(252, 0, 155);
+  border-bottom: 5px dotted greenyellow;
+  border-left: 5px solid white;
+}
+.box-example17 {
+  background: rgba(255, 255, 255, 0.3);
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: 10px solid #fff;
+  border-radius: 10px;
+}
+.box-example18 {
+  background: rgba(255, 255, 255, 0.3);
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  margin: 50px auto;
+}
+.box-example19 {
+  background: rgba(255, 255, 255, 0.3);
+  height: 200px;
+  padding: 20px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  margin: 50px auto;
+}
+.box-example20 {
+  background: rgba(216, 40, 40, 0.3);
+  height: 200px;
+  width: 200px;
+  padding: 16px;
+  margin: 0;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.box-example21 {
+  background: rgba(216, 40, 40, 0.3);
+  overflow: auto;
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.box-example21 {
+  background: rgba(216, 40, 40, 0.3);
+  overflow: auto;
+  height: 200px;
+  width: 300px;
+  padding: 5px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.box-example22 {
+  background: rgba(216, 40, 40, 0.3);
+  overflow: auto;
+  height: 200px;
+  width: 300px;
+  padding: 5px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.box-example23 {
+  background: rgba(216, 40, 40, 0.3);
+  height: 200px;
+  width: 300px;
+  padding: 5px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.box-example24 {
+  background: rgba(216, 40, 40, 0.3);
+  width: 300px;
+  padding: 5px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.box-example25 {
+  background: rgba(216, 40, 40, 0.3);
+  width: 300px;
+  padding: 5px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.secondary-box1 {
+  background: rgb(255, 255, 255);
+  width: 1000px;
+  height: 30px;
+}
+.secondary-box2 {
+  background: rgb(255, 255, 255);
+  width: 50%;
+  height: 50%;
+}
+.secondary-box3 {
+  background: rgb(255, 255, 255);
+  width: 50vw;
+  height: 50%;
+}
+.secondary-box4 {
+  background: rgb(255, 255, 255);
+  width: 50%;
+  height: 50vh;
+}
+.a1 {
+  display: block;
+}
+.centered {
+  margin: 0 auto;
+  background: hotpink;
+  width: 60px;
+}
+.absolute1 {
+  position: absolute;
+  background:hotpink;
+  top: 50%;
+  left: 20px;
+}
+.absolute2 {
+  position: absolute;
+  color: yellow;
+  background:rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  right: 70px;
+  z-index: 1001;
+}
+.absolute3 {
+  position: absolute;
+  color:black;
+  background:yellow;
+  width: 50px;
+  height: 50px;
+  top: 35px;
+  right: 45px;
+  z-index: 1000;
+}
+.fixed {
+  position: fixed;
+  color:black;
+  background:yellow;
+  top: 50px;
+  right: 0px;
+  width: 100%;
+  height: 50px;
+  z-index: 2000;
+}
+.sticky {
+  position: sticky;
+  color:black;
+  background:rgb(255, 0, 0);
+  top: 20px;
+  right: 0px;
+  width: 50%;
+  height: 20px;
+  z-index: 2000;
+}
+.float{
+  float: left;
+  background: hotpink;
+  height: 50px;
+  width: 50px;
+}
+.float-left{
+  float: left;
+  background: hotpink;
+  height: 100px;
+  width: 50px;
+}
+.float-right{
+  float: right;
+  background: hotpink;
+  height: 70px;
+  width: 50px;
+}
+.clear{
+  clear: both;
+}

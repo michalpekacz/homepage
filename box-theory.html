@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michał Pękacz - strona domowa</title>
+    <link href="box-theory-style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="nauka-html.html">Nauka HTML</a>
+        <a href="nauka-css.html">Nauka CSS</a>
+        <a href="nauka-js.html">Nauka JavaScript</a>
+        <a href="box-theory.html">Teoria pudełek</a>
+      </nav>
+    </header>
+    <main>
+      <header id="top">
+        <h1 class="h1-header">Strefa testów</h1>
+      </header>
+
+      <section>
+        <h2 class="h2-header">Teoria pudełek</h2>
+        <p>
+          <img src="box-image.jpg" alt="pudełko" />
+        </p>
+        <article>
+          <h3>Display, wymiary, overflow</h3>
+          <section>
+            <h4>Własność Display: block</h4>
+            <p>
+              Tworzymy div'a o klasie box. Dajemy mu kolor background:
+              rgba(255,255,255,0.3); paostatnia liczba to parametr
+              przezroczystość. Ma on domyślnie własność display: block. Możemy
+              to podejrzeć w devtoolsach w sekcji user agent stylesheet(domyślne
+              style przeglądarki). Możemy:<br />
+              -ustawić kilka jejeden pod drugim<br />
+              -własność display: block możemy ustawić do wszystkich elementów,
+              np linków - ten link będzie aktywny przez całą szerokość dzięki
+              własności display:block.<br />
+              -część znaczników mają domyślnie display :block (section, article,
+              main, p)<br />
+              -część znaczników ma display:inline (np a)
+            </p>
+            <div class="box-example1">
+              Tekst
+              <a>LINK</a>
+              <a href="#" class="a1">LINK</a>
+            </div>
+            <div class="box-example1">
+              Tekst
+            </div>
+          </section>
+          <section>
+            <h4>Display: inline</h4>
+            <p>
+              Stosując własność display: inline blok skurczy się do rozmiaru
+              tekstu. Elementy ustawiają się obok siebie, np kilka divów. Jesli
+              usuniemy display: inline ze stylu boxa wyświetlą się jeden pod
+              drugim, ponieważ domyślnie mają ustawione display: block.
+            </p>
+            <div class="box-example2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing.
+            </div>
+            <div class="box-example2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum
+              dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit
+              amet, consectetur adipiscing.
+            </div>
+            <div class="box-example2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing.
+            </div>
+            <div class="box-example2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing.
+            </div>
+          </section>
+          <section>
+            <h4>Display: inline-block</h4>
+            <p>
+              Własności width i height. W stylach nadajmy naszemu boxowi
+              własności height: 100px; i width: 100px;. Domyślnie te elementy
+              mają własność display: block, dlatego ustawią się jeden pod
+              drugim, nawet jeśli obok jest miejsce. Nadając mu własność
+              display: inline sprawimy, że zignorowane zostaną własność width i
+              height i elementy wyświetlą się jeden za drugim. Własność display:
+              inline-block łączy dwie porzednie własności i dzięki temu można
+              ustawić elementy blokowe obok siebie.
+            </p>
+            <div class="box-example3">
+              WTF
+            </div>
+            <div class="box-example3">
+              WTF
+            </div>
+            <div class="box-example3">
+              WTF
+            </div>
+            <p>
+              Własności: max-width i max-height. Ustawiając max-width
+              powodujemy, że box dopasuje się do szerokości strony, jeżeli
+              zmniejszymy okno. Samo width sprawi, że pojawi się pasek
+              przewijania, bo element będzie musiał mieć zadaną szerokość px.
+              Max=height sprawi, że treść wypadnie za zdefiniowaną wysokość
+              boxa, jeśli będzie jej zbyt dużo (rzadko wykorzystywana własność).
+            </p>
+            <div class="box-example4">
+              WTF
+            </div>
+            <div class="box-example5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+            </div>
+            <p>
+              Własności min-width i min-height. Min-width sprawi, że box będzie
+              zawsze miał minimum zdefiniowaną liczbę px. Jeśli zmniejszymy okno
+              pojawi się pasek przewijania. Min-height w przeciwieństwie do
+              max-height spowoduje, że dodając treść będzie się rozszerzał w dół
+              w nieskończoność.
+            </p>
+            <div class="box-example6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+            </div>
+            <h4>Własność: overflow</h4>
+            <p>
+              Własność overflow. Wartość hidden ucina treść wystającą poza box.
+              W przykładzie secondary-box cały czas ma 1000px i również został
+              ścięty. Wartość visible jest domyślna i powoduje, że i w pionie i
+              w poziomie treść będzie wystawać. Wartość auto spowoduje, że
+              pojawi się scroll w elemencie.
+            </p>
+            <div class="box-example7">
+              <div class="secondary-box1">dfsf</div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing.<br />
+            </div>
+            <div>
+              test
+            </div>
+          </section>
+        </article>
+        <article>
+          <h3>Jednostki</h3>
+          <p>
+            0 zapisujemy bez jednostek (np nie 0px, po prostu 0). Podstawowa
+            jednostka to pixel (px).
+          </p>
+          <p>
+            Procenty. Ustawiając szerokość boxa na 50% bedzie ono wypełniać 50%
+            ekranu. Jak wstawimy pudełko głebiej to % liczymy względem rodzica.
+          </p>
+          <div class="box-example8">
+            WTF<br />
+            WTF<br />
+            <div class="secondary-box2"></div>
+          </div>
+          <p>
+            vw=viewport-width. Bierze % z szerokości całego okna przeglądarki.
+          </p>
+          <div class="box-example9">
+            WTF<br />
+            <div class="secondary-box3"></div>
+          </div>
+          <p>
+            vw=viewport-height. Np jak chcemy mieć element który zajmie cały
+            ekran to możemy wpisać 100vh. Będzie się on rozszerzać bądź
+            zmniejszać w stosunku do rozmiaru okna przeglądarki.
+          </p>
+          <div class="box-example10">
+            WTF<br />
+            <div class="secondary-box4"></div>
+          </div>
+        </article>
+        <article>
+          <h3>Padding/border/margin</h3>
+          <p>
+            Wszystkie elementy otoczone są "niewidzialnym" prostokątem. Widok z
+            narzędzi developerskich w przeglądarce Chrome:<br />
+            <img src="box-model-001.JPG" alt="box-model" /><br />
+          </p>
+          <section>
+            <h4>Padding</h4>
+            <p>
+              Jeśli element ma wymiary 100x100px, po zbadaniu możemy zobaczyć tą
+              wartość (obrazek powyżej.) Text lub inny element który wrzucimy do
+              środka jest "zamocowany" w lewym górnym rogu. Padding to
+              wewnętrzny margines zawartości w elemencie. Wielkość widocznego
+              elementu powiększy się o wartość paddingu. Jeśli podamy jedną
+              wartość to jest aplikowana dla każdej ze stron. Padding można
+              ustawić oddzielnie dla każdej strony na dwa sposoby. Wartości
+              lustrzane - jesli podamy dwie wartości, pierwsza będzie dotyczyć
+              góra-dół, a druga prawo-lewo.
+            </p>
+            <div class="box-example11">
+              WTF
+            </div>
+            <div class="box-example12">
+              WTF
+            </div>
+            <div class="box-example13">
+              WTF
+            </div>
+          </section>
+          <section>
+            <h4>Border</h4>
+            <p>
+              Border również jest (jeszcze) częścią elementu. Podobnie jak z
+              paddingiem mamy wersję zapisu długą i krótką. Posiada własności
+              width (szerokość - ustawiamy tak samo jak dla paddingu), style
+              (solid - tło jest stałe, nie jest przerywane), color(kolor).
+              Możemy ustawić różne bordery na każdej stronie.
+            </p>
+            <div class="box-example14">
+              WTF
+            </div>
+            <div class="box-example15">
+              WTF
+            </div>
+            <div class="box-example16">
+              WTF
+            </div>
+            <p>
+              Border radius - pozwala nam na zaokrąglenie naszego elementu.
+              Podajemy w px albo %. Możemy zrobić kółko (50%). Nie ma wpływu na
+              położenie treści (można zwiększyć padding).
+            </p>
+            <div class="box-example17">
+              WTF
+            </div>
+          </section>
+          <section>
+            <h4>Margin</h4>
+            <p>
+              Znajduje się poza elementem. Odpowiada za to, o ile możemy się
+              odsunąć od innych elementów. Odpycha wszystko, co znajduje się z
+              każdej ze stron elementu. Wartości margin zapisujemy tak samo jak
+              w przypadku paddingu. Własność auto ustawi nam symetrycznie
+              margines po lewej i prawej stronie, ustawiając element po środku
+              (nie działa dla inline-block). Chcąc wycentrować element musimy
+              podać jego szerokość, bo inaczej będzie zajmować 100% dozwolonej
+              powierzchni. Margines automatyczny zadziała tylko wtedy, kiedy
+              szerokość jest zdefiniowana (przykład z hotpink). Margines działa
+              tylko przy wartościach blokowych.
+            </p>
+            <div class="box-example18">
+              WTF
+              <div class="centered">WTF</div>
+            </div>
+            <div class="box-example18">
+              WTF
+            </div>
+            <div class="box-example18">
+              WTF
+            </div>
+            <div class="box-example19">
+              <div class="centered">brzydka elipsa - bez własności width</div>
+            </div>
+          </section>
+        </article>
+        <article>
+          <h3>Własność box-sizing</h3>
+          <p>
+            Nasz przykładowy element zajmuje 200px + 30x2(padding) +
+            10x2(border) =300px. (wielkość elementu bez marginu). Dzięki
+            wartości border-box możemy zdefiniować wielkość elementu, razem z
+            paddingiem i borderem.<br />
+            <a
+              href="https://www.abeautifulsite.net/box-sizing-border-box-explained"
+              >box sizing border box explained</a
+            ><br />
+          </p>
+
+          <div class="box-example20">
+            WTF
+          </div>
+          <div class="box-example20">
+            WTF
+          </div>
+        </article>
+        <article>
+          <h3>Własność position</h3>
+          <p>
+            Pozwala nam na pozycjonowanie elementów w przestrzeni nie wylko za
+            pomocą narzuconych przez przeglądarkę układów (np coś się nie mieści
+            i przeskakuje do nowego wiersza).
+          </p>
+          <section>
+            <h4>Position: static/relative/absolute/z-index</h4>
+            <p>
+              Domyslną wartością dla position jest "static". Oprócz tego mamy
+              position: relative i absolute i własności: top, right, bottom,
+              left. Dla przykładu jeśli własność position diva ustawimy na
+              "relative", oraz position diva .absolute również ustawimy na
+              absolute, to możemy ustawić położenie diva .absolute za pomocą
+              własności top, right, bottom, left (jeśli nie ustawię absolute w
+              dive box example21, to wtedy kontener ten może być zupełnie gdzie
+              indziej). Możemy wpisywać w px i %. Jeśli damy własność absolute
+              do elementu nie znajdującego się w kontenerze z własnością
+              position:relative, to wtedy własności top, right, bottom, left
+              bedą odnosić się do body. Tam gdzie zdefinujemy wartość relative,
+              ten element będzie miał swój własny układ współrzędnych.
+            </p>
+            <div class="box-example21">
+              position: relative;
+              <div class="absolute1">position: absolute;</div>
+            </div>
+            <div>test</div>
+          </section>
+          <section>
+            <h4>Z-index</h4>
+            <p>
+              Trzeci wymiar! Np dwa elementy mające tą samą pozycję (lub
+              częściowo pokrywające się). W przykładzie dwa nakładające się na
+              siebie divy. Wyżej jest ten, który jest dalej (niżej) w kodzie
+              strony. Nie mają one zdefiniowanej kolejności, i to robimy za
+              pomocą atrybutu z-index. Elementy o wyższej wartości z-index będą
+              "bliżej ekranu". W ten sposób możemy definiować warstwy.
+            </p>
+            <div class="box-example22">
+              WTF
+              <div class="absolute2">WTF 2</div>
+              <div class="absolute3">WTF 3</div>
+            </div>
+          </section>
+          <section>
+            <h4>Position: fixed</h4>
+            <p>
+              Element będzie "przyklejony" do ekranu w danym miejscu. W ten
+              sposób możemy robić nagłówki na stronach, przyklejone menu. Przy
+              własnościach absolute i fixed szerokość elementu jest ustawiana
+              tak, jakby byl inline-block.
+            </p>
+            <div class="box-example22">
+              WTF
+              <div class="absolute2">WTF 2</div>
+              <div class="fixed">position: fixed</div>
+            </div>
+          </section>
+          <section>
+            <h4>Position: sticky</h4>
+            <p>
+              Rodzic elementu z position: sticky nie może mieć overflow., wtedy
+              sticky nie zadziała. Różni się tym od fixed, że przykleja się w
+              momencie, w którym pixele zdefiniowane w top uderzają o górę
+              ekranu. Możemy wykorzystać gdy mamy nagłówek, dużo podnagłówków i
+              chcemy, żeby ten nagłówek wyświetlał się cały czas.
+            </p>
+            <div class="box-example23">
+              WTF<br />
+              WTF<br />
+              WTF<br />
+              <div class="absolute2">WTF 2</div>
+              <div class="sticky">position: sticky</div>
+              WTF<br />
+              WTF<br />
+              WTF<br />
+            </div>
+          </section>
+          <section>
+            <h4>Position: float</h4>
+            <p>
+              Float nie służy do budowania layoutów. Float służy do "opływania"
+              elementów. Div bez floata zaczyna się w nowej linii, zabiera całą
+              szerokość (domyślne display: block). Przy użyciu float zachowuje
+              się, jakby miał display: inline-block. Moge mu nadać wysokość i
+              szerokość, a treść go opływa.
+            </p>
+            <div class="box-example23">
+              WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF
+              <div class="float">position: float</div>
+              WTF WTF WTF WTF WTF WTF WTF
+            </div>
+            <p>
+              Jeśli zmniejszymy wysokość rodzica (lub usuniemy własność height)
+              to może on wychodzić poza swojego rodzica. Żeby temu zapobiec
+              możemy wstawić pustgo diva o klasie clear. o własności clear:
+              both;. Własności clear możemy nadać też wartości left lub right. 
+            </p>
+            <div class="box-example24">
+              WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF
+              <div class="float-left">position: float</div>
+              <div class="float-right">position: float</div>
+              WTF WTF WTF WTF WTF WTF WTF
+              <div class="clear"></div>
+            </div>
+            <div>test</div>
+            <p>
+              Innym sposobem jest nadanie właściwości overflow: hidden i nie podawanie wysokości elementu. Przy zdefiniowanej wysokości będzie ścięty.
+            </p>
+            <div class="box-example25">
+              WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF WTF
+              <div class="float-left">position: float</div>
+              <div class="float-right">position: float</div>
+              WTF WTF WTF WTF WTF WTF WTF
+            </div>
+            <div>test</div>
+          </section>
+        </article>
+      </section>
+    </main>
+    <footer>
+      Strona domowa Michała Pękacza, wszystkie treści są efektem tworzenia
+      szkolenia WTF: Co ten frontend. <a href="#top">Wróć na górę strony</a>
+    </footer>
+  </body>
+</html>

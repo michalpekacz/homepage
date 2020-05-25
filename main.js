@@ -1,4 +1,3 @@
-alert("Jak mnie denerwują te wszystke wyskakujące okienka!")
 const firstName = 'Michał';
 const age = 32;
 

@@ -14,6 +14,7 @@
         <a href="nauka-html.html">Nauka HTML</a>
         <a href="nauka-css.html">Nauka CSS</a>
         <a href="nauka-js.html">Nauka JavaScript</a>
+        <a href="box-theory.html">Teoria pudełek</a>
       </nav>
     </header>
     <main>
@@ -29,8 +30,8 @@
           Elementy składowe JavaScript: wartości, operacje porównywania,
           literały, zmienne, obiekty, funkcje. Pliki zawierające kod SavaScript
           mają rozszerzenie .js mają też swój znacznik - "script". Kod JS
-          uruchamia się raz - po załadowaniu strony, może też działać później, jeśli
-          ma odpowiednie instrukcje.
+          uruchamia się raz - po załadowaniu strony, może też działać później,
+          jeśli ma odpowiednie instrukcje.
         </p>
       </section>
 
@@ -46,7 +47,8 @@
           <p>
             Zmienna w JS jest pewnym rodzajem połączenia, między nazwą której
             chcemy użyć a wartością. Coś jak podstawianie pod zmienne w
-            matematyce (np x=3).
+            matematyce (np x=3). Zmienna to nie wartość, zmienna może wskazywać
+            na jakąś wartość.
           </p>
         </article>
       </section>
@@ -57,11 +59,11 @@
           <p>
             Znacznik script dodajemy na samym dole, przed zamknięciem znacznika
             body. W znaczniku wpisujemy funkcję alert<br />
-            <img src="js-001.JPG" alt="alert function" /><br />. Funkcje składają się z
-            nazwy funkcji, nawiasów otwartych i parametrów. Znacznik "script"
-            zadziała, ale podobnie jak z CSS, lepiej umieścić kod w oddzielnym
-            pliku, a w znaczniku "script" podpinamy plik z kodem JS za pomocą
-            atrybutu "src":<br />
+            <img src="js-001.JPG" alt="alert function" /><br />. Funkcje
+            składają się z nazwy funkcji, nawiasów otwartych i parametrów.
+            Znacznik "script" zadziała, ale podobnie jak z CSS, lepiej umieścić
+            kod w oddzielnym pliku, a w znaczniku "script" podpinamy plik z
+            kodem JS za pomocą atrybutu "src":<br />
             <img src="js-002.JPG" alt="script tag" /><br />
             Za pomocą znacznika script możemy dołączyć skrypt albo bezpośrednio
             wpisując kod do środka, albo za pomocą dołączonego pliku. Średniki
@@ -72,9 +74,10 @@
           <h3 class="h3-header">console.log i zmienne.</h3>
           <p>
             Polecenie "console.log" - funkcja, która pozwala na wyświetlenie
-            tekstu lub wartości. <img src="js-003.JPG" alt="console.log function" /> nie
-            wyświetla żadnego komunikatu bezpośrednio na stronie, żeby zobaczyć
-            jego działanie odpalamy devtoolsy i wchodzimy do zakładki "console".
+            tekstu lub wartości.
+            <img src="js-003.JPG" alt="console.log function" /> nie wyświetla
+            żadnego komunikatu bezpośrednio na stronie, żeby zobaczyć jego
+            działanie odpalamy devtoolsy i wchodzimy do zakładki "console".
             Pojawił się tam napis, który umieściliśmy w skrypcie. Tekt, który
             chcemy wyswietlić musimy opakować w apostrofy ''. Ważna jest
             kolejność zapisu w pliku z kodem JS.
@@ -96,6 +99,73 @@
             <img src="js-007.JPG" alt="literał" /><br />
             Efekt zobaczymy w konsoli. Jesli zmienimy imię na inne, to wartość
             firstName zostanie podmieniona. Tak samo bedzie dla wartości age.
+          </p>
+        </article>
+      </section>
+      <section>
+        <h2 class="h2-header">Lekcja 2 - Typy danych i immutability.</h2>
+        <article>
+          <h3 class="h3-header">Zmienne w JS</h3>
+          <p>
+            Zmienne w JS. Są 3 sposoby definicji zmiennych: LET, CONST i VAR.
+            Definiowanie zmiennych w JS to tworzenie połączenia między nazwą a
+            wartością. Zmienną (jej nazwę) definiujemy tylko raz.
+          </p>
+          <p>
+            Const - tworzy zmienną, która ma stałe połączenie z jedną wartością.
+            Możemy pisać kod js w konsoli. W przykładzie podpinamy name pod
+            wartość Michał. Potem mogę wypisać wartość zmiennej. Próbując
+            zmienić wartość konsola wyrzuciła błąd. Nie można przepisać
+            zmiennej, która jest stała(const=constant=stała). Z liczbami jest
+            tak samo. Zmienna Const pozwala stworzyć stałe wiązanie między nazwą
+            zmiennej (name, age) a konkretną wartością, i tego połączenia nie
+            możemy edytować.
+            <img src="js-008.JPG" alt="const" />
+          </p>
+          <p>
+            let - tworzy zmienną, w której można zmieniać to przypisanie nazwy
+            do wartości. Nie można utworzyć dwóch zmiennych o tej samej nazwie
+            (error). Dwie zmienne mogą wskazać na tą samą wartość. To połączenie
+            można nadpisać(newName='Mariusz'). Edytowano połączenie między nazwą
+            newName i wartością. Wartość Michał dalej istnieje, nie została
+            nadpisana. (Przepięto (nie podmieniono) wartość zmiennej z Michała
+            na Mariusza). To nie musi byc ten sam typ danych. Liczba też
+            zadziała.
+          </p>
+          <p>
+            Przy definiowaniu zmiennych nie wskazujemy na to, czy będzie to
+            napis, czy liczba. <br />
+            Typy proste w JS:<br />
+            -String - tekst, oznaczamy '' lub ""(lepiej '')<br />
+            -Number<br />
+            -Bigint - duża liczba, większa niż 2^53<br />
+            -boolean - true lub false<br />
+            -null - wartość celowo niezdefiniowana<br />
+            -undefined - brak definicji<br />
+            -*symbol - tworzy "unikalne opakowanie"<br />
+          </p>
+          <p>
+            Wpisując true/false dostaniemy rodzaj wartości boolean. Możemy
+            wpisać null, mp gdy nie wiemy co bedzie w naszej zmiennej. Np
+            póxniej ustawimy carColor, ale teraz nie wiemy na jaki. Jak wpiszemy
+            coś czego nie zdefiniowalismy wyskoczy undefined. Wpisując typeof
+            sprawdzamy, jakiego typu jest zmienna.
+            <img src="js-010.JPG" alt="typy-danych" />
+          </p>
+          <p>
+            Stworzyłem nową zmienną, przypisuję do niej x - w przeglądarce
+            silnik odpytuje x na co on wskazuje (wartość 10), y tworzy
+            połączenie do 10. Jeśli zmienimy x y się nie zmieni, bo on w dalszym
+            ciągu jest połączony z wartością 10, a nie x (x to zmienna, a
+            zmienna to nie wartość). Operator przypisania nie tworzy nowych
+            zmiennych, tworzy połączenie i to połączenie nam później zwraca.
+            <img src="js-011.JPG" alt="zmienne" />
+          </p>
+          <p>
+            Immutability - nie możemy zmieniać wartości primitive values w JS.
+            To co zmieniamy to połączenie między nimi, a zmiennymi. To co może
+            się wydawać, że zmieniamy wartość, to tak naprawdę zmieniamy
+            połączenie między nazwą zmiennej a wartością .
           </p>
         </article>
       </section>
