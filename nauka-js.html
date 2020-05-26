@@ -9,12 +9,11 @@
 
   <body>
     <header class="header">
-      <nav>
+      <nav class="navigation">
         <a href="index.html">Strona główna</a>
         <a href="nauka-html.html">Nauka HTML</a>
         <a href="nauka-css.html">Nauka CSS</a>
         <a href="nauka-js.html">Nauka JavaScript</a>
-        <a href="box-theory.html">Teoria pudełek</a>
       </nav>
     </header>
     <main>
@@ -168,6 +167,57 @@
             połączenie między nazwą zmiennej a wartością .
           </p>
         </article>
+      </section>
+      <section id="#document-object-model">
+        <h3>Document Object Model</h3>
+        <p>
+          Document Object Model czyli obiektowy model okumentu. To co widzimy w
+          devtoolsach to jest DOM. Plik HTML, ani źródło strony wyświetlone w
+          przeglądarce to nie jest DOM (HTML to instrukcja, a skręcony mebel to
+          DOM.). DOM jest miejscem, gdzie możemy się komunikowac ze stroną
+          internetową za pomocą JS i ją modyfikować.
+        </p>
+        <p>
+          Jeśli zmienimy nazwę klasy konsola zwróci nam null, ponieważ wartość
+          jest zdefiniowana (heading), ale nie ma takiego elementu na stronie
+          (jesli w queryselector wybierzemy element którego nie ma w DOMie,
+          dostaniemy null, a nie undefined). Aby zmiana klasy nie miała wpływu
+          na JS można stworzyć modyfikator(np main-heading--js)
+        </p>
+        <p>
+          document.querySelector('.selector') - zwraca nam node (węzeł) z
+          HTML-a, selektor zapisywany zgodnie z css. Pozwoli podpiąć się pod
+          wartości (elementy) na stronie.
+          <strong
+            >Jeśli coś nie chce wyjśc możliwe, że nie masz scriptu popdpiętego
+            na stronie(lub podstronie), z której chcesz coś wywołać.</strong
+          >
+          Podpinamy się pod nagłówek .main-heading, potem robimy console.log
+          headingu. W efekcie w konsoli dostajemy element (wartość, do której
+          się przypięliśmy). Możemy wybrać inne elementy np nawigację
+          (navigation), wypiszą się inne dzieci tego elementu.
+        </p>
+        <p>
+          Łączenie się z DOM - możemy modyfikować treść tego elementu za pomocą
+          własności inner.HTML (wartość w backticku, nie w ''). To co sobie w
+          tym miejscu wpisaemy zostanie "wstrzyknięte" do elementu. Jeżeli
+          zbadamy ten element za pomocą devtoolsów zobaczymy zmodyfikowany
+          tekst.
+          <strong
+            >I to jest dopiero nasz DOM, faktyczny stan dokumentu po załadowaniu
+            treści już po przekształceiach związanych z JS i po załadowaniu się
+            całej treści (złożony mebel). Dopiero to jest analizowane przez
+            przeglądarke (w źródle strony, które zobaczymy w przeglądarce
+            heading jest jeszcze przed przekształceniem).</strong
+          > <br>
+          <img src="js-012.JPG" alt="DOM">
+        </p>
+        <p>
+          Są inne metody żeby dostać się do elementu np
+          document.getElementsByClassName ale ona zwraca inną rzecz. jest
+          jeszcze document.getElementsById. My bedziemy korzystać z
+          queryselectora, dzięki temu bedziemy korzystać ze składni z CSS.
+        </p>
       </section>
     </main>
     <footer>

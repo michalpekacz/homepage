@@ -9,22 +9,21 @@
 
   <body>
     <header class="header">
-      <nav>
+      <nav class="navigation">
         <a href="index.html">Strona główna</a>
         <a href="nauka-html.html">Nauka HTML</a>
         <a href="nauka-css.html">Nauka CSS</a>
         <a href="nauka-js.html">Nauka JavaScript</a>
-        <a href="box-theory.html">Teoria pudełek</a>
       </nav>
     </header>
     <main>
       <header id="top">
-        <h1 class="h1-header">Michał Pękacz - strona domowa</h1>
+        <h1 class="main-heading main-heading--js" id="name">Michał Pękacz - strona domowa</h1>
       </header>
 
       <section>
         <h2 class="h2-header">Kim jestem?</h2>
-        <img src="IMG_20200428_160746.jpg" alt="Michał selfie" />
+        <img src="selfie.jpg" alt="Michał selfie" />
         <p>
           Hej! Na imię mam Michał. Z wykształcenia jestem inżynierem
           budownictwa, jednak okazało się że pracując na budowie po 10, 12 a
@@ -194,14 +193,6 @@
               <a href="new-tricks.html">Moje notatki.</a>
             </p>
           </section>
-          <section>
-            <h4 class="daily-notes-header">25.05.2020</h4>
-            <p>
-              -Lekcja na temat typów danych w JS<br />
-              -dodatek do VSC - prettier<br />
-              -dodatek do VSC - live server<br />
-            </p>
-          </section>
         </article>
         <article>
           <h3 class="weekly-notes-header">Tydzień 7</h3>
@@ -212,10 +203,16 @@
           </p>
           <section>
             <h4 class="daily-notes-header">25.05.2020</h4>
-
             <p>
-              Skończone notatki z box-modelu. Trochę mi zajęło rozpisanie
-              wszystkich przykładów.
+              -Skończone notatki z box-modelu. -Lekcja na temat typów danych w
+              JS<br />
+              -dodatek do VSC - prettier<br />
+              -dodatek do VSC - live server<br />
+              -poznałem
+              <a href="#block-element-modifier">BEM</a>
+              (block-element-modifier)<br />
+              -dowiedziałem się, co to jest
+              <a href="#document-object-model">DOM</a> (Document Object Model)
             </p>
           </section>
         </article>
@@ -339,6 +336,48 @@
             </p>
           </section>
         </article>
+        <article id="block-element-modifier">
+          <h3 class="h3-header">Block-Element-Modifier</h3>
+          <p>
+            BEM jest to konwencja nazewnictwa klas. W przykładzie block to dłoń,
+            finger to element, a thumb lub pinky to modifier. Tylko elementy z
+            modyfikatorem opisujemy za pomocą dwóch klas. Ta druga klasa
+            dodaje(bądx nadpisuje) własności specyficzne tylko dla danego
+            elementu.
+          </p>
+          <p>
+            Block - nadrzędny element<br />
+            Element - część bloku (nie musi być bezpośrednim dzieckiem) <br />
+            Modifier - jeśli element występuje w kilku wariacjach tworzymy
+            dodatkową klasę.<br />
+          </p>
+          <p>
+            -przy nazywaniu klas nie stosujmy skrótów<br />
+            -na początek najlepiej stworzyć semantyczny HTML, potem dokładamy
+            klasy, dzielimy stronę na bloki (blokiem może byc zdjęcie,
+            pojedyńczy artykuł)<br />
+            -jeśli dodamy dwie klasy do elementu, wtedy ta druga nadpisuje
+            pierwszą<br />
+            -jeśli dodamy tylko jedną klasę do elementu, gdzie powinien być
+            modifier (np .block__element--modifier zamiast .block__element
+            .block__element--modifier) to ta druga klasa zastąpi nam poprzednią
+            i niektóre własności mogą zniknąć.<br />
+            -do drugiej klasy dopisujemy tylko unikalne dla elementu wartości,
+            nie kopiujemy wartości z pierwszej klasy<br />
+            -przy dodawaniu klas w CSS warto ustawiać je alfabetycznie<br />
+            -modyfikatory można wrzucać zarówna na poziomie bloku jak i elementu
+            (np mamy artykuły ostylowane w ten sposób: ".week-summary"
+            ".week-summary__title" i ".week-summary__description", a jeden
+            konkretny chcemy wyróżnić: ".week-summary .week-summary--special" )
+          </p>
+          <div class="hand">
+            <div class="hand__finger hand__finger--thumb"></div>
+            <div class="hand__finger"></div>
+            <div class="hand__finger"></div>
+            <div class="hand__finger"></div>
+            <div class="hand__finger hand__finger--pinky"></div>
+          </div>
+        </article>
       </section>
 
       <section>
@@ -404,5 +443,6 @@
       Strona domowa Michała Pękacza, wszystkie treści są efektem tworzenia
       szkolenia WTF: Co ten frontend. <a href="#top">Wróć na górę strony</a>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
