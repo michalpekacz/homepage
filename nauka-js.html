@@ -18,14 +18,14 @@
         <a class="navigation__link" href="nauka-js.html">Nauka JavaScript</a>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <header class="main-header" id="top">
         <h1 class="main-header__heading">Nauka JavaScript</h1>
       </header>
 
-      <section>
-        <h2 class="h2-header">Co to jest JavaScript</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__header">Co to jest JavaScript</h2>
+        <p class="section__description">
           JavaScript w wersji ECMAScript 2015+ (ES6+). ECMAScript jest to
           ustandaryzowany przez organizację ECMA skryptowy język programowania.
           Elementy składowe JavaScript: wartości, operacje porównywania,
@@ -36,16 +36,16 @@
         </p>
       </section>
 
-      <section>
-        <h2 class="h2-header">Elementy JavaScript</h2>
-        <article>
-          <h3 class="h3-header">Wartości</h3>
-          <p>
+      <section class="section">
+        <h2 class="section__header">Elementy JavaScript</h2>
+        <article class="section__article">
+          <h3 class="section__article-header">Wartości</h3>
+          <p class="section__description">
             Wartości są dla JavaScript tym, czym liczby dla matematyki.
             Wartością może być liczba, może być też napis.
           </p>
-          <h3 class="h3-header">Zmienne</h3>
-          <p>
+          <h3 class="section__article-header">Zmienne</h3>
+          <p class="section__description">
             Zmienna w JS jest pewnym rodzajem połączenia, między nazwą której
             chcemy użyć a wartością. Coś jak podstawianie pod zmienne w
             matematyce (np x=3). Zmienna to nie wartość, zmienna może wskazywać
@@ -53,66 +53,89 @@
           </p>
         </article>
       </section>
-      <section>
-        <h2 class="h2-header">Lekcja 1 - dodajemy skrypt na stronie</h2>
-        <article>
-          <h3 class="h3-header">Sposoby dodawania skryptu</h3>
-          <p>
+      <section class="section">
+        <h2 class="section__header">Lekcja 1 - dodajemy skrypt na stronie</h2>
+        <article class="section__article">
+          <h3 class="section__article-header">Sposoby dodawania skryptu</h3>
+          <p class="section__description">
             Znacznik script dodajemy na samym dole, przed zamknięciem znacznika
             body. W znaczniku wpisujemy funkcję alert<br />
-            <img src="js-001.JPG" alt="alert function" /><br />. Funkcje
-            składają się z nazwy funkcji, nawiasów otwartych i parametrów.
-            Znacznik "script" zadziała, ale podobnie jak z CSS, lepiej umieścić
-            kod w oddzielnym pliku, a w znaczniku "script" podpinamy plik z
-            kodem JS za pomocą atrybutu "src":<br />
-            <img src="js-002.JPG" alt="script tag" /><br />
+            <img
+              class="section__image"
+              src="js-001.JPG"
+              alt="alert function"
+            /><br />. Funkcje składają się z nazwy funkcji, nawiasów otwartych i
+            parametrów. Znacznik "script" zadziała, ale podobnie jak z CSS,
+            lepiej umieścić kod w oddzielnym pliku, a w znaczniku "script"
+            podpinamy plik z kodem JS za pomocą atrybutu "src":<br />
+            <img
+              class="section__image"
+              src="js-002.JPG"
+              alt="script tag"
+            /><br />
             Za pomocą znacznika script możemy dołączyć skrypt albo bezpośrednio
             wpisując kod do środka, albo za pomocą dołączonego pliku. Średniki
             na końcu lini nie są konieczne, warto je jednak stosować.
           </p>
         </article>
-        <article>
-          <h3 class="h3-header">console.log i zmienne.</h3>
-          <p>
+        <article class="section__article">
+          <h3 class="section__article-header">console.log i zmienne.</h3>
+          <p class="section__description">
             Polecenie "console.log" - funkcja, która pozwala na wyświetlenie
             tekstu lub wartości.
-            <img src="js-003.JPG" alt="console.log function" /> nie wyświetla
-            żadnego komunikatu bezpośrednio na stronie, żeby zobaczyć jego
-            działanie odpalamy devtoolsy i wchodzimy do zakładki "console".
-            Pojawił się tam napis, który umieściliśmy w skrypcie. Tekt, który
-            chcemy wyswietlić musimy opakować w apostrofy ''. Ważna jest
-            kolejność zapisu w pliku z kodem JS.
+            <img
+              class="section__image"
+              src="js-003.JPG"
+              alt="console.log function"
+            />
+            nie wyświetla żadnego komunikatu bezpośrednio na stronie, żeby
+            zobaczyć jego działanie odpalamy devtoolsy i wchodzimy do zakładki
+            "console". Pojawił się tam napis, który umieściliśmy w skrypcie.
+            Tekt, który chcemy wyswietlić musimy opakować w apostrofy ''. Ważna
+            jest kolejność zapisu w pliku z kodem JS.
           </p>
-          <p>
+          <p class="section__description">
             Zmienne. Stworzyłem powiązanie między name a wartością 'Michał' oraz
             między age a wartością 32. Używamy angielskich nazw zmiennych, przy
             nazwach używamy camelCase. <br />
-            <img src="js-004.JPG" alt="zmienne 01" /><br />
+            <img
+              class="section__image"
+              src="js-004.JPG"
+              alt="zmienne 01"
+            /><br />
             funkcja console.log powinna wypisać wartości które powiązaliśmy z
             nazwami name i age.<br />
-            <img src="js-005.JPG" alt="zmienne 02" /><br />
+            <img
+              class="section__image"
+              src="js-005.JPG"
+              alt="zmienne 02"
+            /><br />
             Efekt możemy zobaczyć w konsoli w devtoolsach:<br />
-            <img src="js-006.JPG" alt="zmienne 03" /><br />
+            <img
+              class="section__image"
+              src="js-006.JPG"
+              alt="zmienne 03"
+            /><br />
           </p>
-          <p>
+          <p class="section__description">
             Możemy opakować nasze zmienne w tekst, używając literału. Używamy
             ``(backtick) a zmienne opakowujemy w ${}.<br />
-            <img src="js-007.JPG" alt="literał" /><br />
+            <img class="section__image" src="js-007.JPG" alt="literał" /><br />
             Efekt zobaczymy w konsoli. Jesli zmienimy imię na inne, to wartość
             firstName zostanie podmieniona. Tak samo bedzie dla wartości age.
           </p>
         </article>
       </section>
-      <section>
-        <h2 class="h2-header">Lekcja 2 - Typy danych i immutability.</h2>
-        <article>
-          <h3 class="h3-header">Zmienne w JS</h3>
-          <p>
+      <section class="section">
+        <h2 class="section__header">Typy danych i immutability.</h2>
+        <article class="section__article">
+          <h3 class="section__article-header">Zmienne w JS</h3>
+          <p class="section__description">
             Zmienne w JS. Są 3 sposoby definicji zmiennych: LET, CONST i VAR.
             Definiowanie zmiennych w JS to tworzenie połączenia między nazwą a
             wartością. Zmienną (jej nazwę) definiujemy tylko raz.
           </p>
-          <p>
+          <p class="section__description">
             Const - tworzy zmienną, która ma stałe połączenie z jedną wartością.
             Możemy pisać kod js w konsoli. W przykładzie podpinamy name pod
             wartość Michał. Potem mogę wypisać wartość zmiennej. Próbując
@@ -120,10 +143,10 @@
             zmiennej, która jest stała(const=constant=stała). Z liczbami jest
             tak samo. Zmienna Const pozwala stworzyć stałe wiązanie między nazwą
             zmiennej (name, age) a konkretną wartością, i tego połączenia nie
-            możemy edytować.
-            <img src="js-008.JPG" alt="const" />
+            możemy edytować.<br />
+            <img class="section__image" src="js-008.JPG" alt="const" />
           </p>
-          <p>
+          <p class="section__description">
             let - tworzy zmienną, w której można zmieniać to przypisanie nazwy
             do wartości. Nie można utworzyć dwóch zmiennych o tej samej nazwie
             (error). Dwie zmienne mogą wskazać na tą samą wartość. To połączenie
@@ -133,7 +156,7 @@
             na Mariusza). To nie musi byc ten sam typ danych. Liczba też
             zadziała.
           </p>
-          <p>
+          <p class="section__description">
             Przy definiowaniu zmiennych nie wskazujemy na to, czy będzie to
             napis, czy liczba. <br />
             Typy proste w JS:<br />
@@ -145,24 +168,25 @@
             -undefined - brak definicji<br />
             -*symbol - tworzy "unikalne opakowanie"<br />
           </p>
-          <p>
+          <p class="section__description">
             Wpisując true/false dostaniemy rodzaj wartości boolean. Możemy
             wpisać null, mp gdy nie wiemy co bedzie w naszej zmiennej. Np
             póxniej ustawimy carColor, ale teraz nie wiemy na jaki. Jak wpiszemy
             coś czego nie zdefiniowalismy wyskoczy undefined. Wpisując typeof
-            sprawdzamy, jakiego typu jest zmienna.
-            <img src="js-010.JPG" alt="typy-danych" />
+            sprawdzamy, jakiego typu jest zmienna.<br />
+            <img class="section__image" src="js-010.JPG" alt="typy-danych" />
           </p>
-          <p>
+          <p class="section__description">
             Stworzyłem nową zmienną, przypisuję do niej x - w przeglądarce
             silnik odpytuje x na co on wskazuje (wartość 10), y tworzy
             połączenie do 10. Jeśli zmienimy x y się nie zmieni, bo on w dalszym
             ciągu jest połączony z wartością 10, a nie x (x to zmienna, a
             zmienna to nie wartość). Operator przypisania nie tworzy nowych
             zmiennych, tworzy połączenie i to połączenie nam później zwraca.
-            <img src="js-011.JPG" alt="zmienne" />
+            <br />
+            <img class="section__image" src="js-011.JPG" alt="zmienne" />
           </p>
-          <p>
+          <p class="section__description">
             Immutability - nie możemy zmieniać wartości primitive values w JS.
             To co zmieniamy to połączenie między nimi, a zmiennymi. To co może
             się wydawać, że zmieniamy wartość, to tak naprawdę zmieniamy
@@ -170,23 +194,23 @@
           </p>
         </article>
       </section>
-      <section id="#document-object-model">
-        <h3>Document Object Model</h3>
-        <p>
+      <section class="section" id="#document-object-model">
+        <h2 class="section__header">Document Object Model</h2>
+        <p class="section__description">
           Document Object Model czyli obiektowy model okumentu. To co widzimy w
           devtoolsach to jest DOM. Plik HTML, ani źródło strony wyświetlone w
           przeglądarce to nie jest DOM (HTML to instrukcja, a skręcony mebel to
           DOM.). DOM jest miejscem, gdzie możemy się komunikowac ze stroną
           internetową za pomocą JS i ją modyfikować.
         </p>
-        <p>
+        <p class="section__description">
           Jeśli zmienimy nazwę klasy konsola zwróci nam null, ponieważ wartość
           jest zdefiniowana (heading), ale nie ma takiego elementu na stronie
           (jesli w queryselector wybierzemy element którego nie ma w DOMie,
           dostaniemy null, a nie undefined). Aby zmiana klasy nie miała wpływu
           na JS można stworzyć modyfikator(np main-heading--js)
         </p>
-        <p>
+        <p class="section__description">
           document.querySelector('.selector') - zwraca nam node (węzeł) z
           HTML-a, selektor zapisywany zgodnie z css. Pozwoli podpiąć się pod
           wartości (elementy) na stronie.
@@ -199,7 +223,7 @@
           się przypięliśmy). Możemy wybrać inne elementy np nawigację
           (navigation), wypiszą się inne dzieci tego elementu.
         </p>
-        <p>
+        <p class="section__description">
           Łączenie się z DOM - możemy modyfikować treść tego elementu za pomocą
           własności inner.HTML (wartość w backticku, nie w ''). To co sobie w
           tym miejscu wpisaemy zostanie "wstrzyknięte" do elementu. Jeżeli
@@ -213,9 +237,9 @@
             heading jest jeszcze przed przekształceniem).</strong
           >
           <br />
-          <img src="js-012.JPG" alt="DOM" />
+          <img class="section__image" src="js-012.JPG" alt="DOM" />
         </p>
-        <p>
+        <p class="section__description">
           Są inne metody żeby dostać się do elementu np
           document.getElementsByClassName ale ona zwraca inną rzecz. jest
           jeszcze document.getElementsById. My bedziemy korzystać z
@@ -223,9 +247,10 @@
         </p>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       Strona domowa Michała Pękacza, wszystkie treści są efektem tworzenia
-      szkolenia WTF: Co ten frontend. <a href="#top">Wróć na górę strony</a>
+      szkolenia WTF: Co ten frontend.
+      <a class="footer__link" href="#top">Wróć na górę strony</a>
     </footer>
     <script src="main.js"></script>
   </body>

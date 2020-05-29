@@ -1,36 +1,53 @@
+.appendix {
+  padding: 16px;
+  border: 1px rgb(255, 0, 0) solid;
+  margin-bottom: 20px;
+}
 body {
   background: rgb(226, 226, 226);
 }
 section {
   background: rgb(226, 226, 226);
 }
+.daily-notes__image {
+  padding: 16px;
+  border: 5px rgb(245, 16, 16) solid;
+}
+.external-links {
+  padding: 16px;
+  border: 1px rgb(255, 0, 0) solid;
+  margin-bottom: 20px;
+}
 
 .footer {
   color: rgb(255, 255, 255);
   background: rgb(88, 88, 88);
+  max-width: 1000px;
+  margin: auto;
 }
 .footer__link {
   color: rgb(255, 5, 5);
 }
-.introduction__description{
+.introduction__description {
   color: rgb(25, 84, 201);
   display: inline-block;
 }
-.introduction__heading{
+.introduction__heading {
   color: rgb(15, 47, 112);
   text-align: center;
 }
-.introduction__image{
+.introduction__image {
   border-top-left-radius: 150px;
-  border-top-right-radius:  70px;
+  border-top-right-radius: 70px;
   border-bottom-right-radius: 150px;
   border-bottom-left-radius: 70px;
+  border: 5px #fff solid;
 }
-.introduction__image-box{
+.introduction__image-box {
   display: inline-block;
   max-width: 40%;
 }
-.introduction__wrapper{
+.introduction__wrapper {
   display: inline-block;
   max-width: 60%;
 }
@@ -38,8 +55,9 @@ section {
   max-width: 1000px;
   margin: auto;
 }
-.main-header__heading{
+.main-header__heading {
   color: rgb(15, 47, 112);
+  text-align: center;
 }
 .navigation {
   background: rgb(255, 255, 255);
@@ -51,29 +69,37 @@ section {
   z-index: 2000;
 }
 .navigation__link {
-  color: rgb(19, 36, 71);
+  color: rgb(23, 180, 49);
   display: inline-block;
   margin-right: 20px;
 }
 .navigation__link--homepage {
   color: rgb(0, 0, 0);
 }
-.notes__header{
+.notes__header {
   color: rgb(15, 47, 112);
 }
-.main-header{
+.main-header {
   display: block;
   padding-top: 40px;
   max-width: 600px;
   margin: auto;
 }
-.weekly-notes__header{
-  color: rgb(255, 5, 5); 
+.section {
+  padding: 16px;
+  border: 1px #fff solid;
+  margin-bottom: 20px;
 }
-
-
-
-
-
-
-
+.section__article {
+  padding: 16px;
+  border: 1px #fff solid;
+  margin-bottom: 20px;
+}
+.weekly-notes {
+  padding: 16px;
+  border: 1px #fff solid;
+  margin-bottom: 20px;
+}
+.weekly-notes__header {
+  color: rgb(255, 5, 5);
+}

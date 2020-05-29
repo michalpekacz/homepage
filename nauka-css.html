@@ -18,14 +18,14 @@
         <a class="navigation__link" href="nauka-js.html">Nauka JavaScript</a>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <header class="main-header" id="top">
         <h1 class="main-header__heading">Nauka CSS</h1>
       </header>
 
-      <section>
-        <h2 class="h2-header">Co to jest CSS</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__header">Co to jest CSS</h2>
+        <p class="section__description">
           CSS=Cascading Style Sheets (kaskadowe arkusze stylów)<br />
           CSS odpowiada za prezentację/nadawanie wyglądu na ekranach, ale także
           wydrukach, czytnikach ekranowych itp. Składnia CSS to reguły
@@ -33,39 +33,43 @@
         </p>
       </section>
 
-      <section>
-        <h2 class="h2-header">Nadawanie stylów - podstawy</h2>
-        <article>
-          <h3 class="h3-header">Stylowanie po nagłowkach</h3>
-          <p>
+      <section class="section">
+        <h2 class="section__header">Nadawanie stylów - podstawy</h2>
+        <article class="section__article">
+          <h3 class="section__article-header">Stylowanie po nagłowkach</h3>
+          <p class="section__description">
             Na początek wpiszmy znacznik style w sekcji head (w sekcji body
             widzimy treść, w sekcji head umieszczamy to co wpływa na wygląd,
             działanie strony).<br />
-            <img src="css-001.JPG" alt="znacznik style" />
+            <img
+              class="section__image"
+              src="css-001.JPG"
+              alt="znacznik style"
+            />
           </p>
-          <p>
+          <p class="section__description">
             W związku z tym, że ostylowanych elementów może pojawić się więcej
             najlepiej style wrzucić do oddzielnego pliku. Będzie to zewnętrzny
             arkusz stylów.<br />
-            <img src="css-002.JPG" alt="podpięcie CSS" />
+            <img class="section__image" src="css-002.JPG" alt="podpięcie CSS" />
           </p>
         </article>
-        <article>
-          <h3 class="h3-header">Atrybut "style"</h3>
-          <p>
+        <article class="section__article">
+          <h3 class="section__article-header">Atrybut "style"</h3>
+          <p class="section__description">
             Style mozna również dołączyć za pomocą atrybutu style, który
             przypinamy do danego znacznika, nazywa się to stylem inline
             (liniowym). Style CSS wpisujemy wewnątrz atrybutu. Możemy wpisać
             więcej niż jedną własność, np
-            <img src="css-003.JPG" alt="atrybut style" />
+            <img class="section__image" src="css-003.JPG" alt="atrybut style" />
             Korzystając z tego atrybutu może nam się pojawić bałagan w kodzie,
             zanim zobaczymy treść lista atrybutów może osiągnąc 20 i więcej
             pozycji.
           </p>
         </article>
-        <article>
-          <h3 class="h3-header">Selektory .class oraz #id</h3>
-          <p>
+        <article class="section__article">
+          <h3 class="section__article-header">Selektory .class oraz #id</h3>
+          <p class="section__description">
             Powyższe sposoby nie sprawdzą się, gdy chcemy np tylko części z
             tagów nadać osobny styl. Z pomocą przychodzi nam atrybut class
             (stylowanie za pomocą selektora klasy). Dzięki niemu możemy
@@ -74,43 +78,55 @@
             stylów zamiast znacznika wpisujemy
             <b>.nazwa-klasy</b> - kropka przed nazwą to selektor klasy.
           </p>
-          <p>
+          <p class="section__description">
             Innym sposobem jest stylowanie za pomocą id. Tak samo jak w
             poprzednim przykładzie, do znacznika dodajemy id o określonej
             nazwie, a w arkuszu CSS zamiast znacznika wpisujemy
             <b>#nazwa-id</b> - # to selektor id.
           </p>
-          <p>
+          <p class="section__description">
             Selektory można łączyć, np chcąc wyróznić linki znajdujące się tylo
             w nawigacji (bardziej ogólnie elmenty znajdujące się w elementach)
             należy w arkuszu stylów wpisać<br />
-            <img src="css-004.JPG" alt="łączenie selektorów" /><br />
+            <img
+              class="section__image"
+              src="css-004.JPG"
+              alt="łączenie selektorów"
+            /><br />
             W tym przypadku jeden element nie musi byc bezpośrednio nad innym,
             taki sam efekt otrzymalibyśmy zamiast nav wpisując header, wtedy
             ostylowalibyśmy wszystkie linki znajdujące się w sekcji header.
           </p>
-          <p>
+          <p class="section__description">
             !important - nadpisuje wszystkie rzeczy, które mogą być zdefiniowane
             dla elementów. Jeśli zdefiniujemy kolor wszystkich linków dopisując
             !important, zmieni się kolor linków także w elemencie nav,
             nadpisując wczesniej zdefiniowany kolor:<br />
-            <img src="css-005.JPG" alt="selektor !important" /><br />
+            <img
+              class="section__image"
+              src="css-005.JPG"
+              alt="selektor !important"
+            /><br />
             Jeśli nie musimy, nie należy go stosować.
           </p>
         </article>
       </section>
-      <section>
-        <h2 class="h2-header">Specyficzność w CSS</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__header">Specyficzność w CSS</h2>
+        <p class="section__description">
           Kiedy pewien element jest ostylowany na kilka sposobów, obowiązuje
           hierarchia sposobu, w jaki ostylowaliśmy dany element:<br />
           <b>!important > style="" (inline) > #name > .name > element</b><br />
           Np wracając do przykładu z linkami w nawigacji, możemy podejrzeć w
           devtoolsach która zasada obowiązuje, a która nie(jest ona
           przekreślona).<br />
-          <img src="css-006.JPG" alt="specyficzność - devtools" /><br />
+          <img
+            class="section__image"
+            src="css-006.JPG"
+            alt="specyficzność - devtools"
+          /><br />
         </p>
-        <p>
+        <p class="section__description">
           Jeśli specyficzność jest równa, pierwszeństwo ma selektor "bliżej"
           elementu. Tak samo, jeśli wpiszemy dwa style w jeden selektor wygrywa
           ta własność, która jest niżej. Dobrą praktyką jest dodawać klasy do
@@ -118,7 +134,7 @@
           header nav a), lepiej dodać klasę do elementu który nas interesuje (np
           klasa header-link do linków w nav) i stylować po tych klasach.
         </p>
-        <p>
+        <p class="section__description">
           Nazewnictwo klas:<br />
           -używamy pojedyńczych słów z j. angielskiego<br />
           -nazywamy rzeczy zgodnie z ich funkcją na stronie<br />
@@ -129,9 +145,9 @@
           specyficzności bez potrzeby)<br />
         </p>
       </section>
-      <section>
-        <h2 class="h2-header">Teoria pudełek</h2>
-        <p>
+      <section class="section">
+        <h2 class="section__header">Teoria pudełek</h2>
+        <p class="section__description">
           Poznałem takie własności i wartości jak:<br />
           -display: block; display: inline; display: inline-block<br />
           -width; height; max-width; amx-height; min-width; min-height;
@@ -145,9 +161,10 @@
         </p>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       Strona domowa Michała Pękacza, wszystkie treści są efektem tworzenia
-      szkolenia WTF: Co ten frontend. <a href="#top">Wróć na górę strony</a>
+      szkolenia WTF: Co ten frontend.
+      <a class="footer__link" href="#top">Wróć na górę strony</a>
     </footer>
   </body>
 </html>
