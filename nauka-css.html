@@ -10,15 +10,17 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <a href="index.html">Strona główna</a>
-        <a href="nauka-html.html">Nauka HTML</a>
-        <a href="nauka-css.html">Nauka CSS</a>
-        <a href="nauka-js.html">Nauka JavaScript</a>
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+        <a class="navigation__link" href="nauka-js.html">Nauka JavaScript</a>
       </nav>
     </header>
     <main>
-      <header id="top">
-        <h1 class="h1-header">Nauka CSS</h1>
+      <header class="main-header" id="top">
+        <h1 class="main-header__heading">Nauka CSS</h1>
       </header>
 
       <section>
@@ -133,11 +135,11 @@
           Poznałem takie własności i wartości jak:<br />
           -display: block; display: inline; display: inline-block<br />
           -width; height; max-width; amx-height; min-width; min-height;
-          overflow<br />
+          overflow: visible(domyślna)/hidden/auto;<br />
           -viewport-width; viewport-height;<br />
-          -padding; border; margin; border-radius<br />
-          -box sizing<br />
-          -position: static/relative/absolute;<br />
+          -padding; border: width/style/color; margin: auto; border-radius<br />
+          -border-box<br />
+          -position: static/relative/absolute; top/right/bottom/left<br />
           -z-index<br />
           -position: fixed/sticky/float
         </p>

@@ -31,12 +31,11 @@
           <section>
             <h4>Własność Display: block</h4>
             <p>
-              Tworzymy div'a o klasie box. Dajemy mu kolor background:
-              rgba(255,255,255,0.3); paostatnia liczba to parametr
-              przezroczystość. Ma on domyślnie własność display: block. Możemy
-              to podejrzeć w devtoolsach w sekcji user agent stylesheet(domyślne
-              style przeglądarki). Możemy:<br />
-              -ustawić kilka jejeden pod drugim<br />
+              Tworzymy div'a (domyślna własność display:block). Dajemy mu kolor
+              background: rgba(255,255,255,0.3); ostatnia liczba to parametr
+              przezroczystość. Możemy to podejrzeć w devtoolsach w sekcji user
+              agent stylesheet (domyślne style przeglądarki). Możemy:<br />
+              -ustawić kilka divów jededen pod drugim<br />
               -własność display: block możemy ustawić do wszystkich elementów,
               np linków - ten link będzie aktywny przez całą szerokość dzięki
               własności display:block.<br />
@@ -84,9 +83,9 @@
               mają własność display: block, dlatego ustawią się jeden pod
               drugim, nawet jeśli obok jest miejsce. Nadając mu własność
               display: inline sprawimy, że zignorowane zostaną własność width i
-              height i elementy wyświetlą się jeden za drugim. Własność display:
-              inline-block łączy dwie porzednie własności i dzięki temu można
-              ustawić elementy blokowe obok siebie.
+              height, a elementy wyświetlą się jeden za drugim. Własność
+              display: inline-block łączy dwie porzednie własności i dzięki temu
+              można ustawić elementy blokowe obok siebie.
             </p>
             <div class="box-example3">
               WTF
@@ -250,7 +249,9 @@
             <p>
               Border-radius - pozwala nam na zaokrąglenie naszego elementu.
               Podajemy w px albo %. Możemy zrobić kółko (50%). Nie ma wpływu na
-              położenie treści (można zwiększyć padding).
+              położenie treści (można zwiększyć padding). MOżemy dla każdego z
+              rogów elementu wpisać inny promień zaokrąglenia, np:
+              border-top-left-radius: 50px;
             </p>
             <div class="box-example17">
               WTF
@@ -424,6 +425,7 @@
               WTF WTF WTF WTF WTF WTF WTF
             </div>
             <div>test</div>
+            <div>aaa</div>
           </section>
 
           <div class="box-example26"></div>
