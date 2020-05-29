@@ -20,7 +20,7 @@
     </header>
     <main class="main">
       <header class="main-header" id="top">
-        <h1 class="main-header__heading">Nauka JavaScript</h1>
+        <h1 class="main-header__heading main-header__heading--js"></h1>
       </header>
 
       <section class="section">
@@ -128,71 +128,66 @@
       </section>
       <section class="section">
         <h2 class="section__header">Typy danych i immutability.</h2>
-        <article class="section__article">
-          <h3 class="section__article-header">Zmienne w JS</h3>
-          <p class="section__description">
-            Zmienne w JS. Są 3 sposoby definicji zmiennych: LET, CONST i VAR.
-            Definiowanie zmiennych w JS to tworzenie połączenia między nazwą a
-            wartością. Zmienną (jej nazwę) definiujemy tylko raz.
-          </p>
-          <p class="section__description">
-            Const - tworzy zmienną, która ma stałe połączenie z jedną wartością.
-            Możemy pisać kod js w konsoli. W przykładzie podpinamy name pod
-            wartość Michał. Potem mogę wypisać wartość zmiennej. Próbując
-            zmienić wartość konsola wyrzuciła błąd. Nie można przepisać
-            zmiennej, która jest stała(const=constant=stała). Z liczbami jest
-            tak samo. Zmienna Const pozwala stworzyć stałe wiązanie między nazwą
-            zmiennej (name, age) a konkretną wartością, i tego połączenia nie
-            możemy edytować.<br />
-            <img class="section__image" src="js-008.JPG" alt="const" />
-          </p>
-          <p class="section__description">
-            let - tworzy zmienną, w której można zmieniać to przypisanie nazwy
-            do wartości. Nie można utworzyć dwóch zmiennych o tej samej nazwie
-            (error). Dwie zmienne mogą wskazać na tą samą wartość. To połączenie
-            można nadpisać(newName='Mariusz'). Edytowano połączenie między nazwą
-            newName i wartością. Wartość Michał dalej istnieje, nie została
-            nadpisana. (Przepięto (nie podmieniono) wartość zmiennej z Michała
-            na Mariusza). To nie musi byc ten sam typ danych. Liczba też
-            zadziała.
-          </p>
-          <p class="section__description">
-            Przy definiowaniu zmiennych nie wskazujemy na to, czy będzie to
-            napis, czy liczba. <br />
-            Typy proste w JS:<br />
-            -String - tekst, oznaczamy '' lub ""(lepiej '')<br />
-            -Number<br />
-            -Bigint - duża liczba, większa niż 2^53<br />
-            -boolean - true lub false<br />
-            -null - wartość celowo niezdefiniowana<br />
-            -undefined - brak definicji<br />
-            -*symbol - tworzy "unikalne opakowanie"<br />
-          </p>
-          <p class="section__description">
-            Wpisując true/false dostaniemy rodzaj wartości boolean. Możemy
-            wpisać null, mp gdy nie wiemy co bedzie w naszej zmiennej. Np
-            póxniej ustawimy carColor, ale teraz nie wiemy na jaki. Jak wpiszemy
-            coś czego nie zdefiniowalismy wyskoczy undefined. Wpisując typeof
-            sprawdzamy, jakiego typu jest zmienna.<br />
-            <img class="section__image" src="js-010.JPG" alt="typy-danych" />
-          </p>
-          <p class="section__description">
-            Stworzyłem nową zmienną, przypisuję do niej x - w przeglądarce
-            silnik odpytuje x na co on wskazuje (wartość 10), y tworzy
-            połączenie do 10. Jeśli zmienimy x y się nie zmieni, bo on w dalszym
-            ciągu jest połączony z wartością 10, a nie x (x to zmienna, a
-            zmienna to nie wartość). Operator przypisania nie tworzy nowych
-            zmiennych, tworzy połączenie i to połączenie nam później zwraca.
-            <br />
-            <img class="section__image" src="js-011.JPG" alt="zmienne" />
-          </p>
-          <p class="section__description">
-            Immutability - nie możemy zmieniać wartości primitive values w JS.
-            To co zmieniamy to połączenie między nimi, a zmiennymi. To co może
-            się wydawać, że zmieniamy wartość, to tak naprawdę zmieniamy
-            połączenie między nazwą zmiennej a wartością .
-          </p>
-        </article>
+        <p class="section__description">
+          Zmienne w JS. Są 3 sposoby definicji zmiennych: LET, CONST i VAR.
+          Definiowanie zmiennych w JS to tworzenie połączenia między nazwą a
+          wartością. Zmienną (jej nazwę) definiujemy tylko raz.
+        </p>
+        <p class="section__description">
+          Const - tworzy zmienną, która ma stałe połączenie z jedną wartością.
+          Możemy pisać kod js w konsoli. W przykładzie podpinamy name pod
+          wartość Michał. Potem mogę wypisać wartość zmiennej. Próbując zmienić
+          wartość konsola wyrzuciła błąd. Nie można przepisać zmiennej, która
+          jest stała(const=constant=stała). Z liczbami jest tak samo. Zmienna
+          Const pozwala stworzyć stałe wiązanie między nazwą zmiennej (name,
+          age) a konkretną wartością, i tego połączenia nie możemy edytować.<br />
+          <img class="section__image" src="js-008.JPG" alt="const" />
+        </p>
+        <p class="section__description">
+          let - tworzy zmienną, w której można zmieniać to przypisanie nazwy do
+          wartości. Nie można utworzyć dwóch zmiennych o tej samej nazwie
+          (error). Dwie zmienne mogą wskazać na tą samą wartość. To połączenie
+          można nadpisać(newName='Mariusz'). Edytowano połączenie między nazwą
+          newName i wartością. Wartość Michał dalej istnieje, nie została
+          nadpisana. (Przepięto (nie podmieniono) wartość zmiennej z Michała na
+          Mariusza). To nie musi byc ten sam typ danych. Liczba też zadziała.
+        </p>
+        <p class="section__description">
+          Przy definiowaniu zmiennych nie wskazujemy na to, czy będzie to napis,
+          czy liczba. <br />
+          Typy proste w JS:<br />
+          -String - tekst, oznaczamy '' lub ""(lepiej '')<br />
+          -Number<br />
+          -Bigint - duża liczba, większa niż 2^53<br />
+          -boolean - true lub false<br />
+          -null - wartość celowo niezdefiniowana<br />
+          -undefined - brak definicji<br />
+          -*symbol - tworzy "unikalne opakowanie"<br />
+        </p>
+        <p class="section__description">
+          Wpisując true/false dostaniemy rodzaj wartości boolean. Możemy wpisać
+          null, mp gdy nie wiemy co bedzie w naszej zmiennej. Np póxniej
+          ustawimy carColor, ale teraz nie wiemy na jaki. Jak wpiszemy coś czego
+          nie zdefiniowalismy wyskoczy undefined. Wpisując typeof sprawdzamy,
+          jakiego typu jest zmienna.<br />
+          <img class="section__image" src="js-010.JPG" alt="typy-danych" />
+        </p>
+        <p class="section__description">
+          Stworzyłem nową zmienną, przypisuję do niej x - w przeglądarce silnik
+          odpytuje x na co on wskazuje (wartość 10), y tworzy połączenie do 10.
+          Jeśli zmienimy x y się nie zmieni, bo on w dalszym ciągu jest
+          połączony z wartością 10, a nie x (x to zmienna, a zmienna to nie
+          wartość). Operator przypisania nie tworzy nowych zmiennych, tworzy
+          połączenie i to połączenie nam później zwraca.
+          <br />
+          <img class="section__image" src="js-011.JPG" alt="zmienne" />
+        </p>
+        <p class="section__description">
+          Immutability - nie możemy zmieniać wartości primitive values w JS. To
+          co zmieniamy to połączenie między nimi, a zmiennymi. To co może się
+          wydawać, że zmieniamy wartość, to tak naprawdę zmieniamy połączenie
+          między nazwą zmiennej a wartością .
+        </p>
       </section>
       <section class="section" id="#document-object-model">
         <h2 class="section__header">Document Object Model</h2>
