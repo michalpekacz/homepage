@@ -98,6 +98,12 @@ section {
   border: 1px #fff solid;
   margin-bottom: 20px;
 }
+.section__article-header--js{
+  color: limegreen;
+}
+.section__description--js{
+  color: limegreen;
+}
 .weekly-notes {
   padding: 16px;
   border: 1px #fff solid;

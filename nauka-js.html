@@ -240,6 +240,102 @@
           jeszcze document.getElementsById. My bedziemy korzystać z
           queryselectora, dzięki temu bedziemy korzystać ze składni z CSS.
         </p>
+        <p class="section__description"></p>
+      </section>
+      <section class="section">
+        <h2 class="section__header">Funkcje w JS</h2>
+        <p class="section__description">
+          Funkcje definujemy po to, żeby: <br />
+          -nie używać kodu, który się powtarza (DRY - dont repeat yourself).
+          -zwiększenie czytelności kodu<br />
+          -łatwiejsze szukanie błędów<br />
+          -odpowiedzialność za wykonywane zadania w jednym miejscu
+        </p>
+        <article class="section__article">
+          <h3 class="section__article-header">Prosta funkcja mnożenia</h3>
+          <p class="section__description">
+            Elementy funkcji: deklaracja, nazwa funkcji, parametr, słowo
+            kluczowe ( tutaj return, definiuje nam to co ma być zwrócone) i
+            wynik. nawiasy sześcienne ograniczają blok kodu (funkcja składa się
+            z tego co pomiędzy nimi). Po zdefiniowaniu funkcję należy wywołać,
+            inaczej nie dostaniemy żadnej informacji zwrotnej. <br />
+            <img
+              class="section__image"
+              src="js-fun-001.JPG"
+              alt="funkcja możenia"
+            /><br />
+            Pod argument funkcji możemy podpiąć zmienną age, która ma wartość
+            32. Zmienna age pozostanie niezmieniona, bo wartości proste są
+            niemutowalne. To co przekazujemy do funkcji to wskazanie
+            (połączenie) na wartość 32 jako argument tej funkcji. Zmienna
+            myNumber i age wskazują na wartość age.<br />
+            <img
+              class="section__image"
+              src="js-fun-002.JPG"
+              alt="funkcja możenia 2"
+            /><br />
+            Słowo kluczowe return - sprawia, ze wynik zostanie zwrócony, jesli
+            go skasujemy dostaniemy undefined. Operacje się wykonają ale nie
+            mogę stworzyć połączenia do wyniku tej operacji, zmienna myResult
+            dostaje undefined. Pod zmienną myResult nie zawsze musi być liczba,
+            może byc też string. To co dostajemy na wejściu nie musi być tym
+            samym typem danych co zostanie zwrócone. <br />
+            <img
+              class="section__image"
+              src="js-fun-003.JPG"
+              alt="funkcja możenia 3"
+            /><br />
+          </p>
+        </article>
+        <article class="section__article">
+          <h3 class="section__article-header">Funkcja powitalna</h3>
+          <p class="section__description">
+            Możemy podać więcej niż 2 argumenty. Argumenty funkcji age i
+            firstname to nie bedzie to same age i firstname które stworzyliśmy
+            wcześniej. Jeśli jakiegoś argumentu nie podamy dostaniemy undefined
+            (argument niezdefiniowany). jeśli w wywołaniu funkcji wpiszemy
+            argumenty w innej kolejności łyknie bez problemu. Funkcję możemy
+            wywołać wiele razy w różnych miejscach w kodzie. <br />
+            <img
+              class="section__image"
+              src="js-fun-004.JPG"
+              alt="funkcja powitalna"
+            /><br />
+          </p>
+        </article>
+        <article class="section__article">
+          <h3 class="section__article-header section__article-header--js">
+            Funkcja wypełniająca content treścią.
+          </h3>
+          <p class="section__description">
+            Za pomocą funkcji można uzupełnić treść w kilku róznych elementach.
+            W tym przypadku funkcja nie posiada return. <br />
+            <img
+              class="section__image"
+              src="js-fun-005.JPG"
+              alt="funkcja createContent"
+            /><br />
+          </p>
+          <p class="section__article-header section__description--js"></p>
+        </article>
+        <article class="section__article">
+          <h3 class="section__article-header">Arrow functions</h3>
+          <p class="section__description">
+            Arrow functions - inny sposób zapisu funkcji w JS.<br />
+            <img
+              class="section__image"
+              src="js-fun-006.JPG"
+              alt="funkcja arrow"
+            /><br />
+            Funkcja Fat arrow:<br />
+            -skraca zapis deklaracji funkcji<br />
+            -zwiększa czytelność (??)<br />
+            -Nie tworzy nowego kontekstu this, nie ma dostępu do arguments i
+            super<br />
+            -nie jest zamiennikiem tradycyjnej funkcji (w wkiększości przypadków
+            nie widać róznicy)
+          </p>
+        </article>
       </section>
     </main>
     <footer class="footer">
