@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michał Pękacz - Nauka HTML</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -48,7 +49,21 @@
       </section>
 
       <section class="section">
-        <h2 class="section__header">Znaczniki</h2>
+        <h2 class="section__header">Poznane Znaczniki</h2>
+        <ol class="list">
+          Lista
+          <li class="list__item">main - główna częśc dokumentu</li>
+          <li>section - wyodrębniamy sekcje dzieląc dokument na części</li>
+          <li>
+            article - ma sens osobno, ale może być jednym z kilku artykułów
+          </li>
+        </ol>
+        <dl>
+          <dt>main</dt>
+          <dd>główna część dokumentu</dd>
+          <dt>section</dt>
+          <dd>wyodrębniamy sekcje dzieląc dokument na części</dd>
+        </dl>
         <p class="section__description">
           main - główna częśc dokumentu <br />
           section - wyodrębniamy sekcje dzieląc dokument na części<br />
@@ -77,6 +92,21 @@
           semantyczny. Najczęściej używany do stylowania, gdy chcemy osiągnąc
           pewien efekt na stronie, a mamy za mało znaczników (section i article
           nie wystarczają)<br />
+          ul - Unordered list<br />
+          ol - lista uporządkowana<br />
+          li - list item, działa dla ul i ol<br />
+          dl - description list<br />
+          dt - description term<br />
+          dd - description details<br />
+          table - tabela - nie używamy tabel do budowania layoutów<br />
+          tr - wiersz tabeli<br />
+          td - komórka tabeli (table data(cell))<br />
+          thead - nagłówek tabeli<br />
+          th - komórka w nagłówku tabeli<br />
+          tbody - ciało tabeli<br />
+          caption - opis tabeli<br />
+          button - wrzuca guzik na stronę, różni się od a tym, że button to
+          interakcja na stronie, a to nawigacja.
         </p>
       </section>
     </main>

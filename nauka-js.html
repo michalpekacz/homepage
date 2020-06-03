@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michał Pękacz - strona domowa</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -38,14 +39,14 @@
 
       <section class="section">
         <h2 class="section__header">Elementy JavaScript</h2>
-        <article class="section__article">
-          <h3 class="section__article-header">Wartości</h3>
-          <p class="section__description">
+        <article class="article">
+          <h3 class="article__header">Wartości</h3>
+          <p class="article__description">
             Wartości są dla JavaScript tym, czym liczby dla matematyki.
             Wartością może być liczba, może być też napis.
           </p>
-          <h3 class="section__article-header">Zmienne</h3>
-          <p class="section__description">
+          <h3 class="article__header">Zmienne</h3>
+          <p class="article__description">
             Zmienna w JS jest pewnym rodzajem połączenia, między nazwą której
             chcemy użyć a wartością. Coś jak podstawianie pod zmienne w
             matematyce (np x=3). Zmienna to nie wartość, zmienna może wskazywać
@@ -55,13 +56,13 @@
       </section>
       <section class="section">
         <h2 class="section__header">Lekcja 1 - dodajemy skrypt na stronie</h2>
-        <article class="section__article">
-          <h3 class="section__article-header">Sposoby dodawania skryptu</h3>
-          <p class="section__description">
+        <article class="article">
+          <h3 class="article__header">Sposoby dodawania skryptu</h3>
+          <p class="article__description">
             Znacznik script dodajemy na samym dole, przed zamknięciem znacznika
             body. W znaczniku wpisujemy funkcję alert<br />
             <img
-              class="section__image"
+              class="article__image"
               src="js-001.JPG"
               alt="alert function"
             /><br />. Funkcje składają się z nazwy funkcji, nawiasów otwartych i
@@ -69,7 +70,7 @@
             lepiej umieścić kod w oddzielnym pliku, a w znaczniku "script"
             podpinamy plik z kodem JS za pomocą atrybutu "src":<br />
             <img
-              class="section__image"
+              class="article__image"
               src="js-002.JPG"
               alt="script tag"
             /><br />
@@ -78,13 +79,13 @@
             na końcu lini nie są konieczne, warto je jednak stosować.
           </p>
         </article>
-        <article class="section__article">
-          <h3 class="section__article-header">console.log i zmienne.</h3>
-          <p class="section__description">
+        <article class="article">
+          <h3 class="article__header">console.log i zmienne.</h3>
+          <p class="article__description">
             Polecenie "console.log" - funkcja, która pozwala na wyświetlenie
             tekstu lub wartości.
             <img
-              class="section__image"
+              class="article__image"
               src="js-003.JPG"
               alt="console.log function"
             />
@@ -94,33 +95,33 @@
             Tekt, który chcemy wyswietlić musimy opakować w apostrofy ''. Ważna
             jest kolejność zapisu w pliku z kodem JS.
           </p>
-          <p class="section__description">
+          <p class="article__description">
             Zmienne. Stworzyłem powiązanie między name a wartością 'Michał' oraz
             między age a wartością 32. Używamy angielskich nazw zmiennych, przy
             nazwach używamy camelCase. <br />
             <img
-              class="section__image"
+              class="article__image"
               src="js-004.JPG"
               alt="zmienne 01"
             /><br />
             funkcja console.log powinna wypisać wartości które powiązaliśmy z
             nazwami name i age.<br />
             <img
-              class="section__image"
+              class="article__image"
               src="js-005.JPG"
               alt="zmienne 02"
             /><br />
             Efekt możemy zobaczyć w konsoli w devtoolsach:<br />
             <img
-              class="section__image"
+              class="article__image"
               src="js-006.JPG"
               alt="zmienne 03"
             /><br />
           </p>
-          <p class="section__description">
+          <p class="article__description">
             Możemy opakować nasze zmienne w tekst, używając literału. Używamy
             ``(backtick) a zmienne opakowujemy w ${}.<br />
-            <img class="section__image" src="js-007.JPG" alt="literał" /><br />
+            <img class="article__image" src="js-007.JPG" alt="literał" /><br />
             Efekt zobaczymy w konsoli. Jesli zmienimy imię na inne, to wartość
             firstName zostanie podmieniona. Tak samo bedzie dla wartości age.
           </p>
@@ -251,16 +252,16 @@
           -łatwiejsze szukanie błędów<br />
           -odpowiedzialność za wykonywane zadania w jednym miejscu
         </p>
-        <article class="section__article">
-          <h3 class="section__article-header">Prosta funkcja mnożenia</h3>
-          <p class="section__description">
+        <article class="article">
+          <h3 class="article__header">Prosta funkcja mnożenia</h3>
+          <p class="article__description">
             Elementy funkcji: deklaracja, nazwa funkcji, parametr, słowo
             kluczowe ( tutaj return, definiuje nam to co ma być zwrócone) i
             wynik. nawiasy sześcienne ograniczają blok kodu (funkcja składa się
             z tego co pomiędzy nimi). Po zdefiniowaniu funkcję należy wywołać,
             inaczej nie dostaniemy żadnej informacji zwrotnej. <br />
             <img
-              class="section__image"
+              class="article__image"
               src="js-fun-001.JPG"
               alt="funkcja możenia"
             /><br />
@@ -270,7 +271,7 @@
             (połączenie) na wartość 32 jako argument tej funkcji. Zmienna
             myNumber i age wskazują na wartość age.<br />
             <img
-              class="section__image"
+              class="article__image"
               src="js-fun-002.JPG"
               alt="funkcja możenia 2"
             /><br />
@@ -281,15 +282,15 @@
             może byc też string. To co dostajemy na wejściu nie musi być tym
             samym typem danych co zostanie zwrócone. <br />
             <img
-              class="section__image"
+              class="article__image"
               src="js-fun-003.JPG"
               alt="funkcja możenia 3"
             /><br />
           </p>
         </article>
-        <article class="section__article">
-          <h3 class="section__article-header">Funkcja powitalna</h3>
-          <p class="section__description">
+        <article class="article">
+          <h3 class="article__header">Funkcja powitalna</h3>
+          <p class="article__description">
             Możemy podać więcej niż 2 argumenty. Argumenty funkcji age i
             firstname to nie bedzie to same age i firstname które stworzyliśmy
             wcześniej. Jeśli jakiegoś argumentu nie podamy dostaniemy undefined
@@ -297,33 +298,33 @@
             argumenty w innej kolejności łyknie bez problemu. Funkcję możemy
             wywołać wiele razy w różnych miejscach w kodzie. <br />
             <img
-              class="section__image"
+              class="article__image"
               src="js-fun-004.JPG"
               alt="funkcja powitalna"
             /><br />
           </p>
         </article>
-        <article class="section__article">
-          <h3 class="section__article-header section__article-header--js">
+        <article class="article">
+          <h3 class="article__header article__header--js">
             Funkcja wypełniająca content treścią.
           </h3>
-          <p class="section__description">
+          <p class="article__description">
             Za pomocą funkcji można uzupełnić treść w kilku róznych elementach.
             W tym przypadku funkcja nie posiada return. <br />
             <img
-              class="section__image"
+              class="article__image"
               src="js-fun-005.JPG"
               alt="funkcja createContent"
             /><br />
           </p>
-          <p class="section__article-header section__description--js"></p>
+          <p class="article__description article__description--js"></p>
         </article>
-        <article class="section__article">
-          <h3 class="section__article-header">Arrow functions</h3>
-          <p class="section__description">
+        <article class="article">
+          <h3 class="article__header">Arrow functions</h3>
+          <p class="article__description">
             Arrow functions - inny sposób zapisu funkcji w JS.<br />
             <img
-              class="section__image"
+              class="article__image"
               src="js-fun-006.JPG"
               alt="funkcja arrow"
             /><br />
@@ -336,6 +337,40 @@
             nie widać róznicy)
           </p>
         </article>
+      </section>
+      <section class="section">
+        <h2 class="section__header">Obiekty</h2>
+        <p class="section__description">
+          Prawie wszystko w JS jest obiektem (nawet typy proste, które obiektem
+          nie są - zachowują się jak obiekt). Obiekt to
+          <strong>struktura</strong> danych. Obiekt składa się z własności
+          (property) i a funkcje w obiekcie to metody (methods).
+        </p>
+        <p class="section__description">
+          Po utworzeniu obiektu (deathStar) możemy go zobaczyc w konsoli za
+          pomocą console.log. Widzimy wszystkie własności tego obiektu, wypisane
+          alfabetycznie, niezależnie od kolejności. Te własności tworzą pary
+          key: value (klucz: wartość). Klucz musi być unikalny w ramach obiektu.
+          Wartość to: primitive/funkcja/zagnieżdżenie.
+        </p>
+        <p class="section__description">
+          Zagnieżdżenie - obiekt w obiekcie. Dot notation. Np console - obiekt
+          .log metoda znajdująca się w obiekcie. (inne przykłady inner.HTML albo
+          document.querySelector). Wpisując console.log(console) zobaczymy listę
+          wszystkich funkcji, które ma obiekt console.
+        </p>
+        <p class="section__description">
+          Bracket notation. Zamiast używać kropek możemy w nawiasach
+          kwadratowych wpisać nazwę własności, podajemy ją jako stringa np
+          'diameter'.
+        </p>
+      </section>
+      <section class="section">
+        <h2 class="section__header">Immutability w obiektach</h2>
+        <p class="section__description">
+          Nie możemy zmieniać wartości primitive values w JS. To co zmieniamy,
+          to połączenie między nimi, a zmiennymi.
+        </p>
       </section>
     </main>
     <footer class="footer">

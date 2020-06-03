@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michał Pękacz - strona domowa</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -237,11 +238,20 @@
             deklaracja > dziedziczenie z sekcji wyżej,), style domyślne
             przeglądarki, własność : inherit; - jawnie definuje własność, która
             ma być dziedziczona z elementu wyżej<br />
-            -funkcje w JavaScript<br />
+            -funkcje, obiekty, niemutowalność w JavaScript<br />
+            -troubleshooting ( m. in. disable cache w przeglądarce - całość
+            załaduje się na nowo, błędy w kodzie lub devtoolsach, literówki,
+            czytanie błędów, zła ścieżka do pliku, gdzie szukać rozwiązań:
+            google (najlepiej ostatni rok), dokumentacja MDN, stackoverflow,
+            dokumentacja narzędzi, github: issues, NIE SZUKAĆ w W3Schools)<br />
             -listy, tabele, definicje w HTML<br />
-            -dowiedziałem się co to jest normalizacja i reset<br />
-            -poznałem flexboxa<br>
-            -własności tła w CSS<br>
+            -reset vs normalizacja (normalize.css) Przeglądarki mają swoje style
+            domyślne, są między nimi jakieś różnice. Ten plik .css należy wpiąć,
+            najlepiej nad własnymi stylami, wtedy nasze nadpiszą te z
+            normalize.css. Usprawnia on wyświetlanie elementów na różnych
+            przeglądarkach.<br />
+            -poznałem flexboxa<br />
+            -własności tła w CSS<br />
             -zrobiłem projekt wizytówki w HTML na wzór projektu graficznego
           </p>
         </article>
@@ -467,21 +477,13 @@
             class="external-links__link"
             href="https://caniuse.com/#feat=text-stroke"
             >Can i use - kompatybilność z przeglądarkami</a
-          >
-        </p>
-      </section>
-
-      <section class="homework" id="prace-domowe">
-        <h2 class="homework__header">Prace domowe</h2>
-
-        <p class="homework__description">
-          Mnie śmieszy : )<br />
-          <img src="Koterski.JPG" alt="koterski" />
-        </p>
-
-        <p class="homework__description">
-          Schemat regulowania przerzutki<br />
-          <img src="homework-week-2.jpg" alt="schemat" />
+          ><br />
+          <a class="external-links__link" href="https://css-tricks.com/almanac/"
+            >CSS tricks</a
+          ><br />
+          <a class="external-links__link" href="https://devdocs.io/"
+            >https://devdocs.io/</a
+          ><br />
         </p>
       </section>
     </main>

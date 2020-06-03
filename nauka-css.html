@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michał Pękacz - Nauka CSS</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -35,41 +36,42 @@
 
       <section class="section">
         <h2 class="section__header">Nadawanie stylów - podstawy</h2>
-        <article class="section__article">
-          <h3 class="section__article-header">Stylowanie po nagłowkach</h3>
-          <p class="section__description">
+        <article class="article">
+          <h3 class="article__header">Stylowanie po nagłowkach</h3>
+          <p class="article__description">
             Na początek wpiszmy znacznik style w sekcji head (w sekcji body
             widzimy treść, w sekcji head umieszczamy to co wpływa na wygląd,
             działanie strony).<br />
             <img
-              class="section__image"
+              class="article__image"
               src="css-001.JPG"
               alt="znacznik style"
             />
           </p>
-          <p class="section__description">
+          <p class="article__description">
             W związku z tym, że ostylowanych elementów może pojawić się więcej
             najlepiej style wrzucić do oddzielnego pliku. Będzie to zewnętrzny
             arkusz stylów.<br />
-            <img class="section__image" src="css-002.JPG" alt="podpięcie CSS" />
+            <img class="article__image" src="css-002.JPG" alt="podpięcie CSS" />
           </p>
+          <p>* to selektor uniwersalny</p>
         </article>
-        <article class="section__article">
-          <h3 class="section__article-header">Atrybut "style"</h3>
-          <p class="section__description">
+        <article class="article">
+          <h3 class="article__header">Atrybut "style"</h3>
+          <p class="article__description">
             Style mozna również dołączyć za pomocą atrybutu style, który
             przypinamy do danego znacznika, nazywa się to stylem inline
             (liniowym). Style CSS wpisujemy wewnątrz atrybutu. Możemy wpisać
             więcej niż jedną własność, np
-            <img class="section__image" src="css-003.JPG" alt="atrybut style" />
+            <img class="article__image" src="css-003.JPG" alt="atrybut style" />
             Korzystając z tego atrybutu może nam się pojawić bałagan w kodzie,
             zanim zobaczymy treść lista atrybutów może osiągnąc 20 i więcej
             pozycji.
           </p>
         </article>
-        <article class="section__article">
-          <h3 class="section__article-header">Selektory .class oraz #id</h3>
-          <p class="section__description">
+        <article class="article">
+          <h3 class="article__header">Selektory .class oraz #id</h3>
+          <p class="article__description">
             Powyższe sposoby nie sprawdzą się, gdy chcemy np tylko części z
             tagów nadać osobny styl. Z pomocą przychodzi nam atrybut class
             (stylowanie za pomocą selektora klasy). Dzięki niemu możemy
@@ -78,18 +80,18 @@
             stylów zamiast znacznika wpisujemy
             <b>.nazwa-klasy</b> - kropka przed nazwą to selektor klasy.
           </p>
-          <p class="section__description">
+          <p class="article__description">
             Innym sposobem jest stylowanie za pomocą id. Tak samo jak w
             poprzednim przykładzie, do znacznika dodajemy id o określonej
             nazwie, a w arkuszu CSS zamiast znacznika wpisujemy
             <b>#nazwa-id</b> - # to selektor id.
           </p>
-          <p class="section__description">
+          <p class="article__description">
             Selektory można łączyć, np chcąc wyróznić linki znajdujące się tylo
             w nawigacji (bardziej ogólnie elmenty znajdujące się w elementach)
             należy w arkuszu stylów wpisać<br />
             <img
-              class="section__image"
+              class="article__image"
               src="css-004.JPG"
               alt="łączenie selektorów"
             /><br />
@@ -97,13 +99,13 @@
             taki sam efekt otrzymalibyśmy zamiast nav wpisując header, wtedy
             ostylowalibyśmy wszystkie linki znajdujące się w sekcji header.
           </p>
-          <p class="section__description">
+          <p class="article__description">
             !important - nadpisuje wszystkie rzeczy, które mogą być zdefiniowane
             dla elementów. Jeśli zdefiniujemy kolor wszystkich linków dopisując
             !important, zmieni się kolor linków także w elemencie nav,
             nadpisując wczesniej zdefiniowany kolor:<br />
             <img
-              class="section__image"
+              class="article__image"
               src="css-005.JPG"
               alt="selektor !important"
             /><br />
@@ -134,19 +136,27 @@
           header nav a), lepiej dodać klasę do elementu który nas interesuje (np
           klasa header-link do linków w nav) i stylować po tych klasach.
         </p>
-        <p class="section__description">
-          Nazewnictwo klas:<br />
-          -używamy pojedyńczych słów z j. angielskiego<br />
-          -nazywamy rzeczy zgodnie z ich funkcją na stronie<br />
-          -nazwa z małej litery<br />
-          -nie zaczynamy od cyfr<br />
-          -jeśli nazwa ma więcej niż 2 słowa, używamy kebab-case<br />
-          -staramy się, żeby element miał jedną klasę (nie zwiększamy
-          specyficzności bez potrzeby)<br />
-        </p>
+        <ul class="section__list">
+          Nazewnictwo klas:
+        </ul>
+        <li class="section__list-item">
+          używamy pojedynczych słów z j. angielskiego
+        </li>
+        <li class="section__list-item">
+          nazywamy rzeczy zgodnie z ich funkcją na stronie
+        </li>
+        <li class="section__list-item">nazwa z małej litery</li>
+        <li class="section__list-item">nie zaczynamy od cyfr</li>
+        <li class="section__list-item">
+          jeśli nazwa ma więcej niż 2 słowa, używamy kebab-case
+        </li>
+        <li class="section__list-item">
+          staramy się, żeby element miał jedną klasę (nie zwiększamy
+          specyficzności bez potrzeby)
+        </li>
       </section>
       <section class="section">
-        <h2 class="section__header">Teoria pudełek</h2>
+        <h2 class="section__header">Box-model</h2>
         <p class="section__description">
           Poznałem takie własności i wartości jak:<br />
           -display: block; display: inline; display: inline-block<br />
@@ -159,6 +169,131 @@
           -z-index<br />
           -position: fixed/sticky/float
         </p>
+      </section>
+      <section class="section">
+        <h2 class="section__header">Flexbox</h2>
+        <p class="section__description">
+          Poznałem takie własności i wartości jak:<br />
+          display: flex<br />
+          flex-direction: <b>row</b>/column/row-reverse/column-reverse<br />
+          flex-wrap: wrap/<b>nowrap</b>/wrap-reverse<br />
+          flex-flow: row nowrap - domyślne wartości<br />
+          justify-content:
+          <b>flex-start</b
+          >/flex-end/center/space-between/space-around/space-evenly.<br />
+          align-content:
+          <b>stretch</b
+          >/flex-start/flex-end/center/space-between/space-around.<br />
+          align-items: <b>stretch</b>/flex-start/flex-end/center/baseline<br />
+          align-self: stretch/flex-start/flex-end/center/baseline<br />
+          Order - liczba całkowita (dodatnia bądź ujemna)<br />
+          flex-grow - domyslna wartość 0. Inne wartości to liczby/proporcje.<br />
+          flex-shrink - 1/ liczba/proporcja. Domyślnie 1<br />
+          flex-basis - none/rozmiar bazowy.<br />
+          flex: flex-grow/flex-shrink/flex-basis<br />
+        </p>
+      </section>
+      <section class="section">
+        <h2 class="section__header">Tła</h2>
+        <p class="section__description">
+          Background-image: url('sciezka-do-pliku'); (body class="page").
+          Background-position - domyślna wartość 0 0 (lewy górny róg). Warto dać
+          min-height 100vgh dla body. Tło jest wyśrodkowane w rozmiarach
+          orginalnych obrazka.
+        </p>
+        <p>
+          background-repeat: repeat/repeat-x/repeat-y/no-repeat/round/space.
+        </p>
+        <p>
+          background-attachment: scroll(domyślna wartość)/fixed/local (
+          spróbować razem z overflow - scroll)
+        </p>
+        <p>
+          background-origin: padding-box/border-box/content-box. Definiuje nam
+          to, w którym miejscu tło powinno się zaczynać. Domyslne padding-box.
+        </p>
+        <p>
+          background-clip: border-box/padding-box/content-box. mówi nam w którym
+          miejscu tło powinno byc cięte. Domyślnie border-box.
+        </p>
+        <p>
+          background-color: tło może byc półprzezroczyste. background-color:
+          rgba.
+        </p>
+        <p>
+          background-size: auto (domyślne)/cover/contain/width height. Contain -
+          cały obrazek będzie się mieścił w oknie. Działa w zależności od
+          repeat, position i attachment. Cover- obrazek zawsze wypełnia stronę
+          niezależnie od contentu. Cover najczęściej wykorzystywany.
+        </p>
+        <p>
+          Gradienty. Na stronie
+          <a href="https://www.grabient.com/">www.grabient.com</a> możemy
+          skorzystać z gotowych lub stworzyć swój własny gradient.
+        </p>
+      </section>
+      <section class="section">
+        <h2 class="section__header">Projekt: wizytówka</h2>
+        <p class="section__description">
+          Zadaniem będzie utworzenie projektu wizytówki w HTML-u na bazie
+          projektu graficznego.
+        </p>
+        <ol>
+          Kroki i uwagi do tworzenia projektu:
+          <li>
+            Utworzenie szkieletu strony, podpięcie plików ze stylami,
+            wydzielenie elementów i stworzenie BEM.
+          </li>
+          <li>
+            Kolory tła i wizytówki
+          </li>
+          <li>
+            Ustawienie elementu na stronie za pomocą flexboxa.
+          </li>
+          <li>
+            Ustawienie paddingu, ustawienie lub usinięcie marginesów i
+            ostylowanie każdego z elementów po kolei.
+          </li>
+        </ol>
+
+        <ul>
+          Uwagi:
+          <li>
+            Jesli ustawimy we flexboxie align-content a element się nie
+            wyśrodkuje, należy sprawdzić czy element nie zajmuje całej wysokości
+            kontenera.
+          </li>
+          <li>
+            Możemy na body ustawić margin - lepiej to wygląda.
+          </li>
+          <li>
+            Domyślną czcionkę/rodzinę czcionek możemy wrzucić w stylach do
+            elementu body.
+          </li>
+          <li>
+            nowa własność - line-height
+          </li>
+          <li>
+            Chcąc wyróżnić część tekstu możemy opakować go w tagi (strong/b),
+            następnie nadać im klasę (niekoniecznie zgodną z BEM, mozna sobie
+            zrobić zestaw klas służących tylko do wyróżniania)
+          </li>
+          <li>
+            Program Figma ma zakładkę kod - możemy skopiować elementy takie jak
+            kolory, własności fontów.
+          </li>
+        </ul>
+        <ul>
+          Własności tekstu:
+          <li>font-family - odpowiada za czcionkę w elemencie</li>
+          <li>font-size - wielkość czcionki</li>
+          <li>font-weight: bold/normal grubość czcionki</li>
+          <li>font-style; italic/normal - styl czcionki</li>
+          <li>
+            text-decoration: none - likwiduje podkreślenie linków i zmianę
+            kolorów już odwiedzonych
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">

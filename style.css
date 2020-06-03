@@ -1,13 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 .appendix {
   padding: 16px;
   border: 1px rgb(255, 0, 0) solid;
   margin-bottom: 20px;
 }
+.article {
+  padding: 16px;
+  border: 1px #fff solid;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.article__header--js {
+  color: limegreen;
+}
+.article__description--js {
+  color: limegreen;
+}
 body {
-  background: rgb(226, 226, 226);
+  background: rgb(157, 254, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(157, 254, 255, 1) 0%,
+    rgba(158, 153, 153, 1) 100%
+  );
 }
 section {
-  background: rgb(226, 226, 226);
+  background: rgb(226, 226, 226, 0.2);
 }
 .daily-notes__image {
   padding: 16px;
@@ -18,7 +46,6 @@ section {
   border: 1px rgb(255, 0, 0) solid;
   margin-bottom: 20px;
 }
-
 .footer {
   color: rgb(255, 255, 255);
   background: rgb(88, 88, 88);
@@ -28,9 +55,18 @@ section {
 .footer__link {
   color: rgb(255, 5, 5);
 }
+.introduction {
+  min-height: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+}
 .introduction__description {
   color: rgb(25, 84, 201);
-  display: inline-block;
+  padding: 16px;
+  min-height: 100px;
+  align-self: center;
 }
 .introduction__heading {
   color: rgb(15, 47, 112);
@@ -44,12 +80,15 @@ section {
   border: 5px #fff solid;
 }
 .introduction__image-box {
-  display: inline-block;
-  max-width: 40%;
+  width: 291px;
+  height: 384px;
 }
 .introduction__wrapper {
-  display: inline-block;
-  max-width: 60%;
+  max-width: 500px;
+  max-height: 500px;
+}
+.list {
+  list-style-type: lower-greek;
 }
 .main {
   max-width: 1000px;
@@ -59,7 +98,7 @@ section {
   color: rgb(15, 47, 112);
   text-align: center;
 }
-.main-header__heading--js{
+.main-header__heading--js {
   color: limegreen;
 }
 .navigation {
@@ -70,12 +109,16 @@ section {
   width: 100%;
   left: 0px;
   z-index: 2000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .navigation__link {
   color: rgb(23, 180, 49);
   display: inline-block;
   margin-right: 20px;
 }
+
 .navigation__link--homepage {
   color: rgb(255, 0, 0);
 }
@@ -93,21 +136,14 @@ section {
   border: 1px #fff solid;
   margin-bottom: 20px;
 }
-.section__article {
-  padding: 16px;
-  border: 1px #fff solid;
-  margin-bottom: 20px;
-}
-.section__article-header--js{
-  color: limegreen;
-}
-.section__description--js{
-  color: limegreen;
+.section__list {
 }
 .weekly-notes {
   padding: 16px;
   border: 1px #fff solid;
   margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .weekly-notes__header {
   color: rgb(255, 5, 5);
