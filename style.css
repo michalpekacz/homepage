@@ -7,7 +7,14 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
+body {
+  background: rgb(157, 254, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(157, 254, 255, 1) 0%,
+    rgba(158, 153, 153, 1) 100%
+  );
+}
 .appendix {
   padding: 16px;
   border: 1px rgb(255, 0, 0) solid;
@@ -20,22 +27,17 @@ html {
   margin-left: 20px;
   margin-right: 20px;
 }
-.article__header--js {
-  color: limegreen;
+.article__list {
+  list-style-type: square;
 }
 .article__description--js {
   color: limegreen;
 }
-body {
-  background: rgb(157, 254, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(157, 254, 255, 1) 0%,
-    rgba(158, 153, 153, 1) 100%
-  );
+.article__header--js {
+  color: limegreen;
 }
-section {
-  background: rgb(226, 226, 226, 0.2);
+.article__secondary-list {
+  list-style-type: circle;
 }
 .daily-notes__image {
   padding: 16px;
@@ -56,7 +58,9 @@ section {
   color: rgb(255, 5, 5);
 }
 .introduction {
+  background: rgb(226, 226, 226, 0.2);
   min-height: 400px;
+  margin-bottom: 20px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -132,19 +136,7 @@ section {
   margin: auto;
 }
 .section {
+  background: rgb(226, 226, 226, 0.2);
   padding: 16px;
-  border: 1px #fff solid;
   margin-bottom: 20px;
-}
-.section__list {
-}
-.weekly-notes {
-  padding: 16px;
-  border: 1px #fff solid;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.weekly-notes__header {
-  color: rgb(255, 5, 5);
 }

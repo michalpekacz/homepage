@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narzędzia</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header class="navigation-header">
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+        <a class="navigation__link" href="nauka-js.html">Nauka JavaScript</a>
+        <a class="navigation__link" href="narzedzia.html">Narzędzia i linki</a>
+      </nav>
+    </header>
+    <main class="main">
+      <header class="main-header" id="top">
+        <h1 class="main-header__heading" id="name">
+          Poznane narzędzia i przydatne linki.
+        </h1>
+      </header>
+      <section class="section">
+        <h2 class="section__header">Narzędzia</h2>
+
+        <article class="appendix" id="VSC">
+          <h3 class="appendix__header">Visual Studio Code</h3>
+          <p class="appendix__description">
+            Ściągamy wersję stabilną, zaznaczamy wszystkie checkboxy. Na
+            systemie Windows tworzymy katalog roboczy na dysku C. Długa ścieżka
+            do katalogu może powodować problemy.
+          </p>
+          <p class="appendix__description">
+            Kombinacje klawiszy:<br />
+            ! + Tab Szkielet strony<br />
+            ctrl + s zapisanie pliku<br />
+            ctrl + shift + p <br />
+            shift + alt + f formatowanie dokumentu<br />
+          </p>
+          <p class="appendix__description">
+            Rozszerzenia:<br />
+            -GitLens<br />
+            -prettier -służy do formatowania kodu. <br />
+            -live server - jeśli chcemy wyświetlić stronę np na telefonie, to
+            musimy znaleźć adres ip<br />
+          </p>
+        </article>
+        <article class="appendix" id="terminal">
+          <h3 class="appendix__header">Terminal</h3>
+          <section class="appendix__section">
+            <h4 class="appendix__secondary-header">
+              Polecenia w systemie Linux
+            </h4>
+            <p class="appendix__description">
+              - ls - wypisanie zawartości katalogu<br />
+              - cd~- przejście do katalogu domowego<br />
+              - cd nazwa-katalogu/ - wchodzimy do katalogu (używając tabulatora
+              możemy szybko dopełniać nazwę)<br />
+              - cd .. - przejdź katalog wyżej<br />
+              - mkdir nazwa-katalogu - tworzymy katalog o danej nazwie<br />
+              - pwd - pełna ścieżka, wktórej się znajdujemy<br />
+              - code . - pozwoli na uruchomienie VSC z linii poleceń w katalogu
+              bierzącym<br />
+            </p>
+          </section>
+          <section class="appendix__section">
+            <h4 class="appendix__secondary-header">
+              Polecenia w systemie Windows
+            </h4>
+            <p class="appendix__description">
+              W systemie Windows można zainstalować "Linux subsystem for
+              Windows", wtedy korzystamy z poleceń Linuxowych<br />
+              - dir - wypisanie zawartości katalogu<br />
+              - cd katalog - wchodzimy do katalogu (używając tabulatora możemy
+              szybko dopełniać nazwę)<br />
+              - cd.. - przejdź katalog wyżej<br />
+              - cd - wyświetlenie aktualnej ścieżki<br />
+              - cd C:\ - przejście do katalogu głównego<br />
+              - mkdir nazwaKatalogu - tworzymy katalog o danej nazwie<br />
+              - code . - pozwoli na uruchomienie VSC z linii poleceń w katalogu
+              bieżącym (jeśli nie zaznaczono dodatkowych opcji przy instalacji
+              VSC ten sposób może nie działać)<br />
+              - ipconfig - wyrzuci adres IP(lokalny)<br />
+            </p>
+          </section>
+        </article>
+        <article class="appendix" id="GIT-GitHub">
+          <h3 class="appendix__header">Git & GitHub</h3>
+          <section class="appendix__section">
+            <h4 class="appendix__secondary-header">
+              System kontroli wersji GIT
+            </h4>
+            <p class="appendix__description">
+              Komendy w terminalu:<br />
+              git --version - jeśli GIT jest zainstalowany poda nam wersję<br />
+              git config --global user.name "Imię Nazwisko" - konfiguracja
+              użytkownika<br />
+              git config --global user.email jannowak@example.com - podajemy
+              maila, na którego założymy konto w GitHubie<br />
+              git config --get user.name <br />
+              git config --get user.email<br />
+              git init - tworzy puste repozytorium GITa w danym katalogu.<br />
+              git status - daje nam status(np które pliki możemy dodać do
+              commita, które są nowe, zmienione)<br />
+              git add . - dodaje pliki <br />
+              git commit -m "nazwa" - dodaje commit o danej nazwie<br />
+              gitk - pokazuje nam całą historię<br />
+              git push - pushuje commit na serwer zewnętrzny np na GitHuba<br />
+              git clone "adres np z githuba" - klonuje zawartość zdalnego
+              repozytorium<br />
+            </p>
+            <p class="appendix__description">
+              Repozytorium tworzymy za pomocą polecenia git init. Polecenie to
+              tworzy ukryty katalog .git w aktualnym folderze. Żeby podejrzeć
+              zmiany musimy stworzyć commit(stan projektu na daną chwilę i
+              informacje o tym, co się zmieniło od ostatniego zapisu). Po
+              stworzeniu commita widzimy jego hash(identyfikator). Git przyjmuje
+              każdy rodzaj plików, zmiany śledzi w plikach tekstowych, inne
+              pliki (np obrazki) podmieni.
+            </p>
+            <p>
+              Edytor VSC posiada wbudowane narzędzie do commitowania. Oprócz
+              tego mozemy zainstalować rozszerzenie GitLens. Mamy tam wszystkie
+              commity, każdą zmianę którą zrobiliśmy w plikach w edytorze.
+            </p>
+          </section>
+          <section class="appendix__section" id="GitHub">
+            <h4 class="appendix__secondary-header">GitHub</h4>
+            <p>
+              GitHub to internetowe repozytorium, które mozna połączyć z GITem.
+              Przy rejestracji należy podac tego samego maila, który podaliśmy
+              przy konfiguracji GITa.
+            </p>
+            <p>
+              Tworząc repozytorium najlepiej podać nazwę taką samą, jak
+              zatytuowany jest projekt(jego folder). Po utworzeniu repozytorium
+              dostaniemy dwie komendy, które najlepiej skopiować do terminala.
+              Po zalogowaniu się na konto GitHub przez terminal commit zostanie
+              wysłany na GitHuba.
+            </p>
+            <p>
+              Po wprowadzeniu zmian w projekcie i wykonaniu nowego commita po
+              wpisaniu polecenia "git status" dostaniemy informację, że nasz
+              branch master jest jeden commit do przodu przed branchem
+              "origin/master" (na GitHub). Po wpisaniu komendy "git push"
+              wrzucamy commit do GitHuba, a po ponownym sprawdzeniu statusu
+              orzymamy informację, że nasz branch jest aktualny w stosunku do
+              origin/master.
+            </p>
+          </section>
+        </article>
+        <article class="appendix" id="block-element-modifier">
+          <h3 class="appendix__header">Block-Element-Modifier</h3>
+          <p class="appendix__description">
+            BEM jest to konwencja nazewnictwa klas. W przykładzie block to dłoń,
+            finger to element, a thumb lub pinky to modifier. Tylko elementy z
+            modyfikatorem opisujemy za pomocą dwóch klas. Ta druga klasa
+            dodaje(bądx nadpisuje) własności specyficzne tylko dla danego
+            elementu.
+          </p>
+          <p class="appendix__description">
+            Block - nadrzędny element<br />
+            Element - część bloku (nie musi być bezpośrednim dzieckiem) <br />
+            Modifier - jeśli element występuje w kilku wariacjach tworzymy
+            dodatkową klasę.<br />
+          </p>
+          <p class="appendix__description">
+            -przy nazywaniu klas nie stosujmy skrótów<br />
+            -na początek najlepiej stworzyć semantyczny HTML, potem dokładamy
+            klasy, dzielimy stronę na bloki (blokiem może byc zdjęcie,
+            pojedyńczy artykuł)<br />
+            -jeśli dodamy dwie klasy do elementu, wtedy ta druga nadpisuje
+            pierwszą<br />
+            -jeśli dodamy tylko jedną klasę do elementu, gdzie powinien być
+            modifier (np .block__element--modifier zamiast .block__element
+            .block__element--modifier) to ta druga klasa zastąpi nam poprzednią
+            i niektóre własności mogą zniknąć.<br />
+            -do drugiej klasy dopisujemy tylko unikalne dla elementu wartości,
+            nie kopiujemy wartości z pierwszej klasy<br />
+            -przy dodawaniu klas w CSS warto ustawiać je alfabetycznie<br />
+            -modyfikatory można wrzucać zarówna na poziomie bloku jak i elementu
+            (np mamy artykuły ostylowane w ten sposób: ".week-summary"
+            ".week-summary__title" i ".week-summary__description", a jeden
+            konkretny chcemy wyróżnić: ".week-summary .week-summary--special" )
+          </p>
+        </article>
+        <article class="appendix">
+          <h3 class="appendix__header">Działanie przeglądarki</h3>
+          <p>
+            Przeglądarka korzysta z protokołu HTTP lub HTTPS (Hypertext Transfer
+            Protocol (secure-szyfrowany) - protokół do transportowania HTMLa),
+            żeby pobrać i wyświetlić wszystkie pliki znajdujące się na stronach
+            internetowych. <br />
+            URL - Uniform Resource Locator )adres, który wpisujemy, składa się z
+            protokołu, hosta, portu, roota, ścieżki dostępu do zasobu i
+            parametrów. <br />
+            Wpisujemy adres -> przeglądarka szuka serwera, odpowiada za to DNS -
+            konwertuje adres np cotenfrontend.pl na adresy IP -> po znalezieniu
+            serwera odpytuje o plik index -> pobieranie zawartości HTMLa do
+            przeglądarki i szukanie dodatkowych zasobów (obrazki, skrypty,
+            style), dla każdego z zasobów wykonuje oddzielne zapytanie ->
+            Przeglądarka parsuje (sprawdza składnie) i renderuje stronę,
+            aplikując style i ładuje zasoby. <br />
+            Komunikacja przeglądarki z serwerem następuje w modelu request -
+            response.<br />
+            Devtools - zakładka network. Pierwsza rzecz - czysty HTML bez
+            żadnych stylów. Następnie wczytał się plik CSS, poniżej widać inne
+            rzeczy (zasoby).
+          </p>
+          <p>
+            Kody odpowiedzi HTTP:<br />
+            -200 - ok<br />
+            -30x - przekierowanie na inną stronę <br />
+            -404 - Sorry <br />
+            -50x - błędy serwera (wewnętrzne, internal server error)
+          </p>
+          <p>
+            Root (/) - pokazuje, w którym miejscu przeglądarka powinna szukać
+            zasobu. Ścieżki bezwzględne ( / z przodu) i względne ( bez / z
+            przodu). Na stronie odpalanej z dysku wpisywanie / przy zasobach nie
+            jest wymagane.
+          </p>
+        </article>
+      </section>
+      <section class="section">
+        <h2 class="section__header">Przydatne linki</h2>
+        <p class="external-links__description">
+          <a
+            class="external-links__link"
+            href="https://www.google.com/intl/pl/chrome/"
+            >https://www.google.com/intl/pl/chrome/</a
+          ><br />
+          <a class="external-links__link" href="https://code.visualstudio.com/"
+            >https://code.visualstudio.com/</a
+          ><br />
+          <a
+            class="external-links__link"
+            href="https://slack.com/intl/en-pl/downloads/windows"
+            >https://slack.com/intl/en-pl/downloads/windows</a
+          ><br />
+          <a
+            class="external-links__link"
+            href="https://validator.w3.org/nu/#textarea"
+            >https://validator.w3.org/nu/#textarea</a
+          ><br />
+          <a class="external-links__link" href="https://www.w3.org/TR/html52/"
+            >https://www.w3.org/TR/html52/</a
+          ><br />
+          <a class="external-links__link" href="https://www.w3.org/TR/CSS/"
+            >https://www.w3.org/TR/CSS/</a
+          ><br />
+          <a class="external-links__link" href="https://codepen.io/"
+            >https://codepen.io/</a
+          ><br />
+          <a class="external-links__link" href="https://trello.com"
+            >https://trello.com</a
+          ><br />
+          <a
+            class="external-links__link"
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+            >Spis atrybutów globalnych HTML</a
+          ><br />
+          <a class="external-links__link" href="https://git-scm.com/"
+            >https://git-scm.com/</a
+          ><br />
+          <a class="external-links__link" href="https://coolors.co/"
+            >https://coolors.co/</a
+          ><br />
+          <a class="external-links__link" href="https://github.com/"
+            >https://github.com/</a
+          ><br />
+          <a class="external-links__link" href="https://htmlpreview.github.io/"
+            >https://htmlpreview.github.io/</a
+          ><br />
+          <a class="external-links__link" href="https://git-scm.com/">GIT</a
+          ><br />
+          <a class="external-links__link" href="https://github.com/">GitHub</a
+          ><br />
+          <a
+            class="external-links__link"
+            href="https://caniuse.com/#feat=text-stroke"
+            >Can i use - kompatybilność z przeglądarkami</a
+          ><br />
+          <a class="external-links__link" href="https://css-tricks.com/almanac/"
+            >CSS tricks</a
+          ><br />
+          <a class="external-links__link" href="https://devdocs.io/"
+            >https://devdocs.io/</a
+          ><br />
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

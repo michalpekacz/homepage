@@ -17,6 +17,7 @@
         <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
         <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
         <a class="navigation__link" href="nauka-js.html">Nauka JavaScript</a>
+        <a class="navigation__link" href="narzedzia.html">Narzędzia i linki</a>
       </nav>
     </header>
     <main class="main">
@@ -31,12 +32,12 @@
           <h2 class="introduction__heading">Kim jestem?</h2>
 
           <p class="introduction__description">
-            Hej! Na imię mam Michał. Z wykształcenia jestem inżynierem
-            budownictwa, jednak okazało się że pracując na budowie po 10, 12 a
-            czasem i więcej godzin dziennie brak mi czasu na własne projekty,
+            Hej! Mam na imię Michał. Z wykształcenia jestem inżynierem
+            budownictwa, jednak okazało się, że pracując na budowie po 10, 12 a
+            czasem i więcej godzin dziennie, brak mi czasu na własne projekty,
             pomysły i rozwijanie zainteresowań. Kurs
             <a href="https://cotenfrontend.pl">WTF</a> traktuję jako pierwszy
-            krok ku zmianie pracy 😀 Pamiętam że w liceum na informatyce
+            krok ku zmianie pracy 😀 Pamiętam, że w liceum na informatyce
             stworzyłem prostą stronkę, pisałem ją jeszcze wtedy ręcznie w
             notatniku, coś na wzór takiej mało rozbudowanej Gildii RPG z CD
             Action (znajdowało się to na płycie z dodatkami i też było napisane
@@ -54,432 +55,180 @@
         </div>
       </section>
 
-      <section class="notes" id="notatki">
-        <h2 class="notes__header">Notatki z WTF: Co ten frontend</h2>
-        <p class="notes__description">
+      <section class="section" id="notatki">
+        <h2 class="section__header">Notatki z WTF: Co ten frontend</h2>
+        <p class="section__description">
           Tutaj znajdują się notatki ze szkolenia WTF:Co ten frontend. Bedą one
           systematycznie uzupełniane o nowe lekcje, narzędzia i przydatne linki.
         </p>
-        <article class="weekly-notes">
-          <h3 class="weekly-notes__header">Tydzień 1</h3>
-          <p class="weekly-notes__description">
+        <article class="article">
+          <h3 class="article__header">Tydzień 1</h3>
+          <p class="article__description">
             Nie wiedziałem nawet że szkolenie wystartowało, jakimś cudem
             przegapiłem newsletter 😜
           </p>
         </article>
-        <article class="weekly-notes">
-          <h3 class="weekly-notes__header">Tydzień 2</h3>
-          <p class="weekly-notes__description">
-            -zainstalowałem
-            <a class="weekly-notes__link" href="VSC">Visual Studio Code</a>,
-            Google Chrome oraz Slack<br />
-            -skonfigurowałem katalogi i zaczynamy zabawę!<br />
-            -warstwy strony internetowej:<br />
-            Warstwa 0 - treść<br />
-            Warstwa 1 - Semantyka: HTML<br />
-            Warstwa 2 - Prezentacja: CSS<br />
-            Warstwa 3 - Interakcja: JavaScript<br />
-            -HTML - poznałem podstawowe znaczniki, staram się zrozumieć jak w
-            poprawny sposób zagnieżdżać tagi (semantyka) <br />
-            -CSS - podstawy CSS, stworzenie pliku z zewnętrznym arkuszem
-            stylów<br />
-            -korzystamy z DevTools<br />
-            -sprawdzanie kodu za pomocą validatora HTML
-          </p>
-        </article>
-        <article class="weekly-notes">
-          <h3 class="weekly-notes__header">Tydzień 3</h3>
-          <p class="weekly-notes__description">
-            -metodologia Kanban, zawsze wiedziałem że ten cały multitasking jest
-            przereklamowany<br />
-            -nowe znaczniki HTML, a tam między innymi tworzenie linków i łączy
-            wewnętrznych, wstawianie obrazków, tworzenie nawigacji<br />
-            -reguły nazywania rzeczy:<br />
-            -nazwy bez polskich znaków;<br />
-            -nie używamy spacji;<br />
-            -najlepiej używać angielskich słów;<br />
-            -trzymamy się konsekwentnie jednego schematu<br />
-            Konwencje nazewnictwa:<br />
-            -camelCase np <b>mySuperBoldHeader</b> używamy do: zmiennych w JS<br />
-            -kebab-case np <b>my-super-bold-header</b> używamy do: nazywanie
-            plików w katalogach, można do atrybutu id oraz class <br />
-            -snake_case np <b>my_super_bold_header</b> używamy do: <br />
-            -PascalCase np <b>MySuperBoldHeader</b> używamy do: <br />
-          </p>
-        </article>
-        <article class="weekly-notes">
-          <h3 class="weekly-notes__header">Tydzień 6</h3>
-          <p class="weekly-notes__description">
-            Rozpoczął się tydzień szósty, w tym tygodniu mam wiele do
-            nadrobienia, chciałbym powtórzyć tydzień 3 i nadrobić przynajmniej
-            4, zobaczymy jak to pójdzie. Od teraz będę się starał wrzucać
-            codzienne aktualizacje do mojej strony.
-          </p>
-          <section class="daily-notes">
-            <h4 class="daily-notes__header">18.05.2020</h4>
+        <article class="article">
+          <h3 class="article__header">Tydzień 2</h3>
+          <p class="article__description">Zaczynamy zabawę, w tym tygodniu:</p>
+          <ul class="article__list">
+            <li class="article__list-item">
+              instaluję VSC i Slacka, podstawowa konfiguracja
+            </li>
+            <li class="article__list-item">warstwy strony internetowej:</li>
+            <ul class="article__secondary-list">
+              <li class="article__secondary-list-item">Warstwa 0 - treść</li>
+              <li class="article__secondary-list-item">
+                Warstwa 1 - Semantyka: HTML
+              </li>
+              <li class="article__secondary-list-item">
+                Warstwa 2 - Prezentacja: CSS
+              </li>
+              <li class="article__secondary-list-item">
+                Warstwa 3 - Interakcja: JavaScript
+              </li>
+            </ul>
 
-            <p class="daily-notes__description">
+            <li class="article__list-item">
+              HTML - poznałem podstawowe znaczniki, staram się zrozumieć jak w
+              poprawny sposób zagnieżdżać tagi (semantyka)
+            </li>
+            <li class="article__list-item">
+              CSS - podstawy CSS, stworzenie pliku z zewnętrznym arkuszem stylów
+            </li>
+            <li class="article__list-item">korzystam z DevTools</li>
+            <li class="article__list-item">narzędzie: HTML validator</li>
+          </ul>
+        </article>
+        <article class="article">
+          <h3 class="article__header">Tydzień 3</h3>
+          <p class="article__description">W tym tygodniu:</p>
+          <ul class="article__list">
+            <li class="article__list-item">
+              metodologia Kanban (zawsze wiedziałem że ten cały multitasking
+              jest przereklamowany)
+            </li>
+            <li class="article__list-item">
+              HTML, a tam między innymi tworzenie linków i łączy wewnętrznych,
+              wstawianie obrazków, tworzenie nawigacji
+            </li>
+            <li class="article__list-item">
+              konwencje nazewnictwa:
+            </li>
+            <ul class="article__secondary-list">
+              <li class="article__secondary-list-item">
+                camelCase, np
+                <strong>mySuperBoldHeader</strong>
+                używany m. in. w JavaScript
+              </li>
+              <li class="article__secondary-list-item">
+                kebab-case, np
+                <strong>my-super-bold-header</strong>
+                np: nazywanie plików w katalogach, atrybuty id oraz class
+              </li>
+              <li class="article__secondary-list-item">
+                snake_case np <strong>my_super_bold_header</strong>
+              </li>
+              <li class="article__secondary-list-item">
+                PascalCase np <strong>MySuperBoldHeader</strong>
+              </li>
+            </ul>
+            <li class="article__list-item">
+              zasady nadawania nazw:
+            </li>
+            <ul class="article__secondary-list">
+              <li class="article__secondary-list-item">
+                nazwy bez polskich znaków
+              </li>
+              <li class="article__secondary-list-item">nie używamy spacji</li>
+              <li class="article__secondary-list-item">
+                najlepiej używać angielskich słów
+              </li>
+              <li class="article__secondary-list-item">
+                trzymamy się konsekwentnie jednego schematu
+              </li>
+            </ul>
+          </ul>
+        </article>
+        <article class="article">
+          <h3 class="article__header">Tydzień 6</h3>
+          <p class="article__description">
+            Rozpoczął się tydzień szósty. W tym tygodniu mam wiele do
+            nadrobienia, gdyż w poprzednich dwóch tygodniach nie miałem
+            możliwości brać udziału, obejrzałem tylko lekcje. Chciałbym
+            powtórzyć tydzień 3 i nadrobić przynajmniej 4, zobaczymy jak to
+            pójdzie.
+          </p>
+          <ul class="article__list">
+            <li class="article__list-item">
               Jeszcze raz oglądam tydzień 3. Uzupełniam notatki z lekcji o
               HTML-u i robię przemeblowanie w całym dokumencie, bo zagnieżdżanie
               nie jest takie proste, jak mi się wydawało 😅
-            </p>
-          </section>
-          <section class="daily-notes">
-            <h4 class="daily-notes__header">19.05.2020</h4>
-            <p class="daily-notes__description">
-              Praktycznie brak czasu, obejrzałem lekcję o konwencjach
-              nazewnictwa i trochę CSS, uzupełniłem notatki.
-            </p>
-          </section>
-          <section class="daily-notes">
-            <h4 class="daily-notes__header">20.05.2020</h4>
-            <p class="daily-notes__description">
-              Dzisiaj męczę CSS-a, uzupełniając podstronę o nim dotarłem do
-              nagłówka h4, a po ogarnięciu specyficzności uznałem, że warto
-              trochę to wszystko przeorganizować, czyli znowu semantyka, przy
-              okazji pozbyłem się nagłówków h4 (kill me now pls).
-            </p>
-          </section>
-          <section class="daily-notes">
-            <h4 class="daily-notes__header">21.05.2020</h4>
-            <p class="daily-notes__description">
-              Działanie przeglądarki - przeglądarka korzysta z protokołu HTTP
-              lub HTTPS (Hypertext Transfer Protocol (secure-szyfrowany) -
-              protokół do transportowania HTMLa), żeby pobrać i wyświetlić
-              wszystkie pliki znajdujące się na stronach internetowych. <br />
-              URL - Uniform Resource Locator )adres, który wpisujemy, składa się
-              z protokołu, hosta, portu, roota, ścieżki dostępu do zasobu i
-              parametrów. <br />
-              Wpisujemy adres -> przeglądarka szuka serwera, odpowiada za to DNS
-              - konwertuje adres np cotenfrontend.pl na adresy IP -> po
-              znalezieniu serwera odpytuje o plik index -> pobieranie zawartości
-              HTMLa do przeglądarki i szukanie dodatkowych zasobów (obrazki,
-              skrypty, style), dla każdego z zasobów wykonuje oddzielne
-              zapytanie -> Przeglądarka parsuje (sprawdza składnie) i renderuje
-              stronę, aplikując style i ładuje zasoby. <br />
-              Komunikacja przeglądarki z serwerem następuje w modelu request -
-              response.<br />
-              Devtools - zakładka network. Pierwsza rzecz - czysty HTML bez
-              żadnych stylów. Następnie wczytał się plik CSS, poniżej widać inne
-              rzeczy (zasoby).
-            </p>
-            <p class="daily-notes__description">
-              Kody odpowiedzi HTTP:<br />
-              -200 - ok<br />
-              -30x - przekierowanie na inną stronę <br />
-              -404 - Sorry <br />
-              -50x - błędy serwera (wewnętrzne, internal server error) <br />
-            </p>
-            <p class="daily-notes__description">
-              Root (/) - pokazuje, w którym miejscu przeglądarka powinna szukać
-              zasobu. Ścieżki bezwzględne ( / z przodu) i względne ( bez / z
-              przodu). Na stronie odpalanej z dysku wpisywanie / przy zasobach
-              nie jest wymagane.
-            </p>
-            <p class="daily-notes__description">
-              Zaczynamy przygodę z
-              <a class="daily-notes__link" href="nauka-js.html">JavaScript</a>
-            </p>
-            <p class="daily-notes__description">
-              Podstawowe komendy w
-              <a class="daily-notes__link" href="#terminal">terminalu.</a>.
-            </p>
-          </section>
-          <section class="daily-notes">
-            <h4 class="daily-notes__header">22.05.2020</h4>
-            <p class="daily-notes__description">
-              Poznaję system kontroli wersji <a href="#GIT-GitHub">GIT.</a> i
-              tworzę pierwsze repozytorium, czyli
-              <b>zaczynamy tydzień czwarty!</b>
-            </p>
-          </section>
-          <section class="daily-notes">
-            <h4 class="daily-notes__header">23.05.2020</h4>
-            <p class="daily-notes__description">
-              -Zakładam konto na
-              <a class="daily-notes__link" href="#GitHub">GitHub</a> i tworzę
-              tam repozytorium.<br />
-              -teoria pudełek
-            </p>
-          </section>
-          <section class="daily-notes">
-            <h4 class="daily-notes__header">24.05.2020</h4>
-            <p class="daily-notes__description">
-              - Skończona teoria pudełek. Poznałem mnóstwo własności i wartości
-              pomagających w stylowaniu.
-            </p>
-          </section>
+            </li>
+            <li class="article__list-item">specyficzność w CSS</li>
+            <li class="article__list-item">
+              działanie przeglądarki: protokół HTTP, URL, komunikacja z serwerem
+              w modelu request-response, kody odpowiedzi HTTP, root
+            </li>
+            <li class="article__list-item">zaczynamy przygodę z JavaScript</li>
+            <li class="article__list-item">
+              Poznaję system kontroli wersji GIT i tworzę pierwsze repozytorium,
+              czyli <b>zaczynamy tydzień czwarty!</b>
+            </li>
+            <li class="article__list-item">
+              zakładam konto na GitHub i podpinam pod nie repozytorium GIT
+            </li>
+            <li class="article__list-item">teoria pudełek, czyli box model</li>
+          </ul>
         </article>
-        <article class="weekly-notes">
-          <h3 class="weekly-notes__header">Tydzień 7</h3>
-          <p class="weekly-notes__description">
+        <article class="article">
+          <h3 class="article__header">Tydzień 7</h3>
+          <p class="article__description">
             Rozpoczął się tydzień siódmy, ja jestem mniej więcej gdzieś w
             połowie tygodnia 4. W tym tygodniu chciałbym skończyć tydzień 4, 5 i
             zacząć 6.
           </p>
-          <p class="weekly-notes__description">
-            Kończę przerabiać materiał z tygodnia czwartego: -Skończone notatki
-            z box-modelu<br />
-            -Lekcja na temat typów danych w JS<br />
-            -zainstalowałem dodatek do VSC - prettier<br />
-            -zainstalowałem dodatek do VSC - live server<br />
-            -poznałem
-            <a class="weekly-notes__link" href="#block-element-modifier">BEM</a>
-            (block-element-modifier)<br />
-            -dowiedziałem się, co to jest DOM (Document Object Model)<br />
-            Zaczynam tydzień piąty, a w nim: <br />
-            -struktura "drzewa" elementów (węzły (nodes),rodzice elementów,
-            dzieci elementów, dziedziczenie własności elementów - jawna
-            deklaracja > dziedziczenie z sekcji wyżej,), style domyślne
-            przeglądarki, własność : inherit; - jawnie definuje własność, która
-            ma być dziedziczona z elementu wyżej<br />
-            -funkcje, obiekty, niemutowalność w JavaScript<br />
-            -troubleshooting ( m. in. disable cache w przeglądarce - całość
-            załaduje się na nowo, błędy w kodzie lub devtoolsach, literówki,
-            czytanie błędów, zła ścieżka do pliku, gdzie szukać rozwiązań:
-            google (najlepiej ostatni rok), dokumentacja MDN, stackoverflow,
-            dokumentacja narzędzi, github: issues, NIE SZUKAĆ w W3Schools)<br />
-            -listy, tabele, definicje w HTML<br />
-            -reset vs normalizacja (normalize.css) Przeglądarki mają swoje style
-            domyślne, są między nimi jakieś różnice. Ten plik .css należy wpiąć,
-            najlepiej nad własnymi stylami, wtedy nasze nadpiszą te z
-            normalize.css. Usprawnia on wyświetlanie elementów na różnych
-            przeglądarkach.<br />
-            -poznałem flexboxa<br />
-            -własności tła w CSS<br />
-            -zrobiłem projekt wizytówki w HTML na wzór projektu graficznego
-          </p>
+          <ul class="article__list">
+            <li class="article__list-item">box model skończony</li>
+            <li class="article__list-item">typy danych w JS</li>
+            <li class="article__list-item">
+              Block Element Modifier czyli metodologia BEM
+            </li>
+            <li class="article__list-item">
+              Document object Model czyli dowiedziałem się co to jest DOM
+            </li>
+            <li class="article__list-item">
+              struktura "drzewa" elementów (węzły (nodes),rodzice elementów,
+              dzieci elementów, dziedziczenie własności elementów - jawna
+              deklaracja > dziedziczenie z sekcji wyżej,), style domyślne
+              przeglądarki, własność : inherit; - jawnie definuje własność,
+              która ma być dziedziczona z elementu wyżej
+            </li>
+            <li class="article__list-item">
+              funkcje, obiekty, niemutowalność w JavaScript
+            </li>
+            <li class="article__list-item">
+              troubleshooting ( m. in. disable cache w przeglądarce, błędy w
+              kodzie lub devtoolsach, literówki, czytanie błędów, zła ścieżka do
+              pliku, gdzie szukać rozwiązań: google (najlepiej ostatni rok),
+              dokumentacja MDN, stackoverflow, dokumentacja narzędzi, github:
+              issues, NIE SZUKAĆ w W3Schools)
+            </li>
+            <li class="article__list-item">listy, tabele, definicje w HTML</li>
+            <li class="article__list-item">
+              reset vs normalizacja (normalize.css) Przeglądarki mają swoje
+              style domyślne, są między nimi jakieś różnice. Ten plik .css
+              należy wpiąć, najlepiej nad własnymi stylami, wtedy nasze nadpiszą
+              te z normalize.css. Usprawnia on wyświetlanie elementów na różnych
+              przeglądarkach
+            </li>
+            <li class="article__list-item">własności tła w CSS</li>
+            <li class="article__list-item">Flexbox</li>
+            <li class="article__list-item">
+              zadanie: projekt wizytówki w HTML na wzór projektu graficznego
+            </li>
+          </ul>
         </article>
-        <article class="appendix" id="VSC">
-          <h3 class="appendix__header">Visual Studio Code</h3>
-          <p class="appendix__description">
-            Ściągamy wersję stabilną, zaznaczamy wszystkie checkboxy. Na
-            systemie Windows tworzymy katalog roboczy na dysku C. Długa ścieżka
-            do katalogu może powodować problemy.
-          </p>
-          <p class="appendix__description">
-            Kombinacje klawiszy:<br />
-            ! + Tab Szkielet strony<br />
-            ctrl + s zapisanie pliku<br />
-            ctrl + shift + p <br />
-            shift + alt + f formatowanie dokumentu<br />
-          </p>
-          <p class="appendix__description">
-            Rozszerzenia:<br />
-            -GitLens<br />
-            -prettier -służy do formatowania kodu. <br />
-            -live server - jeśli chcemy wyświetlić stronę np na telefonie, to
-            musimy znaleźć adres ip<br />
-          </p>
-        </article>
-
-        <article class="appendix" id="terminal">
-          <h3 class="appendix__header">Terminal</h3>
-          <section class="appendix__section">
-            <h4 class="appendix__secondary-header">
-              Polecenia w systemie Linux
-            </h4>
-            <p class="appendix__description">
-              - ls - wypisanie zawartości katalogu<br />
-              - cd~- przejście do katalogu domowego<br />
-              - cd nazwa-katalogu/ - wchodzimy do katalogu (używając tabulatora
-              możemy szybko dopełniać nazwę)<br />
-              - cd .. - przejdź katalog wyżej<br />
-              - mkdir nazwa-katalogu - tworzymy katalog o danej nazwie<br />
-              - pwd - pełna ścieżka, wktórej się znajdujemy<br />
-              - code . - pozwoli na uruchomienie VSC z linii poleceń w katalogu
-              bierzącym<br />
-            </p>
-          </section>
-          <section class="appendix__section">
-            <h4 class="appendix__secondary-header">
-              Polecenia w systemie Windows
-            </h4>
-            <p class="appendix__description">
-              W systemie Windows można zainstalować "Linux subsystem for
-              Windows", wtedy korzystamy z poleceń Linuxowych<br />
-              - dir - wypisanie zawartości katalogu<br />
-              - cd katalog - wchodzimy do katalogu (używając tabulatora możemy
-              szybko dopełniać nazwę)<br />
-              - cd.. - przejdź katalog wyżej<br />
-              - cd - wyświetlenie aktualnej ścieżki<br />
-              - cd C:\ - przejście do katalogu głównego<br />
-              - mkdir nazwaKatalogu - tworzymy katalog o danej nazwie<br />
-              - code . - pozwoli na uruchomienie VSC z linii poleceń w katalogu
-              bieżącym (jeśli nie zaznaczono dodatkowych opcji przy instalacji
-              VSC ten sposób może nie działać)<br />
-              - ipconfig - wyrzuci adres IP(lokalny)<br />
-            </p>
-          </section>
-        </article>
-        <article class="appendix" id="GIT-GitHub">
-          <h3 class="appendix__header">Git & GitHub</h3>
-          <section class="appendix__section">
-            <h4 class="appendix__secondary-header">
-              System kontroli wersji GIT
-            </h4>
-            <p class="appendix__description">
-              Komendy w terminalu:<br />
-              git --version - jeśli GIT jest zainstalowany poda nam wersję<br />
-              git config --global user.name "Imię Nazwisko" - konfiguracja
-              użytkownika<br />
-              git config --global user.email jannowak@example.com - podajemy
-              maila, na którego założymy konto w GitHubie<br />
-              git config --get user.name <br />
-              git config --get user.email<br />
-              git init - tworzy puste repozytorium GITa w danym katalogu.<br />
-              git status - daje nam status(np które pliki możemy dodać do
-              commita, które są nowe, zmienione)<br />
-              git add . - dodaje pliki <br />
-              git commit -m "nazwa" - dodaje commit o danej nazwie<br />
-              gitk - pokazuje nam całą historię<br />
-              git push - pushuje commit na serwer zewnętrzny np na GitHuba<br />
-              git clone "adres np z githuba" - klonuje zawartość zdalnego
-              repozytorium<br />
-            </p>
-            <p class="appendix__description">
-              Repozytorium tworzymy za pomocą polecenia git init. Polecenie to
-              tworzy ukryty katalog .git w aktualnym folderze. Żeby podejrzeć
-              zmiany musimy stworzyć commit(stan projektu na daną chwilę i
-              informacje o tym, co się zmieniło od ostatniego zapisu). Po
-              stworzeniu commita widzimy jego hash(identyfikator). Git przyjmuje
-              każdy rodzaj plików, zmiany śledzi w plikach tekstowych, inne
-              pliki (np obrazki) podmieni.
-            </p>
-            <p>
-              Edytor VSC posiada wbudowane narzędzie do commitowania. Oprócz
-              tego mozemy zainstalować rozszerzenie GitLens. Mamy tam wszystkie
-              commity, każdą zmianę którą zrobiliśmy w plikach w edytorze.
-            </p>
-          </section>
-          <section class="appendix__section" id="GitHub">
-            <h4 class="appendix__secondary-header">GitHub</h4>
-            <p>
-              GitHub to internetowe repozytorium, które mozna połączyć z GITem.
-              Przy rejestracji należy podac tego samego maila, który podaliśmy
-              przy konfiguracji GITa.
-            </p>
-            <p>
-              Tworząc repozytorium najlepiej podać nazwę taką samą, jak
-              zatytuowany jest projekt(jego folder). Po utworzeniu repozytorium
-              dostaniemy dwie komendy, które najlepiej skopiować do terminala.
-              Po zalogowaniu się na konto GitHub przez terminal commit zostanie
-              wysłany na GitHuba.
-            </p>
-            <p>
-              Po wprowadzeniu zmian w projekcie i wykonaniu nowego commita po
-              wpisaniu polecenia "git status" dostaniemy informację, że nasz
-              branch master jest jeden commit do przodu przed branchem
-              "origin/master" (na GitHub). Po wpisaniu komendy "git push"
-              wrzucamy commit do GitHuba, a po ponownym sprawdzeniu statusu
-              orzymamy informację, że nasz branch jest aktualny w stosunku do
-              origin/master.
-            </p>
-          </section>
-        </article>
-        <article class="appendix" id="block-element-modifier">
-          <h3 class="appendix__header">Block-Element-Modifier</h3>
-          <p class="appendix__description">
-            BEM jest to konwencja nazewnictwa klas. W przykładzie block to dłoń,
-            finger to element, a thumb lub pinky to modifier. Tylko elementy z
-            modyfikatorem opisujemy za pomocą dwóch klas. Ta druga klasa
-            dodaje(bądx nadpisuje) własności specyficzne tylko dla danego
-            elementu.
-          </p>
-          <p class="appendix__description">
-            Block - nadrzędny element<br />
-            Element - część bloku (nie musi być bezpośrednim dzieckiem) <br />
-            Modifier - jeśli element występuje w kilku wariacjach tworzymy
-            dodatkową klasę.<br />
-          </p>
-          <p class="appendix__description">
-            -przy nazywaniu klas nie stosujmy skrótów<br />
-            -na początek najlepiej stworzyć semantyczny HTML, potem dokładamy
-            klasy, dzielimy stronę na bloki (blokiem może byc zdjęcie,
-            pojedyńczy artykuł)<br />
-            -jeśli dodamy dwie klasy do elementu, wtedy ta druga nadpisuje
-            pierwszą<br />
-            -jeśli dodamy tylko jedną klasę do elementu, gdzie powinien być
-            modifier (np .block__element--modifier zamiast .block__element
-            .block__element--modifier) to ta druga klasa zastąpi nam poprzednią
-            i niektóre własności mogą zniknąć.<br />
-            -do drugiej klasy dopisujemy tylko unikalne dla elementu wartości,
-            nie kopiujemy wartości z pierwszej klasy<br />
-            -przy dodawaniu klas w CSS warto ustawiać je alfabetycznie<br />
-            -modyfikatory można wrzucać zarówna na poziomie bloku jak i elementu
-            (np mamy artykuły ostylowane w ten sposób: ".week-summary"
-            ".week-summary__title" i ".week-summary__description", a jeden
-            konkretny chcemy wyróżnić: ".week-summary .week-summary--special" )
-          </p>
-        </article>
-      </section>
-
-      <section class="external-links">
-        <h2 class="external-links__header">Przydatne linki</h2>
-        <p class="external-links__description">
-          <a
-            class="external-links__link"
-            href="https://www.google.com/intl/pl/chrome/"
-            >https://www.google.com/intl/pl/chrome/</a
-          ><br />
-          <a class="external-links__link" href="https://code.visualstudio.com/"
-            >https://code.visualstudio.com/</a
-          ><br />
-          <a
-            class="external-links__link"
-            href="https://slack.com/intl/en-pl/downloads/windows"
-            >https://slack.com/intl/en-pl/downloads/windows</a
-          ><br />
-          <a
-            class="external-links__link"
-            href="https://validator.w3.org/nu/#textarea"
-            >https://validator.w3.org/nu/#textarea</a
-          ><br />
-          <a class="external-links__link" href="https://www.w3.org/TR/html52/"
-            >https://www.w3.org/TR/html52/</a
-          ><br />
-          <a class="external-links__link" href="https://www.w3.org/TR/CSS/"
-            >https://www.w3.org/TR/CSS/</a
-          ><br />
-          <a class="external-links__link" href="https://codepen.io/"
-            >https://codepen.io/</a
-          ><br />
-          <a class="external-links__link" href="https://trello.com"
-            >https://trello.com</a
-          ><br />
-          <a
-            class="external-links__link"
-            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
-            >Spis atrybutów globalnych HTML</a
-          ><br />
-          <a class="external-links__link" href="https://git-scm.com/"
-            >https://git-scm.com/</a
-          ><br />
-          <a class="external-links__link" href="https://coolors.co/"
-            >https://coolors.co/</a
-          ><br />
-          <a class="external-links__link" href="https://github.com/"
-            >https://github.com/</a
-          ><br />
-          <a class="external-links__link" href="https://htmlpreview.github.io/"
-            >https://htmlpreview.github.io/</a
-          ><br />
-          <a class="external-links__link" href="https://git-scm.com/">GIT</a
-          ><br />
-          <a class="external-links__link" href="https://github.com/">GitHub</a
-          ><br />
-          <a
-            class="external-links__link"
-            href="https://caniuse.com/#feat=text-stroke"
-            >Can i use - kompatybilność z przeglądarkami</a
-          ><br />
-          <a class="external-links__link" href="https://css-tricks.com/almanac/"
-            >CSS tricks</a
-          ><br />
-          <a class="external-links__link" href="https://devdocs.io/"
-            >https://devdocs.io/</a
-          ><br />
-        </p>
       </section>
     </main>
     <footer class="footer">
@@ -487,6 +236,5 @@
       szkolenia WTF: Co ten frontend.
       <a class="footer__link" href="#top">Wróć na górę strony</a>
     </footer>
-    <script src="main.js"></script>
   </body>
 </html>
