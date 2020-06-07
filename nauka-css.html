@@ -7,9 +7,8 @@
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-
   <body>
-    <header class="header">
+    <header class="navigation-header">
       <nav class="navigation">
         <a class="navigation__link navigation__link--homepage" href="index.html"
           >Strona główna</a
@@ -303,6 +302,127 @@
             kolorów już odwiedzonych
           </li>
         </ul>
+      </section>
+      <section class="section">
+        <h2 class="section__header">CSS: Grid</h2>
+        <p>
+          Powstał z potrzeby stworzenia prostego systemu do budowania layoutów.
+          Cechuje go przyjazny zapis i możliwość łatwej edycji w kontekście
+          responsywności. Standard dopasowany do aktualnego stanu stron
+          internetowych.
+        </p>
+        <p>Numeracja w gridzie zaczyna się od 1 a nie od 0.</p>
+        <p>Grid line - przebiega przez całość grida, rozdziela grid tracks</p>
+        <p>Grid track (column) - kolumna gridowa - obszar</p>
+        <p>Grid track (row) - wirsz gridowy - obszar</p>
+        <p>Grid cell - pojedyncza komórka</p>
+        <p>Grid Area - kilkakomórek - musi być prostokątem</p>
+        <p>
+          grid-template-columns: 'wartosc po spacji' np 100px 300px; tworzy nam
+          kolumny o zadanych szerokościach. Jeśli dodamy kolejne elementy
+          stworzy nam kolejny wiersz. Własności grid działają na jego
+          bezpośrednie dzieci. Jeśli wrzucę więcej treści to wiersz mi się
+          automatycznie rozszerzy. Jako jednostek możemy użyć np vw, %.
+        </p>
+        <p>
+          grid-template-rows: definiuje nam liczbę wierszy i jak te wiersze mają
+          się zachowywać. W tym przypadku jeśli content jest dłuższy to wyjdzie
+          poza wiersz, a wiersz bedzie trzymał zadany wymiar. Jesli elementów
+          będzie więcej niż wierszy ktopre zdefiniowaliśmy to nastepne elementy
+          będą się zachowywać tak, jak dla nie zdefiniowanego wiersza
+          (automatycznie rozszerzane).
+        </p>
+        <p>
+          nowa jednostka: fr - ułamek szerokości strony. Skaluje się z
+          szerokością, jednostki możemy mixować np 200px 2fr 1fr;. <br />
+          Jest też wartość repeat, gdzie można stworzyć kilka takich samych
+          kolumn np grid-template-columns: repeat(4, 200px) 1fr; podzieli nam na
+          4 kolumny po 200px i jedną o szerokości 1fr.
+        </p>
+        <p>
+          min-max - działa na zakresie np<br />
+          grid-template-columns: 1fr minmax(200px, 1fr);<br />
+          sprawi, że zakres drugiej kolumny to minimum 200px, maksymalnie 1fr(w
+          tym przypadku połowa okna).
+        </p>
+        <p>
+          column-gap - odstępy między kolumnami, przerwy tworzą się tylko między
+          kolumnami, nie na zewnątrz nich.
+        </p>
+        <p>
+          row-gap - odstępy między wierszami, przerwy tworzą się tylko między
+          wierszami, nie na zewnątrz nich.
+        </p>
+        <p>
+          Morzemy wrzucić grida np do .main. Skorzystajmy z grid-template areas.
+          Grid-item - odnosi się do elementu w gridzie. Grid-area - definiujemy
+          nasze obszary. Niezdefiniowany obszar możemy zrobić wstawiając
+          dodatkową kolumnę w grid-template areas wstawiając kropkę w
+          niezdefiniowany obszar. Musimy też podać szerokość tego obszaru.<br />
+          Grid-column/row-start i grid-column/row-end - definiujemy obszar po
+          siatce gridowej. Możemy elementy na siebie nachodzące zasłaniać za
+          pomocą z-index.
+        </p>
+        <p>
+          Linie gridu możemy też nazwać np [pierwsza] [druga] itd. (przy
+          grid-template-columns) a potem przy definiowaniu zasięgu obszaru
+          odnieść się do tych nazw, np grid-column-start: pierwsza;
+          grid-column-end: trzecia; możemy też przy grid-column end użyć
+          wartości span 3/innynumer; wtedy przejdzie przez np 3 kolumny.
+        </p>
+        <p>
+          możemy też skorzystać z wartości grid-area: row start/ col start/ row
+          end/ col end, zastąpi on własności powyższe.
+        </p>
+        <p>
+          możemy też skorzystać z grid-column wartość / wartość i grid-row:
+          wartość/wartość. Wszystkie zapisy są równoważne.
+        </p>
+        <p>
+          Grid nie zastępuje flexboxa. Grid jest stosowany do budowania całych
+          layoutów a flexboxa możemy użyć do pozycjonowania/centrowania już
+          wewnątrz tego elementu. Nie używajmy flexa do budowania layoutów.
+        </p>
+      </section>
+      <section class="section">
+        <h2 class="section__header">CSS: media queries.</h2>
+        <p>
+          Media queries - zapytania o media. jedna strona html może wyświetlać
+          się na smartfonie/tablecie/laptopie i nie trzeba nic zmieniać po
+          stronie kodu HTML, ale zmieniane są style. RWD - responsive web
+          design.
+        </p>
+        <p>
+          @media wpisujemy w CSS. możemy podać media-type
+          (screen/print/all/...), media-feature
+          (min-width/max-width/color/aspect-ratio/orientation/...), możemy to
+          łączyć za pomocą and / not / , (przecinek działa jak or w js).
+        </p>
+        <p>
+          Media queries nie mają wpływu na specyficzność, dlatego dobrze je
+          tworzyć po zdefiniowaniu elementu.
+        </p>
+        <p>
+          Mobie-first. Najpierw stylujemy stronę pod urządzenia mobilne a
+          później np na desktop.
+        </p>
+        <p>
+          Możemy ustalić kilka @media dla kolejnych wyższych rozdzielczości.dla
+          każdego @media musimy wpisać odpowiednie selektory, dla których
+          okreslone warunki będą spełnione.
+        </p>
+        <p>
+          możemy chować elementy - display: none; i odpowiednia klasa np w tagu
+          span.
+        </p>
+        <p>
+          jeżeli chcemy żeby dane style były stosowane w danym zakresie możemy
+          dodać np<br />
+          @media screen and (min-width: 600px) and (max-width: 1023px) {<br />
+          Tutaj podajemy graniczną wartość o 1 mniejszą od następnego zakresu.
+          Break-pointy to zdefiniowane szerokości, na których następuje zmiana
+          stylu.
+        </p>
       </section>
     </main>
     <footer class="footer">

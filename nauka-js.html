@@ -7,9 +7,8 @@
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-
   <body>
-    <header class="header">
+    <header class="navigation-header">
       <nav class="navigation">
         <a class="navigation__link navigation__link--homepage" href="index.html"
           >Strona główna</a
@@ -22,7 +21,12 @@
     </header>
     <main class="main">
       <header class="main-header" id="top">
-        <h1 class="main-header__heading main-header__heading--js"></h1>
+        <h1 class="main-header__heading main-header__heading--js">
+          Nauka JavaScript
+        </h1>
+        <button class="action--js">Zmiana nagłówka</button>
+        <button class="action--js2">Mouse Event</button>
+        <button class="action--js3">Funkcja strzałkowa</button>
       </header>
 
       <section class="section">
@@ -377,6 +381,73 @@
           to połączenie między nimi, a zmiennymi.
         </p>
       </section>
+      <section class="section">
+        <h2 class="section__header">Logika w JS</h2>
+        <p class="section__description">
+          Porównania - słowo kluczowe if. Zwraca true lub false. <br />
+          Operatory porównania: >, <, >=, <=, ==, === (sprawdza typeof - ścisłe
+          porównanie), !=, !== (sprawdza typeof). Znaku porównania w JS używamy
+          np przy zmiennych. Żeby to odróznić używamy symbolu ==.
+        </p>
+        <p>
+          JS posiada wartości false ( false, 0, '' "" ``- pusty string, null,
+          undefined, Nan - not a number zawsze zwracają nam false) i truthy(cała
+          reszta - 'string', numery, {}, [], true itd)
+        </p>
+        <p>
+          AND (&&) oraz OR (||). Złożone warunki logincze. And wykona się jeżeli
+          wszystkie warunki są prawdą. OR sprawdzi, czy chociaż jeden jest
+          prawdą.
+        </p>
+        <p>
+          Operator NOT (!). Odwraca wartość wyrażenia logicznego. !false =>
+          true, !true => false.
+        </p>
+        <p>
+          Słowo kluczowe else. Pozwala na budowanie bloku kodu który się wykona
+          np wtedy, jeśli wartość logiczna naszego wyrażenia będzie fałszem.
+          Jest jeszcze Else if - zdefiniowany else.
+        </p>
+        <p>
+          Switch - używamy głównie, jeśli znamy dokładne wartości jakie może
+          osiągnąć nasza zmienna i na bazie tych wartości działamy
+        </p>
+        <p>
+          Zapis skrócony.
+        </p>
+      </section>
+      <section class="section">
+        <h2 class="section__header">JS: Eventy</h2>
+        <p class="section__description">
+          Robimy przycisk który po kliknięciu zmieni nam header. Musimy pobrać
+          przycisk, dodać do niego listener, który będzie działał na kliknięcie
+          i podpiąć pod to jakąś funkcję. Możemy też w eventListenerze wpisać
+          funkcję strzałkową. Eventlistenerów z funkcją click używamy głównie do
+          buttonów, dla innych elementów możemy użyc innych mouse events jak np
+          mouseover.
+        </p>
+      </section>
+      <section class="section">
+        <h2 class="section__header">JS: Eventy</h2>
+        <p class="section__description">
+          Robimy hamburgera. Potrzebujemy:<br />
+          Nawigacja<br />
+          Styl do nawigacji na mobile<br />
+          styl do nawigacji desktop<br />
+          przycisk do pokazywania/ukrywania (zmiana klasy)<br />
+          kod js do podpięcia się pod przycisk<br />
+          kod js do zmiany klasy
+        </p>
+        <p>
+          Obiekt classList (add/remove/toggle/contain) pozwala na
+          dodawanie/usuwanie/przełączanie/contains - element logiczny który
+          zwraca true/false jesli element posiada daną klasę. klasy z elementu.
+          W przykładzie wrzuciłem dodatkową klasę do nagłówka. W ten sposób
+          możemy manipulować klasami, dodawać modyfikatory dzięki czemu elementy
+          będą zachowywać się inaczej kiedy wykonamy jakąś akcję na stronie. W
+          tych metodach nie używamy kropek.
+        </p>
+      </section>
     </main>
     <footer class="footer">
       Strona domowa Michała Pękacza, wszystkie treści są efektem tworzenia
@@ -384,5 +455,6 @@
       <a class="footer__link" href="#top">Wróć na górę strony</a>
     </footer>
     <script src="main.js"></script>
+    <script src="playground.js"></script>
   </body>
 </html>

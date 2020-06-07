@@ -15,20 +15,12 @@ body {
     rgba(158, 153, 153, 1) 100%
   );
 }
-.appendix {
-  padding: 16px;
-  border: 1px rgb(255, 0, 0) solid;
-  margin-bottom: 20px;
-}
-.article {
-  padding: 16px;
-  border: 1px #fff solid;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
 .article__list {
   list-style-type: square;
+}
+.article__image{
+  display: block;
+  max-width: 100%;
 }
 .article__description--js {
   color: limegreen;
@@ -39,15 +31,7 @@ body {
 .article__secondary-list {
   list-style-type: circle;
 }
-.daily-notes__image {
-  padding: 16px;
-  border: 5px rgb(245, 16, 16) solid;
-}
-.external-links {
-  padding: 16px;
-  border: 1px rgb(255, 0, 0) solid;
-  margin-bottom: 20px;
-}
+
 .footer {
   color: rgb(255, 255, 255);
   background: rgb(88, 88, 88);
@@ -83,6 +67,9 @@ body {
   border-bottom-left-radius: 70px;
   border: 5px #fff solid;
 }
+.introduction__image {
+  max-width: 100%;
+}
 .introduction__image-box {
   width: 291px;
   height: 384px;
@@ -91,8 +78,8 @@ body {
   max-width: 500px;
   max-height: 500px;
 }
-.list {
-  list-style-type: lower-greek;
+.klasa-z-js {
+  background: royalblue;
 }
 .main {
   max-width: 1000px;
@@ -126,9 +113,6 @@ body {
 .navigation__link--homepage {
   color: rgb(255, 0, 0);
 }
-.notes__header {
-  color: rgb(15, 47, 112);
-}
 .main-header {
   display: block;
   padding-top: 40px;
@@ -136,7 +120,11 @@ body {
   margin: auto;
 }
 .section {
-  background: rgb(226, 226, 226, 0.2);
+  background: rgba(206, 30, 30, 0.2);
   padding: 16px;
   margin-bottom: 20px;
+}
+.section__image{
+  display: block;
+  max-width: 100%;
 }

@@ -7,9 +7,8 @@
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-
   <body>
-    <header class="header">
+    <header class="navigation-header">
       <nav class="navigation">
         <a class="navigation__link navigation__link--homepage" href="index.html"
           >Strona główna</a
@@ -51,64 +50,232 @@
 
       <section class="section">
         <h2 class="section__header">Poznane Znaczniki</h2>
-        <ol class="list">
-          Lista
-          <li class="list__item">main - główna częśc dokumentu</li>
-          <li>section - wyodrębniamy sekcje dzieląc dokument na części</li>
-          <li>
-            article - ma sens osobno, ale może być jednym z kilku artykułów
+        <ul class="section__list">
+          <li class="section__list-item">
+            &#x3C;main&#x3E; - główna częśc dokumentu
           </li>
-        </ol>
-        <dl>
-          <dt>main</dt>
-          <dd>główna część dokumentu</dd>
-          <dt>section</dt>
-          <dd>wyodrębniamy sekcje dzieląc dokument na części</dd>
-        </dl>
+          <li class="section__list-item">
+            &#x3C;section&#x3E; - wyodrębnisekcja dokumentu
+          </li>
+          <li class="section__list-item">
+            &#x3C;article&#x3E; - ma sens osobno, ale może być jednym z kilku
+            artykułów zawierających się w sekcji, ma sens bedąc samodzielną
+            treścią
+          </li>
+          <li class="section__list-item">
+            &#x3C;header&#x3E; - nagłówek dokumentu/sekcji/artykułu
+          </li>
+          <li class="section__list-item">
+            &#x3C;footer&#x3E; - stopka dokumentu/sekcji
+          </li>
+          <li class="section__list-item">
+            &#x3C;h1&#x3E; do &#x3C;h6&#x3E; - nagłówki tytułowe
+            dokumentu/sekcji
+          </li>
+          <li class="section__list-item">&#x3C;p&#x3E; - paragraf, akapit</li>
+          <li class="section__list-item">
+            &#x3C;br&#x3E; lub &#x3C;br/&#x3E; - nowa linia, znacznik
+            pojedynczy(samozamykający się)
+          </li>
+          <li class="section__list-item">
+            &#x3C;b&#x3E; - pogrubia (bold), nie ma znaczenia semantycznego,
+            służy do wyróżnienia wizualnego fragmentu tekstu z tekstu
+            otaczającego
+          </li>
+          <li class="section__list-item">
+            &#x3C;strong&#x3E; - pogrubia, podkreśla istotność frazy w nim
+            zawartej, jest to znacznik semantyczny
+          </li>
+          <li class="section__list-item">
+            &#x3C;i&#x3E; - kursywa (italic), nie ma znaczenia semantycznego,
+            służy do wyróżnienia wizualnego fragmentu tekstu z tekstu
+            otaczającego
+          </li>
+          <li class="section__list-item">
+            &#x3C;em&#x3E; - kursywa, podkresla, że tekst może mieć inne
+            znaczenie (ironia), jest to znacznik semantyczny
+          </li>
+          <li class="section__list-item">
+            &#x3C;a&#x3E; - linki i łącza wewnątrz dokumentu
+          </li>
+          <li class="section__list-item">
+            &#x3C;nav&#x3E; - tworzenie nawigacji
+          </li>
+          <li class="section__list-item">
+            &#x3C;img&#x3E; - wstawianie obrazka, znacznik samozamykający się
+          </li>
+          <li class="section__list-item">
+            &#x3C;div&#x3E; - nie ma żadnego znaczenia semantycznego, używamy
+            go, gdy chcemy coś "opakować", wydzielić, tylko kiedy nie istnieje
+            odpowieni znacznik semantyczny. Używany do stylowania, gdy chcemy
+            osiągnąc pewien efekt na stronie, np za pomocą flexboxa lub grida
+          </li>
+          <li class="section__list-item">&#x3C;ul&#x3E; - unordered list</li>
+          <li class="section__list-item">&#x3C;ol&#x3E; - ordered list</li>
+          <li class="section__list-item">&#x3C;li&#x3E; - list item</li>
+          <li class="section__list-item">&#x3C;dl&#x3E; - description list</li>
+          <li class="section__list-item">&#x3C;dt&#x3E; - description term</li>
+          <li class="section__list-item">
+            &#x3C;dd&#x3E; - description details
+          </li>
+          <li class="section__list-item">
+            &#x3C;table&#x3E; - tabela (nie używamy tabel do budowania layoutów)
+          </li>
+          <li class="section__list-item">&#x3C;tr&#x3E; - wiersz tabeli</li>
+          <li class="section__list-item">
+            &#x3C;td&#x3E; - komórka tabeli (table data(cell))
+          </li>
+          <li class="section__list-item">
+            &#x3C;thead&#x3E; - nagłówek tabeli
+          </li>
+          <li class="section__list-item">
+            &#x3C;th&#x3E; - komórka w nagłówku tabeli
+          </li>
+          <li class="section__list-item">&#x3C;tbody&#x3E; - "ciało" tabeli</li>
+          <li class="section__list-item">&#x3C;caption&#x3E; - opis tabeli</li>
+          <li class="section__list-item">
+            &#x3C;aside&#x3E; - treść boczna, może się odnosić do całej strony
+            albo do artykułu/sekcji
+          </li>
+          <li class="section__list-item">
+            &#x3C;button&#x3E; - wrzuca guzik na stronę (button odpowiada za
+            interakcje na stronie, &#x3C;a&#x3E; odpowiada za nawigację)
+          </li>
+          <li class="section__list-item">&#x3C;i&#x3E;</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2 class="section__header">Formularze</h2>
         <p class="section__description">
-          main - główna częśc dokumentu <br />
-          section - wyodrębniamy sekcje dzieląc dokument na części<br />
-          article - ma sens osobno, ale może być jednym z kilku artykułów
-          zawierających się w sekcji, ma sens bedąc samodzielną treścią<br />
-          header - nagłówek dokumentu/sekcji/artykułu<br />
-          footer - stopka dokumentu/sekcji<br />
-          h1 do h6 - nagłówki tytułowe - dokumentu/sekcji<br />
-          p - paragraf/akapit<br />
-          br lub br/ - nowa linia, znacznik pojedyńczy, lub samozamykający
-          się<br />
-          Elementy do wyróżnienia tekstu:<br />
-          b - pogrubia (bold), nie ma znaczenia semantycznego, służy do
-          wyróżnienia wizualnego fragmentu tekstu z tekstu otaczającego<br />
-          strong -pogrubia, podkreśla istotność frazy w nim zawartej, jest to
-          znacznik semantyczny<br />
-          i - kursywa(italic), nie ma znaczenia semantycznego, służy do
-          wyróżnienia wizualnego fragmentu tekstu z tekstu otaczającego<br />
-          em - kursywa, podkresla, że tekst może mieć inne znaczenie (ironia),
-          jest to znacznik semantyczny<br />
-          a - linki i łącza wewnątrz dokumentu<br />
-          nav - tworzenie nawigacji<br />
-          img - wstawianie obrazka, znacznik samozamykający się<br />
-          div - nie ma żadnego znaczenia semantycznego, używamy go, gdy chcemy
-          coś "opakować", wydzielić, tylko kiedy nie istnieje odpowieni znacznik
-          semantyczny. Najczęściej używany do stylowania, gdy chcemy osiągnąc
-          pewien efekt na stronie, a mamy za mało znaczników (section i article
-          nie wystarczają)<br />
-          ul - Unordered list<br />
-          ol - lista uporządkowana<br />
-          li - list item, działa dla ul i ol<br />
-          dl - description list<br />
-          dt - description term<br />
-          dd - description details<br />
-          table - tabela - nie używamy tabel do budowania layoutów<br />
-          tr - wiersz tabeli<br />
-          td - komórka tabeli (table data(cell))<br />
-          thead - nagłówek tabeli<br />
-          th - komórka w nagłówku tabeli<br />
-          tbody - ciało tabeli<br />
-          caption - opis tabeli<br />
-          button - wrzuca guzik na stronę, różni się od a tym, że button to
-          interakcja na stronie, a to nawigacja.
+          Służą do komunikacji ze światem. Używamy ich (lub ich elementów) na
+          codzień np w messengerze/klientach pocztowych. Ważną cechą formularzy
+          jest to, żeby dobrze je opisywać za pomocą atrybutów, możliwa jest
+          wtedy nawigacja za pomocą klawiatury.
         </p>
+        <p class="section__description">
+          Znaczniki:
+        </p>
+        <ul class="section__list">
+          <li class="section__list-item">
+            &#x3C;form&#x3E; - podstawowy znacznik formularza, jego ""opakowanie
+          </li>
+          <li class="section__list-item">
+            &#x3C;input&#x3E; - podstawowy element budujący formularz, wg
+            dokumentacji wrzucamy go w znacznik &#x3C;p&#x3E;. Każdy input
+            powinien mieć atrybut "name", służący do identyfikacji pola. Atrybut
+            "id", można zduplikować to co w atrybucie "name", służący do
+            odniesienia się do naszego pola przy pomocy "label".
+          </li>
+          <li class="section__list-item">
+            &#x3C;label&#x3E; - stworzy opis pola. Można go umieścić przed
+            inputem i umieścić atrybut for. Atrybut "for"="idPola" - podajemy w
+            nim id inputa, do którego się odnosi. Polepsza dostepność. Można też
+            cały input umieścić w znaczniku &#x3C;label&#x3E;. (łatwiej
+            stylować, kiedy label jest osobnym elementem). Nie stosujemy żadnych
+            span-ów do opisywania pól - od tego mamy znaczniki label.
+          </li>
+          <li class="section__list-item">&#x3C;fieldset&#x3E; - grupa pól</li>
+          <li class="section__list-item">
+            &#x3C;legend&#x3E; - opis tych grup
+          </li>
+          <li class="section__list-item">
+            &#x3C;select&#x3E; - pozwala stwordzyć listę opcji do wyboru
+          </li>
+          <li class="section__list-item">
+            &#x3C;option&#x3E; - jedna z opcji, możemy opisać ją atrybutem value
+          </li>
+          <li class="section__list-item">
+            &#x3C;textarea&#x3E; - używamy go do wprowadzania dłuższych treści.
+            Okno może byc rozszerzane przez użytkownika. Wielkość możemy
+            zdewiniować w stylach. Nie ma własności value. Jeśli chcemy mieć coś
+            wpisane wcześniej musimy to wpisać między tagi.
+          </li>
+        </ul>
+        <p>Atrybuty input:<br /></p>
+
+        <ul class="section__list">
+          <li class="section__list-item">
+            value="wartość" - uzupełni w formularzu dane pole o wybraną wartość
+            (nie podpowiedź), gdy chcemy żeny formularz był już wypełniony
+            jakimiś danymi
+          </li>
+          <li class="section__list-item">
+            placeholder="tekst podpowiedzi" - gdy mamy zdefiniowane value,
+            pojawi się dopiero po skasowaniu domyślnej wartości. Atrybut
+            placeholder nie zastępuje elementu label. (Czytniki ekranowe
+            sprawdzają label (czytają je) osobom słabowidzącym i bez label nie
+            przeczyta pola)
+          </li>
+          <li class="section__list-item">type="text" - atrybut domyslny</li>
+          <li class="section__list-item">
+            type="radio" - radio button, dla wartości radio name dla całej grupy
+            musi byc taki sam. Wtedy będą się przełączać między sobą. Możemy
+            dodać atrybut o nazwie checked(bez wartości), będzie już domyslnie
+            zaznaczony
+          </li>
+          <li class="section__list-item">
+            type="checkbox" - gdy input będzie bez atrybutu value wartość
+            wysyłana będzie on (zaznaczony) lub brak wartości (odznaczony).
+            Możemy dodać atrybut o nazwie checked(bez wartości), będzie już
+            domyślnie zaznaczony
+          </li>
+          <li class="section__list-item">
+            type="number" - nie można wpisać liter, innych znaków, spacji. W
+            polu pojawiają się strzałki do wybierania numerów
+          </li>
+          <li class="section__list-item">
+            type="tel" - telefon, można wpisywać cyfry i inne znaki
+          </li>
+          <li class="section__list-item">
+            type="email" - dostajemy podpowiedzi, jeśli w przeglądarce użylismy
+            króregoś maila
+          </li>
+          <li class="section__list-item">
+            type="range" - suwak, który pozwala nam na wybieranie wartości.
+            Możemy nadać atrybuty min, max i step. Range nie pokazuje wartości,
+            możemy się do tego dostać za pomocą js. (document.querySelector)
+          </li>
+          <li class="section__list-item">
+            type="password" - zakryje wszytkie znaki, które wpisujemy
+          </li>
+          <li class="section__list-item">type="file" - przeglądarka plików</li>
+          <li class="section__list-item">
+            type="submit" - wysyła formularz, atrybut value - wartość pokaże się
+            na przycisku. Jedyny typ, który nie posiada labela
+          </li>
+        </ul>
+
+        <p>
+          GET i POST. Chcąc wysłać formularz jako atrybut do "form" musimy dodać
+          "action'adres'". Wysyłane są dane z parametru "value", nie label.
+          Wartości formularza możemy podejrzeć w zakładce Query String
+          Parameters. Żądanie typu get dopisuje do adresu parametry. Get jest
+          metodą domyślną. <br />
+          Żeby zmienić metodę wysyłania formularza musimy wpisać method="post"
+          przy form. Zamiast query Stringa mamy form data. Są one ukryte w tym
+          miejscu, nie ma ich w adresie, dzięki temu ta metoda jest
+          bezpieczniejsza. Nie możemy go zmodyfikować po drodze lub wywołać
+          sztucznie bez wysyłania formularza.<br />
+          enctype - wartość elementu form, czy jest to zwykły formularz, czy
+          zawiera inne treści poza tekstowymi
+        </p>
+        <p>
+          Walidacja. Walidacja po stronie frontendu nie zastepuje walidacji po
+          stronie backendu. Walidacja następuje po stronie przeglądarki.
+        </p>
+        <p>
+          Atrybuty związane z walidacją:
+        </p>
+        <ul class="section__list">
+          <li class="section__list-item">
+            required - to pole musi być wypełnione, dla pola typu e-mail
+            sprawdza ono czy wpisano e-mail
+          </li>
+          <li class="section__list-item">
+            pattern - wyrażenie regularne, możemy zdefiniować, w jakim formacie
+            wypełnić pole(np kod pocztowy)
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
