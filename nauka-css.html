@@ -9,9 +9,10 @@
   </head>
   <body>
     <header class="header">
-      <button class="hamburger hamburger--js" aria-label="Otwórz menu">🍔</button>
+      <button class="hamburger hamburger--js" aria-label="Otwórz menu">
+        🍔
+      </button>
       <nav class="navigation navigation--js">
-        
         <a class="navigation__link navigation__link--homepage" href="index.html"
           >Strona główna</a
         >
@@ -19,7 +20,6 @@
         <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
         <a class="navigation__link" href="nauka-js.html">Nauka JavaScript</a>
         <a class="navigation__link" href="narzedzia.html">Narzędzia i linki</a>
-        
       </nav>
     </header>
     <main class="main">
@@ -147,24 +147,24 @@
           header nav a), lepiej dodać klasę do elementu który nas interesuje (np
           klasa header-link do linków w nav) i stylować po tych klasach.
         </p>
+        <p>Nazewnictwo klas:</p>
         <ul class="section__list">
-          Nazewnictwo klas:
+          <li class="section__list-item">
+            używamy pojedynczych słów z j. angielskiego
+          </li>
+          <li class="section__list-item">
+            nazywamy rzeczy zgodnie z ich funkcją na stronie
+          </li>
+          <li class="section__list-item">nazwa z małej litery</li>
+          <li class="section__list-item">nie zaczynamy od cyfr</li>
+          <li class="section__list-item">
+            jeśli nazwa ma więcej niż 2 słowa, używamy kebab-case
+          </li>
+          <li class="section__list-item">
+            staramy się, żeby element miał jedną klasę (nie zwiększamy
+            specyficzności bez potrzeby)
+          </li>
         </ul>
-        <li class="section__list-item">
-          używamy pojedynczych słów z j. angielskiego
-        </li>
-        <li class="section__list-item">
-          nazywamy rzeczy zgodnie z ich funkcją na stronie
-        </li>
-        <li class="section__list-item">nazwa z małej litery</li>
-        <li class="section__list-item">nie zaczynamy od cyfr</li>
-        <li class="section__list-item">
-          jeśli nazwa ma więcej niż 2 słowa, używamy kebab-case
-        </li>
-        <li class="section__list-item">
-          staramy się, żeby element miał jedną klasę (nie zwiększamy
-          specyficzności bez potrzeby)
-        </li>
       </section>
       <section class="section">
         <h2 class="section__header">Box-model</h2>
@@ -249,8 +249,8 @@
           Zadaniem będzie utworzenie projektu wizytówki w HTML-u na bazie
           projektu graficznego.
         </p>
+        <p>Kroki i uwagi do tworzenia projektu:</p>
         <ol>
-          Kroki i uwagi do tworzenia projektu:
           <li>
             Utworzenie szkieletu strony, podpięcie plików ze stylami,
             wydzielenie elementów i stworzenie BEM.
@@ -266,9 +266,8 @@
             ostylowanie każdego z elementów po kolei.
           </li>
         </ol>
-
+        <p>Uwagi:</p>
         <ul>
-          Uwagi:
           <li>
             Jesli ustawimy we flexboxie align-content a element się nie
             wyśrodkuje, należy sprawdzić czy element nie zajmuje całej wysokości
@@ -294,8 +293,8 @@
             kolory, własności fontów.
           </li>
         </ul>
+        <p>Własności tekstu:</p>
         <ul>
-          Własności tekstu:
           <li>font-family - odpowiada za czcionkę w elemencie</li>
           <li>font-size - wielkość czcionki</li>
           <li>font-weight: bold/normal grubość czcionki</li>
