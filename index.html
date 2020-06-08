@@ -8,8 +8,11 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header class="navigation-header">
-      <nav class="navigation">
+    <header class="header">
+      <button class="hamburger hamburger--js" aria-label="Otwórz menu">
+        🍔
+      </button>
+      <nav class="navigation navigation--js">
         <a class="navigation__link navigation__link--homepage" href="index.html"
           >Strona główna</a
         >
@@ -26,11 +29,11 @@
         </h1>
       </header>
 
-      <section class="introduction">
-        <div class="introduction__wrapper">
-          <h2 class="introduction__heading">Kim jestem?</h2>
-
-          <p class="introduction__description">
+      <section class="about">
+        <img class="about__image" src="img/selfie.jpg" alt="Michal selfie" />
+        <div class="about__wrapper">
+          <h2 class="about__heading">Kim jestem?</h2>
+          <p class="about__description">
             Hej! Mam na imię Michał. Z wykształcenia jestem inżynierem
             budownictwa, jednak okazało się, że pracując na budowie po 10, 12 a
             czasem i więcej godzin dziennie, brak mi czasu na własne projekty,
@@ -45,15 +48,7 @@
             (bikepacking), gotować i czytać.
           </p>
         </div>
-        <div class="introduction__image-box">
-          <img
-            class="introduction__image"
-            src="img/selfie.jpg"
-            alt="Michal selfie"
-          />
-        </div>
       </section>
-
       <section class="section" id="notatki">
         <h2 class="section__header">Notatki z WTF: Co ten frontend</h2>
         <p class="section__description">
@@ -239,5 +234,6 @@
       szkolenia WTF: Co ten frontend.
       <a class="footer__link" href="#top">Wróć na górę strony</a>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
