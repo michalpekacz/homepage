@@ -75,6 +75,8 @@ body {
   top: 20px;
   right: 20px;
   z-index: 3000;
+  background: none;
+  border: none;
 }
 .klasa-z-js {
   background: royalblue;
@@ -148,7 +150,7 @@ body {
     border-bottom-left-radius: 70px;
     border: 5px #fff solid;
     display: block;
-    max-width: 281px;
+    flex-shrink: 0;
   }
   .about__wrapper{
     margin-left: 20px;
@@ -179,5 +181,5 @@ body {
     margin-bottom: 0;
     font-weight: bold;
   }
-.
+
 }
