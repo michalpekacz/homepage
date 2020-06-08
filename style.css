@@ -19,13 +19,12 @@ body {
   background: rgb(226, 226, 226, 0.2);
   margin-bottom: 20px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  flex-direction: column;       
+  align-content: center;
 }
 .about__description {
   color: rgb(25, 84, 201);
   padding: 16px;
-  align-self: center;
 }
 .about__heading {
   color: rgb(15, 47, 112);
@@ -38,7 +37,11 @@ body {
   border-bottom-left-radius: 70px;
   border: 5px #fff solid;
   display: block;
-  max-width: 100%;
+  max-width: 281px;
+  align-self: center;
+}
+.article{
+  padding: 16px;
 }
 .article__list {
   list-style-type: square;
@@ -66,6 +69,7 @@ body {
 .footer__link {
   color: rgb(255, 5, 5);
 }
+
 .hamburger{
   position: absolute;
   top: 20px;
@@ -131,7 +135,37 @@ body {
 }
 
 @media (min-width: 768px) {
-  
+  .about {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;       
+    justify-content: center;
+  }
+  .about__image {
+    border-top-left-radius: 150px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 70px;
+    border: 5px #fff solid;
+    display: block;
+    max-width: 281px;
+  }
+  .about__wrapper{
+    margin-left: 20px;
+  }
+  .article{
+    border: white 1px solid;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+
+  }
+  .hamburger{
+    display: none;
+  }
   .navigation {
     display: flex;
     flex-direction: row;
@@ -145,5 +179,5 @@ body {
     margin-bottom: 0;
     font-weight: bold;
   }
-
+.
 }
