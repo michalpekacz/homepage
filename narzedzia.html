@@ -9,9 +9,10 @@
   </head>
   <body>
     <header class="header">
-      <button class="hamburger hamburger--js" aria-label="Otwórz menu">🍔</button>
+      <button class="hamburger hamburger--js" aria-label="Otwórz menu">
+        🍔
+      </button>
       <nav class="navigation navigation--js">
-        
         <a class="navigation__link navigation__link--homepage" href="index.html"
           >Strona główna</a
         >
@@ -19,7 +20,6 @@
         <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
         <a class="navigation__link" href="nauka-js.html">Nauka JavaScript</a>
         <a class="navigation__link" href="narzedzia.html">Narzędzia i linki</a>
-        
       </nav>
     </header>
     <main class="main">
@@ -91,6 +91,10 @@
         <h2 class="section__header">Git & GitHub</h2>
         <article class="article">
           <h3 class="article__header">System kontroli wersji GIT</h3>
+          <p>
+            Za pomocą pliku .gitignore możemy definiować pliki, które mają nie
+            być commitowane.
+          </p>
           <p class="article__description">
             Komendy w terminalu:<br />
             git --version - jeśli GIT jest zainstalowany poda nam wersję<br />
@@ -109,6 +113,10 @@
             git push - pushuje commit na serwer zewnętrzny np na GitHuba<br />
             git clone "adres np z githuba" - klonuje zawartość zdalnego
             repozytorium<br />
+          </p>
+          <p class="article__description">
+            Gitignore - plik tekstowy, w którym definiujemy listę elementów
+            (pliki, foldery) których nie chcemy, żeby sie commitowały.
           </p>
           <p class="article__description">
             Repozytorium tworzymy za pomocą polecenia git init. Polecenie to
@@ -222,6 +230,65 @@
           przodu). Na stronie odpalanej z dysku wpisywanie / przy zasobach nie
           jest wymagane.
         </p>
+      </section>
+      <section class="section">
+        <h2 class="section__header">Node JS i NPM</h2>
+        <article class="article">
+          <h3 class="article__header">Node JS</h3>
+          <p class="article__description">
+            Node to javascript uruchamiany poza przeglądarką. Oparty na silniku
+            chrome V8. Node nie ma dostepu do DOM i do api związanych z DOM.
+          </p>
+        </article>
+        <article class="article">
+          <h3 class="article__header">NPM</h3>
+          <p class="article__description">
+            NPM to menager paczek do node, znajdują się tam gotowe biblioteki,
+            fdsfdsfsd narzędzia. Paczki ściągamy w terminalu, musimy być w
+            katalogu z projektem. Po ściągnięciu paczki pojawi się pole
+            dependencies(zależności) i pojawi się w nim normalize.css w wersji
+            8.0.1. Pojawił się nowy plik package-lock.json. Przechowuje on
+            informacje o tym co zainstalowaliśmy (blokuje wersje), nie edytujemy
+            go. Pojawił się katalog: node_modules, w którym znajdować się bedą
+            moduły node. Folderu node_modules nie commitujemy.
+          </p>
+          <p class="article__description">
+            Alternatywą dla NPM jest yarn.
+          </p>
+        </article>
+        <article class="article">
+          <h3 class="article__header">Lista komend</h3>
+
+          <ul class="article__list">
+            <li class="article__list-item">
+              node -v - wypisze nam wersję node'a
+            </li>
+            <li class="article__list-item">
+              npm init - stworzy plik package.json
+            </li>
+            <li class="article__list-item">
+              npm init -y - stworzy plik package.json bez pytań
+            </li>
+            <li class="article__list-item">
+              npm install &#x3C;nazwa_paczki&#x3E; --save - jeśli chcemy, żeby
+              paczka była wykorzystywana do działania w przeglądarce
+            </li>
+            <li class="article__list-item">
+              npm install &#x3C;nazwa_paczki&#x3E; --save-dev - dla narzędzi
+              developerskich
+            </li>
+            <li class="article__list-item">
+              npm install &#x3C;nazwa_paczki&#x3E; - po usunięciu katalogu node
+              modules mając tylko plik package.json automatycznie sciągnie
+              paczki, które mielismy zainstalowane wcześniej.
+            </li>
+            <li class="article__list-item">
+              npx &#x3C;nazwa_paczki&#x3E; - możemy skorzystać z paczki nie
+              instalując jej (np cowsay), albo po prostu odpalić paczkę z
+              konsoli
+            </li>
+          </ul>
+        </article>
       </section>
 
       <section class="section">

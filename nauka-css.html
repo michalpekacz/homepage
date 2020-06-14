@@ -31,9 +31,9 @@
         <h2 class="section__header">Co to jest CSS</h2>
         <p class="section__description">
           CSS=Cascading Style Sheets (kaskadowe arkusze stylów)<br />
-          CSS odpowiada za prezentację/nadawanie wyglądu na ekranach, ale także
+          CSS odpowiada za prezentację/ nadawanie wyglądu na ekranach, ale także
           wydrukach, czytnikach ekranowych itp. Składnia CSS to reguły
-          (selektor,właściwość,wartość).
+          (selektor, właściwość, wartość).
         </p>
       </section>
 
@@ -169,79 +169,117 @@
       <section class="section">
         <h2 class="section__header">Box-model</h2>
         <p class="section__description">
-          Poznałem takie własności i wartości jak:<br />
-          -display: block; display: inline; display: inline-block<br />
-          -width; height; max-width; amx-height; min-width; min-height;
-          overflow: visible(domyślna)/hidden/auto;<br />
-          -viewport-width; viewport-height;<br />
-          -padding; border: width/style/color; margin: auto; border-radius<br />
-          -border-box<br />
-          -position: static/relative/absolute; top/right/bottom/left<br />
-          -z-index<br />
-          -position: fixed/sticky/float
+          Poznałem takie własności i wartości jak:
         </p>
+        <ul class="section__list">
+          <li class="section__list-item">
+            -display: block; display: inline; display: inline-block
+          </li>
+          <li class="section__list-item">
+            -width; height; max-width; max-height; min-width; min-height;
+            overflow: visible(domyślna)/ hidden/ auto
+          </li>
+          <li class="section__list-item">viewport-width; viewport-height</li>
+          <li class="section__list-item">
+            padding; border: width/style/color; margin: auto; border-radius
+          </li>
+          <li class="section__list-item">border-box</li>
+          <li class="section__list-item">
+            position: static/ relative/ absolute; top/ right/ bottom/ left
+          </li>
+          <li class="section__list-item">z-index</li>
+          <li class="section__list-item">position: fixed/ sticky/ float</li>
+        </ul>
       </section>
       <section class="section">
         <h2 class="section__header">Flexbox</h2>
         <p class="section__description">
-          Poznałem takie własności i wartości jak:<br />
-          display: flex<br />
-          flex-direction: <b>row</b>/column/row-reverse/column-reverse<br />
-          flex-wrap: wrap/<b>nowrap</b>/wrap-reverse<br />
-          flex-flow: row nowrap - domyślne wartości<br />
-          justify-content:
-          <b>flex-start</b
-          >/flex-end/center/space-between/space-around/space-evenly.<br />
-          align-content:
-          <b>stretch</b
-          >/flex-start/flex-end/center/space-between/space-around.<br />
-          align-items: <b>stretch</b>/flex-start/flex-end/center/baseline<br />
-          align-self: stretch/flex-start/flex-end/center/baseline<br />
-          Order - liczba całkowita (dodatnia bądź ujemna)<br />
-          flex-grow - domyslna wartość 0. Inne wartości to liczby/proporcje.<br />
-          flex-shrink - 1/ liczba/proporcja. Domyślnie 1<br />
-          flex-basis - none/rozmiar bazowy.<br />
-          flex: flex-grow/flex-shrink/flex-basis<br />
+          Poznałem takie własności i wartości jak:
         </p>
+        <ul class="section__list">
+          <li class="section__list-item">display: flex</li>
+          <li class="section__list-item">
+            flex-direction: <b>row</b>/ column/ row-reverse/ column-reverse
+          </li>
+          <li class="section__list-item">
+            flex-wrap: wrap/ <b>nowrap</b>/ wrap-reverse
+          </li>
+          <li class="section__list-item">
+            flex-flow: row nowrap - domyślne wartości
+          </li>
+          <li class="section__list-item">
+            justify-content: <b>flex-start</b>/ flex-end/ center/ space-between/
+            space-around/ space-evenly
+          </li>
+          <li class="section__list-item">
+            align-content: <b>stretch</b>/ flex-start/ flex-end/ center/
+            space-between/ space-around
+          </li>
+          <li class="section__list-item">
+            align-items: <b>stretch</b>/ flex-start/ flex-end/ center/ baseline
+          </li>
+          <li class="section__list-item">
+            align-self: stretch/ flex-start/ flex-end/ center/ baseline
+          </li>
+          <li class="section__list-item">
+            order - liczba całkowita (dodatnia bądź ujemna)
+          </li>
+          <li class="section__list-item">
+            flex-grow - domyslna wartość 0. Inne wartości to liczby/ proporcje.
+          </li>
+          <li class="section__list-item">
+            flex-shrink - 1/ liczba/ proporcja. Domyślnie 1
+          </li>
+          <li class="section__list-item">flex-basis - none/rozmiar bazowy</li>
+          <li class="section__list-item">
+            flex: flex-grow/ flex-shrink/ flex-basis
+          </li>
+        </ul>
       </section>
       <section class="section">
         <h2 class="section__header">Tła</h2>
         <p class="section__description">
           Background-image: url('sciezka-do-pliku'); (body class="page").
           Background-position - domyślna wartość 0 0 (lewy górny róg). Warto dać
-          min-height 100vgh dla body. Tło jest wyśrodkowane w rozmiarach
+          min-height 100vh dla body. Tło jest wyśrodkowane w rozmiarach
           orginalnych obrazka.
         </p>
-        <p>
-          background-repeat: repeat/repeat-x/repeat-y/no-repeat/round/space.
-        </p>
-        <p>
-          background-attachment: scroll(domyślna wartość)/fixed/local (
-          spróbować razem z overflow - scroll)
-        </p>
-        <p>
-          background-origin: padding-box/border-box/content-box. Definiuje nam
-          to, w którym miejscu tło powinno się zaczynać. Domyslne padding-box.
-        </p>
-        <p>
-          background-clip: border-box/padding-box/content-box. mówi nam w którym
-          miejscu tło powinno byc cięte. Domyślnie border-box.
-        </p>
-        <p>
-          background-color: tło może byc półprzezroczyste. background-color:
-          rgba.
-        </p>
-        <p>
-          background-size: auto (domyślne)/cover/contain/width height. Contain -
-          cały obrazek będzie się mieścił w oknie. Działa w zależności od
-          repeat, position i attachment. Cover- obrazek zawsze wypełnia stronę
-          niezależnie od contentu. Cover najczęściej wykorzystywany.
-        </p>
-        <p>
+        <p class="section__description">
           Gradienty. Na stronie
           <a href="https://www.grabient.com/">www.grabient.com</a> możemy
           skorzystać z gotowych lub stworzyć swój własny gradient.
         </p>
+        <p>
+          Własności background:
+        </p>
+        <ul class="section__list">
+          <li class="section__list-item">
+            background-repeat: repeat/ repeat-x/ repeat-y/ no-repeat/ round/
+            space
+          </li>
+          <li class="section__list-item">
+            background-attachment: <b>scroll</b>/ fixed/ local (spróbować razem
+            z overflow - scroll)
+          </li>
+          <li class="section__list-item">
+            background-origin: <b>padding-box</b>/ border-box/ content-box.
+            Definiuje nam to, w którym miejscu tło powinno się zaczynać.
+          </li>
+          <li class="section__list-item">
+            background-clip: <b>border-box</b>/ padding-box/ content-box. Mówi
+            nam, w którym miejscu tło powinno byc cięte.
+          </li>
+          <li class="section__list-item">
+            background-color: tło może byc półprzezroczyste. background-color:
+            rgba.
+          </li>
+          <li class="section__list-item">
+            background-size: <b>auto</b>/ cover/ contain/ width height. Contain
+            - cały obrazek będzie się mieścił w oknie. Działa w zależności od
+            repeat, position i attachment. Cover - obrazek zawsze wypełnia
+            stronę niezależnie od contentu. Cover najczęściej wykorzystywany.
+          </li>
+        </ul>
       </section>
       <section class="section">
         <h2 class="section__header">Projekt: wizytówka</h2>
@@ -250,56 +288,62 @@
           projektu graficznego.
         </p>
         <p>Kroki i uwagi do tworzenia projektu:</p>
-        <ol>
-          <li>
+        <ol class="section__ordered-list">
+          <li class="section__ordered-list-item">
             Utworzenie szkieletu strony, podpięcie plików ze stylami,
             wydzielenie elementów i stworzenie BEM.
           </li>
-          <li>
+          <li class="section__ordered-list-item">
             Kolory tła i wizytówki
           </li>
-          <li>
+          <li class="section__ordered-list-item">
             Ustawienie elementu na stronie za pomocą flexboxa.
           </li>
-          <li>
+          <li class="section__ordered-list-item">
             Ustawienie paddingu, ustawienie lub usinięcie marginesów i
             ostylowanie każdego z elementów po kolei.
           </li>
         </ol>
-        <p>Uwagi:</p>
-        <ul>
-          <li>
+        <p class="section__description">Uwagi:</p>
+        <ul class="section__list">
+          <li class="section__list-item">
             Jesli ustawimy we flexboxie align-content a element się nie
             wyśrodkuje, należy sprawdzić czy element nie zajmuje całej wysokości
             kontenera.
           </li>
-          <li>
+          <li class="section__list-item">
             Możemy na body ustawić margin - lepiej to wygląda.
           </li>
-          <li>
+          <li class="section__list-item">
             Domyślną czcionkę/rodzinę czcionek możemy wrzucić w stylach do
             elementu body.
           </li>
-          <li>
+          <li class="section__list-item">
             nowa własność - line-height
           </li>
-          <li>
+          <li class="section__list-item">
             Chcąc wyróżnić część tekstu możemy opakować go w tagi (strong/b),
             następnie nadać im klasę (niekoniecznie zgodną z BEM, mozna sobie
             zrobić zestaw klas służących tylko do wyróżniania)
           </li>
-          <li>
+          <li class="section__list-item">
             Program Figma ma zakładkę kod - możemy skopiować elementy takie jak
             kolory, własności fontów.
           </li>
         </ul>
-        <p>Własności tekstu:</p>
-        <ul>
-          <li>font-family - odpowiada za czcionkę w elemencie</li>
-          <li>font-size - wielkość czcionki</li>
-          <li>font-weight: bold/normal grubość czcionki</li>
-          <li>font-style; italic/normal - styl czcionki</li>
-          <li>
+        <p class="section__description">Własności tekstu:</p>
+        <ul class="section__list">
+          <li class="section__list-item">
+            font-family - odpowiada za czcionkę w elemencie
+          </li>
+          <li class="section__list-item">font-size - wielkość czcionki</li>
+          <li class="section__list-item">
+            font-weight: bold/normal grubość czcionki
+          </li>
+          <li class="section__list-item">
+            font-style; italic/normal - styl czcionki
+          </li>
+          <li class="section__list-item">
             text-decoration: none - likwiduje podkreślenie linków i zmianę
             kolorów już odwiedzonych
           </li>
@@ -308,123 +352,160 @@
       <section class="section">
         <h2 class="section__header">CSS: Grid</h2>
         <p>
-          Powstał z potrzeby stworzenia prostego systemu do budowania layoutów.
-          Cechuje go przyjazny zapis i możliwość łatwej edycji w kontekście
-          responsywności. Standard dopasowany do aktualnego stanu stron
-          internetowych.
-        </p>
-        <p>Numeracja w gridzie zaczyna się od 1 a nie od 0.</p>
-        <p>Grid line - przebiega przez całość grida, rozdziela grid tracks</p>
-        <p>Grid track (column) - kolumna gridowa - obszar</p>
-        <p>Grid track (row) - wirsz gridowy - obszar</p>
-        <p>Grid cell - pojedyncza komórka</p>
-        <p>Grid Area - kilkakomórek - musi być prostokątem</p>
-        <p>
-          grid-template-columns: 'wartosc po spacji' np 100px 300px; tworzy nam
-          kolumny o zadanych szerokościach. Jeśli dodamy kolejne elementy
-          stworzy nam kolejny wiersz. Własności grid działają na jego
-          bezpośrednie dzieci. Jeśli wrzucę więcej treści to wiersz mi się
-          automatycznie rozszerzy. Jako jednostek możemy użyć np vw, %.
-        </p>
-        <p>
-          grid-template-rows: definiuje nam liczbę wierszy i jak te wiersze mają
-          się zachowywać. W tym przypadku jeśli content jest dłuższy to wyjdzie
-          poza wiersz, a wiersz bedzie trzymał zadany wymiar. Jesli elementów
-          będzie więcej niż wierszy ktopre zdefiniowaliśmy to nastepne elementy
-          będą się zachowywać tak, jak dla nie zdefiniowanego wiersza
-          (automatycznie rozszerzane).
-        </p>
-        <p>
-          nowa jednostka: fr - ułamek szerokości strony. Skaluje się z
-          szerokością, jednostki możemy mixować np 200px 2fr 1fr;. <br />
-          Jest też wartość repeat, gdzie można stworzyć kilka takich samych
-          kolumn np grid-template-columns: repeat(4, 200px) 1fr; podzieli nam na
-          4 kolumny po 200px i jedną o szerokości 1fr.
-        </p>
-        <p>
-          min-max - działa na zakresie np<br />
-          grid-template-columns: 1fr minmax(200px, 1fr);<br />
-          sprawi, że zakres drugiej kolumny to minimum 200px, maksymalnie 1fr(w
-          tym przypadku połowa okna).
-        </p>
-        <p>
-          column-gap - odstępy między kolumnami, przerwy tworzą się tylko między
-          kolumnami, nie na zewnątrz nich.
-        </p>
-        <p>
-          row-gap - odstępy między wierszami, przerwy tworzą się tylko między
-          wierszami, nie na zewnątrz nich.
-        </p>
-        <p>
-          Morzemy wrzucić grida np do .main. Skorzystajmy z grid-template areas.
-          Grid-item - odnosi się do elementu w gridzie. Grid-area - definiujemy
-          nasze obszary. Niezdefiniowany obszar możemy zrobić wstawiając
-          dodatkową kolumnę w grid-template areas wstawiając kropkę w
-          niezdefiniowany obszar. Musimy też podać szerokość tego obszaru.<br />
-          Grid-column/row-start i grid-column/row-end - definiujemy obszar po
-          siatce gridowej. Możemy elementy na siebie nachodzące zasłaniać za
-          pomocą z-index.
-        </p>
-        <p>
-          Linie gridu możemy też nazwać np [pierwsza] [druga] itd. (przy
-          grid-template-columns) a potem przy definiowaniu zasięgu obszaru
-          odnieść się do tych nazw, np grid-column-start: pierwsza;
-          grid-column-end: trzecia; możemy też przy grid-column end użyć
-          wartości span 3/innynumer; wtedy przejdzie przez np 3 kolumny.
-        </p>
-        <p>
-          możemy też skorzystać z wartości grid-area: row start/ col start/ row
-          end/ col end, zastąpi on własności powyższe.
-        </p>
-        <p>
-          możemy też skorzystać z grid-column wartość / wartość i grid-row:
-          wartość/wartość. Wszystkie zapisy są równoważne.
+          Grid powstał z potrzeby stworzenia prostego systemu do budowania
+          layoutów. Cechuje go przyjazny zapis i możliwość łatwej edycji w
+          kontekście responsywności. Standard dopasowany do aktualnego stanu
+          stron internetowych.
         </p>
         <p>
           Grid nie zastępuje flexboxa. Grid jest stosowany do budowania całych
-          layoutów a flexboxa możemy użyć do pozycjonowania/centrowania już
+          layoutów a flexboxa możemy użyć do pozycjonowania/ centrowania już
           wewnątrz tego elementu. Nie używajmy flexa do budowania layoutów.
         </p>
+        <p class="section__description">Cechy gridu.</p>
+        <ul class="section__list">
+          <li class="section__list-item">
+            Numeracja w gridzie zaczyna się od 1 a nie od 0
+          </li>
+          <li class="section__list-item">
+            Grid line - przebiega przez całość grida, rozdziela grid tracks
+          </li>
+          <li class="section__list-item">
+            Grid track (column) - kolumna gridowa - obszar
+          </li>
+          <li class="section__list-item">
+            Grid track (row) - wirsz gridowy - obszar
+          </li>
+          <li class="section__list-item">Grid cell - pojedyncza komórka</li>
+          <li class="section__list-item">
+            Grid Area - kilka komórek - musi być prostokątem
+          </li>
+        </ul>
+        <p class="section__description">Atrybuty i wartości gridu.</p>
+        <ul class="section__list">
+          <li class="section__list-item">
+            grid-template-columns: 'wartosc po spacji' np 100px 300px; tworzy
+            nam kolumny o zadanych szerokościach. Jeśli dodamy kolejne elementy
+            stworzy nam kolejny wiersz. Własności grid działają na jego
+            bezpośrednie dzieci. Jeśli wrzucę więcej treści to wiersz mi się
+            automatycznie rozszerzy. Jako jednostek możemy użyć np vw, %.
+          </li>
+          <li class="section__list-item">
+            grid-template-rows: definiuje nam liczbę wierszy i jak te wiersze
+            mają się zachowywać. W tym przypadku jeśli content jest dłuższy to
+            wyjdzie poza wiersz, a wiersz bedzie trzymał zadany wymiar. Jesli
+            elementów będzie więcej niż wierszy które zdefiniowaliśmy to
+            nastepne elementy będą się zachowywać tak, jak dla nie
+            zdefiniowanego wiersza (automatycznie rozszerzane).
+          </li>
+          <li class="section__list-item">
+            Nowa jednostka: fr - ułamek szerokości strony. Skaluje się z
+            szerokością, jednostki możemy mixować np 200px 2fr 1fr;
+          </li>
+          <li class="section__list-item">
+            Wartość repeat, gdzie można stworzyć kilka takich samych kolumn np
+            grid-template-columns: repeat(4, 200px) 1fr; podzieli nam na 4
+            kolumny po 200px i jedną o szerokości 1fr.
+          </li>
+          <li class="section__list-item">
+            min-max - działa na zakresie np grid-template-columns: 1fr
+            minmax(200px, 1fr); sprawi, że zakres drugiej kolumny to minimum
+            200px, maksymalnie 1fr(w tym przypadku połowa okna).
+          </li>
+          <li class="section__list-item">
+            column-gap - odstępy między kolumnami, przerwy tworzą się tylko
+            między kolumnami, nie na zewnątrz nich
+          </li>
+          <li class="section__list-item">
+            row-gap - odstępy między wierszami, przerwy tworzą się tylko między
+            wierszami, nie na zewnątrz nich
+          </li>
+          <li class="section__list-item">
+            Linie gridu możemy też nazwać np [pierwsza] [druga] itd. (przy
+            grid-template-columns) a potem przy definiowaniu zasięgu obszaru
+            odnieść się do tych nazw, np grid-column-start: pierwsza;
+            grid-column-end: trzecia; możemy też przy grid-column end użyć
+            wartości span 3/innynumer; wtedy przejdzie przez np 3 kolumny.
+          </li>
+          <li class="section__list-item">
+            Możemy też skorzystać z wartości grid-area: row start/ col start/
+            row end/ col end, zastąpi on własności powyższe
+          </li>
+          <li class="section__list-item">
+            Możemy też skorzystać z grid-column wartość / wartość i grid-row:
+            wartość/wartość. Wszystkie zapisy są równoważne.
+          </li>
+        </ul>
       </section>
       <section class="section">
         <h2 class="section__header">CSS: media queries.</h2>
-        <p>
+        <p class="section__description">
           Media queries - zapytania o media. jedna strona html może wyświetlać
-          się na smartfonie/tablecie/laptopie i nie trzeba nic zmieniać po
+          się na smartfonie/ tablecie/ laptopie i nie trzeba nic zmieniać po
           stronie kodu HTML, ale zmieniane są style. RWD - responsive web
           design.
         </p>
-        <p>
+        <p class="section__description">
           @media wpisujemy w CSS. możemy podać media-type
           (screen/print/all/...), media-feature
           (min-width/max-width/color/aspect-ratio/orientation/...), możemy to
           łączyć za pomocą and / not / , (przecinek działa jak or w js).
         </p>
-        <p>
+        <p class="section__description">
           Media queries nie mają wpływu na specyficzność, dlatego dobrze je
           tworzyć po zdefiniowaniu elementu.
         </p>
-        <p>
+        <p class="section__description">
           Mobie-first. Najpierw stylujemy stronę pod urządzenia mobilne a
           później np na desktop.
         </p>
-        <p>
+        <p class="section__description">
           Możemy ustalić kilka @media dla kolejnych wyższych rozdzielczości.dla
           każdego @media musimy wpisać odpowiednie selektory, dla których
           okreslone warunki będą spełnione.
         </p>
-        <p>
-          możemy chować elementy - display: none; i odpowiednia klasa np w tagu
+        <p class="section__description">
+          Możemy chować elementy - display: none; i odpowiednia klasa np w tagu
           span.
         </p>
-        <p>
-          jeżeli chcemy żeby dane style były stosowane w danym zakresie możemy
+        <p class="section__description">
+          Jeżeli chcemy żeby dane style były stosowane w danym zakresie możemy
           dodać np<br />
           @media screen and (min-width: 600px) and (max-width: 1023px) {<br />
           Tutaj podajemy graniczną wartość o 1 mniejszą od następnego zakresu.
           Break-pointy to zdefiniowane szerokości, na których następuje zmiana
           stylu.
         </p>
+      </section>
+      <section class="section">
+        <h2 class="section__header">CSS: pseudoelementy i pseudoklasy.</h2>
+        <article class="article">
+          <h3 class="article__header">Pseudoelementy ::</h3>
+          <p class="article__description">
+            CSS za pomocą własności content może tworzyć treść. Używamy go
+            wpisująć w css klasę elementu z dopiskiem ::before lub ::after. Nie
+            można ich zaznaczyć w przeglądarce. Treść ta nie jest częścią DOM.
+            Można nadać im właściwość jak np display, width, height. Można ich
+            używać w celach ostylowania czegoś, np nagłówków, list, itp.
+          </p>
+          <h3 class="article__header">Pseudoklasy :</h3>
+          <p class="article__description">
+            Pseudoklasa to modyfikator elementu. Modyfikuje ona wygląd elementu,
+            np podświetlenie elementu po wskazaniu go myszką przez użytkownika.
+            Można go zastosować do innych rzeczy jak własności artykułów, sekcji
+            itp. (:hover/ :visited/ :focus) Focus pozwala nadać własności
+            elementowi, który podświetla się przy nawigacji tabulatorem, np
+            elementowi input. Działa niezależnie od outline'u.
+          </p>
+          <p class="article__description">
+            Pseudoklasy first-/ last-/ ...-child. Pozwalają one na
+            zmodyfikowanie n-tego dziecka danego elementu.
+          </p>
+          <p class="article__description">
+            not(selektor) - pozwala na zdefiniowanie np, że jeśli element nie
+            jest specjalny, ma się zachowywać inaczej.
+          </p>
+        </article>
       </section>
     </main>
     <footer class="footer">
