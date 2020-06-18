@@ -241,19 +241,37 @@
           </p>
         </article>
         <article class="article">
-          <h3 class="article__header">NPM</h3>
+          <h3 class="article__header">NPM i NPX</h3>
           <p class="article__description">
             NPM to menager paczek do node, znajdują się tam gotowe biblioteki,
-            fdsfdsfsd narzędzia. Paczki ściągamy w terminalu, musimy być w
-            katalogu z projektem. Po ściągnięciu paczki pojawi się pole
-            dependencies(zależności) i pojawi się w nim normalize.css w wersji
-            8.0.1. Pojawił się nowy plik package-lock.json. Przechowuje on
-            informacje o tym co zainstalowaliśmy (blokuje wersje), nie edytujemy
-            go. Pojawił się katalog: node_modules, w którym znajdować się bedą
-            moduły node. Folderu node_modules nie commitujemy.
+            narzędzia. Paczki ściągamy w terminalu, musimy być w katalogu z
+            projektem.<br />
+            <a class="article__link" href="https://www.npmjs.com/"
+              >https://www.npmjs.com/</a
+            >
           </p>
           <p class="article__description">
+            Po zainicjowaniu projektu poleceniem npm init pojawi się plik
+            package.json. Następnie możemy instalować paczki.
+          </p>
+          <p class="article__description">
+            Po ściągnięciu paczki w pliku package.json pojawi się pole
+            dependencies (zależności) i pojawi się w nim normalize.css w wersji
+            8.0.1. Pojawił się też nowy plik package-lock.json. Przechowuje on
+            informacje o tym co zainstalowaliśmy (blokuje wersje). Pojawił się
+            katalog: node_modules, w którym znajdować się bedą moduły node.
+            Folderu node_modules nie commitujemy.
+          </p>
+
+          <p class="article__description">
             Alternatywą dla NPM jest yarn.
+          </p>
+        </article>
+        <article class="article">
+          <h3 class="article__header">Skrypty NPM</h3>
+          <p class="article__description">
+            Skrypty NPM to komendy/ które możemy zdefiniować w pliku
+            package.json w projekcie.
           </p>
         </article>
         <article class="article">
@@ -264,7 +282,10 @@
               node -v - wypisze nam wersję node'a
             </li>
             <li class="article__list-item">
-              npm init - stworzy plik package.json
+              node &#x3C;nazwa_pliku&#x3E; - uruchomi plik
+            </li>
+            <li class="article__list-item">
+              npm init -inicjalizuje projekt, stworzy plik package.json
             </li>
             <li class="article__list-item">
               npm init -y - stworzy plik package.json bez pytań
@@ -278,19 +299,65 @@
               developerskich
             </li>
             <li class="article__list-item">
-              npm install &#x3C;nazwa_paczki&#x3E; - po usunięciu katalogu node
-              modules mając tylko plik package.json automatycznie sciągnie
-              paczki, które mielismy zainstalowane wcześniej.
+              npm install - po usunięciu katalogu node modules mając tylko plik
+              package.json automatycznie sciągnie paczki, które mielismy
+              zainstalowane wcześniej (dependencies lub devDependencies).
             </li>
             <li class="article__list-item">
-              npx &#x3C;nazwa_paczki&#x3E; - możemy skorzystać z paczki nie
-              instalując jej (np cowsay), albo po prostu odpalić paczkę z
-              konsoli
+              npx &#x3C;nazwa_paczki&#x3E; - odpalanie narzędzi konsolowych
+            </li>
+            <li class="article__list-item">
+              npm run &#x3C;skrypt&#x3E; - odpalanie skryptu, nie musimy
+              wpisywac komendy npx, domyslnie szuka poleceń które są w katalogu
+              node_modules.
             </li>
           </ul>
         </article>
       </section>
-
+      <section class="section">
+        <h2 class="section__header">SASS/SCSS</h2>
+        <p class="section_description">
+          Sass to preprocesor CSS, który zamienia swoją składnię na kod CSS
+          rozumiany przez przeglądarkę. SCSS vs SASS - są to różne składnie.
+          Kiedy generujemy CSS w preprocesorze Sass nie modyfikujemy pliku
+          wynikowego, każda zmiana w pliku .css bedzie nadpisana przez
+          jakąkolwiek zmianę w pliku SCSS, bo całość zostanie wygenerowana od
+          nowa.
+          <br />
+          <a class="section_link" href="https://www.sassmeister.com/"
+            >https://www.sassmeister.com/</a
+          >
+        </p>
+        <p class="section_description">
+          Co możemy robic za pomocą SCSS:
+        </p>
+        <ul class="section__list">
+          <li class="section__list-item">
+            $ - zmienna, np $myfavouritecolor - podstawia nam wartość w CSS,
+            możemy podać też breakpointy w mediaqueries np media (min-width:
+            $desktop)
+          </li>
+          <li class="section__list-item">
+            @mixin - funkcja która do wszystkich elementów z nią doda
+            zdefiniowane właściwości - może być ich kilka. Występuje w parze z
+            @include. Możemy zdefiniować mixin, który będzie przyjmował
+            parametry.
+          </li>
+          <li class="section__list-item">
+            @extend - dopisywana jest definicja, która zgrupuje nam własności
+            elementów z @extend w jednym miejscu
+          </li>
+          <li class="section__list-item">
+            & - parent selector - zagnieżdżanie w SASS, możemy zagnieździć też
+            @media
+          </li>
+        </ul>
+        <p class="section_description">
+          Korzystamy z paczki node-sass. Za pomocą komendy -w na bierząco
+          aktualizujemy plik .css względem .scss. Wychodzimy z tego kombinacją
+          ctrl + c.
+        </p>
+      </section>
       <section class="section">
         <h2 class="section__header">Przydatne linki</h2>
         <p class="section__description">
